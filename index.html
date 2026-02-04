@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1600px;
             margin: 0 auto;
         }
 
@@ -40,8 +40,8 @@
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
             margin-bottom: 30px;
         }
 
@@ -51,13 +51,19 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
         }
 
         .stat-card h3 {
             color: #667eea;
-            font-size: 0.9em;
+            font-size: 0.85em;
             text-transform: uppercase;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .stat-card .value {
@@ -69,7 +75,7 @@
         .table-container {
             background: white;
             border-radius: 10px;
-            overflow: hidden;
+            overflow-x: auto;
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             margin-bottom: 30px;
         }
@@ -77,19 +83,24 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            min-width: 800px;
         }
 
         thead {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         th {
-            padding: 15px;
+            padding: 15px 10px;
             text-align: left;
             font-weight: 600;
             text-transform: uppercase;
-            font-size: 0.85em;
+            font-size: 0.8em;
+            white-space: nowrap;
         }
 
         th.round {
@@ -98,7 +109,7 @@
         }
 
         td {
-            padding: 12px 15px;
+            padding: 12px 10px;
             border-bottom: 1px solid #f0f0f0;
         }
 
@@ -111,6 +122,7 @@
             color: #667eea;
             text-align: center;
             font-size: 1.1em;
+            width: 50px;
         }
 
         .driver-name {
@@ -120,7 +132,7 @@
 
         .team-name {
             color: #666;
-            font-size: 0.9em;
+            font-size: 0.85em;
         }
 
         .points {
@@ -130,9 +142,27 @@
 
         .total-points {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            color: white !important;
             font-weight: bold;
             font-size: 1.1em;
+            text-align: center;
+        }
+
+        .penalty-points {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .penalty-low {
+            color: #10b981;
+        }
+
+        .penalty-medium {
+            color: #f59e0b;
+        }
+
+        .penalty-high {
+            color: #ef4444;
         }
 
         .podium {
@@ -147,8 +177,12 @@
             background: linear-gradient(to right, #cd7f32 0%, #e8b77d 100%);
         }
 
-        .race-results {
-            margin-top: 30px;
+        .section-title {
+            color: white;
+            font-size: 2em;
+            margin: 40px 0 20px 0;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .race-card {
@@ -159,10 +193,31 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
+        .race-card.planned {
+            border: 3px dashed #667eea;
+            background: linear-gradient(to right, #f8f9ff 0%, #ffffff 100%);
+        }
+
         .race-card h2 {
             color: #667eea;
             margin-bottom: 15px;
             font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .race-badge {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.7em;
+            font-weight: bold;
+        }
+
+        .race-badge.planned {
+            background: #f59e0b;
         }
 
         .race-info {
@@ -183,11 +238,48 @@
             color: #333;
         }
 
+        .attendance-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .attendance-green {
+            background-color: #10b981;
+        }
+
+        .attendance-yellow {
+            background-color: #f59e0b;
+        }
+
+        .attendance-red {
+            background-color: #ef4444;
+        }
+
         .last-updated {
             text-align: center;
             color: rgba(255,255,255,0.8);
             margin-top: 20px;
             font-size: 0.9em;
+        }
+
+        .error-message {
+            background: #ef4444;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .two-column-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
         }
 
         @media (max-width: 768px) {
@@ -196,15 +288,26 @@
             }
 
             .stats-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
             }
 
             table {
-                font-size: 0.85em;
+                font-size: 0.75em;
+                min-width: 600px;
             }
 
             th, td {
-                padding: 8px;
+                padding: 8px 5px;
+            }
+
+            .two-column-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -212,24 +315,32 @@
 <body>
     <div class="container">
         <h1>🏁 Saludos a Leozever</h1>
-        <p class="subtitle">Standings & Results</p>
+        <p class="subtitle">Championship Standings & Statistics</p>
 
         <div class="stats-grid">
             <div class="stat-card">
-                <h3>Ronda Actual</h3>
+                <h3>🏆 Ronda Actual</h3>
                 <div class="value" id="current-round">-</div>
             </div>
             <div class="stat-card">
-                <h3>Total Pilotos</h3>
+                <h3>👥 Total Pilotos</h3>
                 <div class="value" id="total-drivers">-</div>
             </div>
             <div class="stat-card">
-                <h3>Carreras Disputadas</h3>
-                <div class="value" id="total-races">-</div>
+                <h3>✅ Carreras Disputadas</h3>
+                <div class="value" id="completed-races">-</div>
             </div>
             <div class="stat-card">
-                <h3>Equipos</h3>
+                <h3>📅 Carreras Por Disputar</h3>
+                <div class="value" id="planned-races">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>🏎️ Equipos</h3>
                 <div class="value" id="total-teams">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>🎯 Carreras Totales</h3>
+                <div class="value" id="total-races">-</div>
             </div>
         </div>
 
@@ -240,6 +351,8 @@
                         <th>Pos</th>
                         <th>Piloto</th>
                         <th>Equipo</th>
+                        <th class="round">🏁 Disp.</th>
+                        <th class="round">⚠️ Pen.</th>
                         <th class="round">R1</th>
                         <th class="round">R2</th>
                         <th class="round">R3</th>
@@ -255,49 +368,87 @@
             </table>
         </div>
 
-        <div class="race-results">
-            <h1 style="margin-bottom: 20px;">📊 Resultados de Carreras</h1>
-            <div id="race-results-container"></div>
-        </div>
+        <h1 class="section-title">📊 Resultados de Carreras Disputadas</h1>
+        <div id="completed-races-container"></div>
+
+        <h1 class="section-title">📅 Próximas Carreras</h1>
+        <div id="planned-races-container"></div>
 
         <p class="last-updated" id="last-updated"></p>
     </div>
 
     <script>
-        // Cargar datos del JSON
         async function loadData() {
             try {
                 const response = await fetch('championship_master_export.json');
+                if (!response.ok) {
+                    throw new Error('No se pudo cargar el archivo JSON');
+                }
                 const data = await response.json();
 
-                // Actualizar estadísticas
-                document.getElementById('current-round').textContent = data.current_round;
-                document.getElementById('total-drivers').textContent = Object.keys(data.drivers).length;
-                document.getElementById('total-races').textContent = data.races.filter(r => !r.planned).length;
-                document.getElementById('total-teams').textContent = Object.keys(data.teams).length;
+                console.log('Data loaded:', data);
 
-                // Renderizar tabla de standings
-                renderStandings(data.standings);
+                // Calcular estadísticas
+                const completedRaces = data.races.filter(r => !r.planned && r.results && r.results.length > 0);
+                const plannedRaces = data.races.filter(r => r.planned === true);
 
-                // Renderizar resultados de carreras
-                renderRaceResults(data.races, data.drivers, data.teams);
+                document.getElementById('current-round').textContent = data.current_round || 0;
+                document.getElementById('total-drivers').textContent = Object.keys(data.drivers || {}).length;
+                document.getElementById('completed-races').textContent = completedRaces.length;
+                document.getElementById('planned-races').textContent = plannedRaces.length;
+                document.getElementById('total-teams').textContent = Object.keys(data.teams || {}).length;
+                document.getElementById('total-races').textContent = data.races.length;
+
+                // Renderizar tabla de standings con estadísticas adicionales
+                renderStandings(data.standings, data.drivers, data.races);
+
+                // Renderizar carreras completadas
+                renderCompletedRaces(completedRaces, data.drivers, data.teams);
+
+                // Renderizar carreras planificadas
+                renderPlannedRaces(plannedRaces);
 
                 // Última actualización
                 if (data.standings_updated_at) {
                     const date = new Date(data.standings_updated_at);
                     document.getElementById('last-updated').textContent = 
-                        `Última actualización: ${date.toLocaleString('es-MX')}`;
+                        `Última actualización: ${date.toLocaleString('es-MX', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric',
+                            hour: '2-digit',
+                            minute: '2-digit'
+                        })}`;
                 }
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.querySelector('.container').innerHTML += 
-                    '<p style="color: white; text-align: center; margin-top: 20px;">Error al cargar los datos. Asegúrate de que championship_master_export.json esté en la misma carpeta.</p>';
+                document.querySelector('.container').innerHTML = 
+                    '<div class="error-message">❌ Error al cargar los datos. Asegúrate de que championship_master_export.json esté en la misma carpeta que index.html</div>' +
+                    '<div class="error-message">Detalles técnicos: ' + error.message + '</div>';
             }
         }
 
-        function renderStandings(standings) {
+        function calculateDriverStats(driverId, races) {
+            let racesDisputed = 0;
+
+            races.forEach(race => {
+                if (!race.planned && race.results) {
+                    const participated = race.results.some(r => r.driver_id === driverId);
+                    if (participated) racesDisputed++;
+                }
+            });
+
+            return { racesDisputed };
+        }
+
+        function renderStandings(standings, drivers, races) {
             const tbody = document.getElementById('standings-body');
             tbody.innerHTML = '';
+
+            if (!standings || standings.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="13" style="text-align: center; padding: 40px;">No hay datos de clasificación disponibles</td></tr>';
+                return;
+            }
 
             standings.forEach((row, index) => {
                 const tr = document.createElement('tr');
@@ -307,10 +458,32 @@
                 if (index === 1) tr.classList.add('second');
                 if (index === 2) tr.classList.add('third');
 
+                // Buscar driver_id por nombre
+                let driverId = null;
+                let penaltyPoints = 0;
+                let racesDisputed = 0;
+
+                for (const [id, driver] of Object.entries(drivers || {})) {
+                    if (driver.name === row['Piloto/Ronda']) {
+                        driverId = id;
+                        penaltyPoints = driver.penalty_points || 0;
+                        const stats = calculateDriverStats(id, races);
+                        racesDisputed = stats.racesDisputed;
+                        break;
+                    }
+                }
+
+                // Determinar color de penalty points
+                let penaltyClass = 'penalty-low';
+                if (penaltyPoints >= 10) penaltyClass = 'penalty-high';
+                else if (penaltyPoints >= 5) penaltyClass = 'penalty-medium';
+
                 tr.innerHTML = `
                     <td class="position">${row['Posición']}</td>
                     <td class="driver-name">${row['Piloto/Ronda']}</td>
                     <td class="team-name">${row['Equipo'] || '-'}</td>
+                    <td class="points">${racesDisputed}</td>
+                    <td class="penalty-points ${penaltyClass}">${penaltyPoints.toFixed(1)}</td>
                     <td class="points">${row['R1'] || 0}</td>
                     <td class="points">${row['R2'] || 0}</td>
                     <td class="points">${row['R3'] || 0}</td>
@@ -325,31 +498,40 @@
             });
         }
 
-        function renderRaceResults(races, drivers, teams) {
-            const container = document.getElementById('race-results-container');
+        function renderCompletedRaces(races, drivers, teams) {
+            const container = document.getElementById('completed-races-container');
             container.innerHTML = '';
 
-            // Filtrar solo carreras completadas y ordenar por ronda
-            const completedRaces = races.filter(r => !r.planned).sort((a, b) => b.round - a.round);
+            if (races.length === 0) {
+                container.innerHTML = '<div class="race-card"><p style="text-align: center; color: #666;">No hay carreras disputadas todavía</p></div>';
+                return;
+            }
 
-            completedRaces.forEach(race => {
+            // Ordenar por ronda descendente (más reciente primero)
+            races.sort((a, b) => b.round - a.round);
+
+            races.forEach(race => {
                 const card = document.createElement('div');
                 card.className = 'race-card';
 
-                const raceDate = race.date ? new Date(race.date).toLocaleDateString('es-MX') : 'Fecha no disponible';
+                const raceDate = race.date ? new Date(race.date).toLocaleDateString('es-MX', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                }) : 'Fecha no disponible';
 
                 let resultsHTML = '<table><thead><tr><th>Pos</th><th>Piloto</th><th>Equipo</th><th>Puntos</th><th>Estado</th></tr></thead><tbody>';
 
-                race.results.forEach(result => {
+                (race.results || []).forEach(result => {
                     const driver = drivers[result.driver_id];
                     const team = driver && driver.team_id ? teams[driver.team_id] : null;
 
                     resultsHTML += `
                         <tr>
                             <td class="position">${result.position}</td>
-                            <td class="driver-name">${result.name}</td>
+                            <td class="driver-name">${result.name || driver?.name || 'N/A'}</td>
                             <td class="team-name">${team ? team.name : '-'}</td>
-                            <td class="points">${result.points}</td>
+                            <td class="points">${result.points || 0}</td>
                             <td class="points">${result.status || 'FIN'}</td>
                         </tr>
                     `;
@@ -358,7 +540,10 @@
                 resultsHTML += '</tbody></table>';
 
                 card.innerHTML = `
-                    <h2>Ronda ${race.round}: ${race.name}</h2>
+                    <h2>
+                        <span class="race-badge">R${race.round}</span>
+                        ${race.name}
+                    </h2>
                     <div class="race-info">
                         <div class="race-info-item"><strong>📅 Fecha:</strong> ${raceDate}</div>
                         ${race.track ? `<div class="race-info-item"><strong>🏁 Circuito:</strong> ${race.track}</div>` : ''}
@@ -371,11 +556,54 @@
             });
         }
 
+        function renderPlannedRaces(races) {
+            const container = document.getElementById('planned-races-container');
+            container.innerHTML = '';
+
+            if (races.length === 0) {
+                container.innerHTML = '<div class="race-card"><p style="text-align: center; color: #666;">No hay carreras planificadas por el momento</p></div>';
+                return;
+            }
+
+            // Ordenar por ronda ascendente
+            races.sort((a, b) => a.round - b.round);
+
+            races.forEach(race => {
+                const card = document.createElement('div');
+                card.className = 'race-card planned';
+
+                const raceDate = race.date ? new Date(race.date).toLocaleDateString('es-MX', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                }) : 'Fecha por confirmar';
+
+                card.innerHTML = `
+                    <h2>
+                        <span class="race-badge planned">PRÓXIMA</span>
+                        <span class="race-badge">R${race.round}</span>
+                        ${race.name}
+                    </h2>
+                    <div class="race-info">
+                        <div class="race-info-item"><strong>📅 Fecha:</strong> ${raceDate}</div>
+                        ${race.track ? `<div class="race-info-item"><strong>🏁 Circuito:</strong> ${race.track}</div>` : ''}
+                    </div>
+                    <p style="margin-top: 15px; color: #667eea; font-weight: 600; text-align: center;">
+                        ⏳ Carrera pendiente de disputar
+                    </p>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
         // Cargar datos al inicio
         loadData();
 
-        // Recargar cada 5 minutos para actualizar automáticamente
-        setInterval(loadData, 300000);
+        // Recargar cada 2 minutos
+        setInterval(loadData, 120000);
     </script>
 </body>
 </html>
