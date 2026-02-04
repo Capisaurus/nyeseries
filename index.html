@@ -72,6 +72,66 @@
             letter-spacing: 1px;
         }
 
+        .app-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            background: linear-gradient(180deg, var(--primary-gray-dark) 0%, var(--primary-gray-medium) 100%);
+            padding: 28px 22px;
+            border-right: 1px solid rgba(255,255,255,0.08);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+        }
+
+        .sidebar-header {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .sidebar-title {
+            color: var(--f2-white);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 0.9em;
+        }
+
+        .nav-select {
+            background: var(--primary-gray-light);
+            color: var(--f2-white);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 10px;
+            padding: 12px 14px;
+            font-weight: 600;
+            font-size: 0.95em;
+            outline: none;
+            cursor: pointer;
+            transition: border 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .nav-select:focus {
+            border-color: var(--f2-blue-accent);
+            box-shadow: 0 0 0 2px rgba(51,153,255,0.25);
+        }
+
+        .sidebar-meta {
+            color: var(--f2-gray-light);
+            font-size: 0.85em;
+            line-height: 1.5;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
         .container {
             max-width: 1600px;
             margin: 0 auto;
@@ -299,6 +359,27 @@
             font-weight: 700;
         }
 
+        .race-selector {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .race-select-label {
+            color: var(--f2-gray-dark);
+            font-weight: 700;
+            font-size: 0.95em;
+        }
+
+        .race-selector .nav-select {
+            background: var(--f2-white);
+            color: var(--f2-gray-dark);
+            border: 1px solid var(--f2-bg-light);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
         .chart-container {
             position: relative;
             height: 500px;
@@ -512,9 +593,17 @@
         @media (max-width: 1024px) {
             h1 { font-size: 2.2em; }
             .chart-container { height: 400px; }
+            .app-layout { grid-template-columns: 220px 1fr; }
         }
 
         @media (max-width: 768px) {
+            .app-layout { grid-template-columns: 1fr; }
+            .sidebar {
+                position: relative;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,0.08);
+            }
             h1 { font-size: 1.8em; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
             .chart-container { height: 350px; }
@@ -532,19 +621,24 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="header-content">
-            <h1>Saludos a Leozever</h1>
-            <p class="subtitle" id="season-subtitle">Championship Dashboard • Season 2026</p>
-            
-            <!-- Season Navigation -->
-            <div class="season-nav" id="season-nav">
-                <!-- Buttons will be generated dynamically -->
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">Temporadas</div>
+                <select id="season-select" class="nav-select"></select>
             </div>
-        </div>
-    </div>
+            <div class="sidebar-meta" id="sidebar-status">Cargando...</div>
+        </aside>
 
-    <div class="container">
+        <main class="main-content">
+            <div class="header">
+                <div class="header-content">
+                    <h1>Saludos a Leozever</h1>
+                    <p class="subtitle" id="season-subtitle">Championship Dashboard • Season 2026</p>
+                </div>
+            </div>
+
+            <div class="container">
         <!-- Stats Cards -->
         <div class="stats-grid">
             <div class="stat-card">
@@ -594,6 +688,12 @@
             </div>
         </div>
 
+        <!-- Last Race Highlight -->
+        <div class="section" id="last-race-section">
+            <h2 class="section-title">Última Carrera</h2>
+            <div id="last-race-container"></div>
+        </div>
+
         <!-- Standings Table -->
         <div class="section">
             <h2 class="section-title" id="standings-title">Clasificación General</h2>
@@ -621,14 +721,43 @@
             </div>
         </div>
 
+        <!-- Driver Statistics -->
+        <div class="section" id="driver-stats-section">
+            <h2 class="section-title">Estadísticas por Piloto</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Piloto</th>
+                            <th>Equipo</th>
+                            <th class="center">Puntos</th>
+                            <th class="center">Superlicencia</th>
+                            <th class="center">Asistencia</th>
+                        </tr>
+                    </thead>
+                    <tbody id="driver-stats-body"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Race Results Selector -->
+        <div class="section" id="race-selector-section">
+            <h2 class="section-title">Resultados por Carrera</h2>
+            <div class="race-selector">
+                <label for="race-select" class="race-select-label">Selecciona una carrera</label>
+                <select id="race-select" class="nav-select"></select>
+            </div>
+            <div id="race-results-container"></div>
+        </div>
+
         <!-- Team Statistics -->
-        <div class="section">
+        <div class="section" id="team-stats-section">
             <h2 class="section-title">Estadísticas por Equipo</h2>
             <div class="team-stats-grid" id="team-stats-container"></div>
         </div>
 
         <!-- Completed Races -->
-        <div class="section">
+        <div class="section" id="completed-races-section">
             <h2 class="section-title">Carreras Disputadas</h2>
             <div id="completed-races-container"></div>
         </div>
@@ -639,12 +768,15 @@
             <div id="planned-races-container"></div>
         </div>
 
-        <p class="last-updated" id="last-updated"></p>
+                <p class="last-updated" id="last-updated"></p>
+            </div>
+        </main>
     </div>
 
     <script>
         let progressionChart = null;
         let currentSeason = null;
+        let currentView = 'home';
         let allData = {};
         let seasonsList = [];
         let lastSeason = null;
@@ -707,11 +839,11 @@
                     return;
                 }
 
-                // Create navigation buttons
-                createNavigationButtons();
+                // Create navigation dropdown
+                createNavigationDropdown();
 
-                // Display current season
-                switchSeason(currentSeason);
+                // Display initial screen (current season summary)
+                switchView('home');
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.querySelector('.container').innerHTML = 
@@ -719,65 +851,111 @@
             }
         }
 
-        function createNavigationButtons() {
-            const nav = document.getElementById('season-nav');
-            nav.innerHTML = '';
+        function createNavigationDropdown() {
+            const select = document.getElementById('season-select');
+            const sidebarStatus = document.getElementById('sidebar-status');
+            if (!select) return;
 
-            seasonsList.forEach((season, index) => {
-                const btn = document.createElement('button');
-                btn.className = 'season-btn';
-                btn.textContent = season.name;
-                btn.onclick = () => switchSeason(season.key);
-                
-                if (season.key === currentSeason) {
-                    btn.classList.add('active');
-                }
-                
-                nav.appendChild(btn);
+            select.innerHTML = '';
+            const regularSeasons = seasonsList.filter(s => !s.isOverall);
+            const overall = seasonsList.find(s => s.isOverall);
+            const currentInfo = regularSeasons.find(s => s.key === currentSeason);
+
+            const homeLabel = currentInfo ? `Temporada actual (${currentInfo.name})` : 'Temporada actual';
+            select.appendChild(new Option(homeLabel, 'home'));
+
+            regularSeasons.forEach(season => {
+                select.appendChild(new Option(season.name, season.key));
             });
+
+            if (overall) {
+                select.appendChild(new Option(overall.name, overall.key));
+            }
+
+            select.value = 'home';
+            select.onchange = (event) => switchView(event.target.value);
+
+            if (sidebarStatus) {
+                sidebarStatus.textContent = `${regularSeasons.length} temporadas detectadas`;
+            }
         }
 
-        function switchSeason(seasonKey) {
-            currentSeason = seasonKey;
-            
-            // Update active button
-            document.querySelectorAll('.season-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            const activeBtn = Array.from(document.querySelectorAll('.season-btn'))
-                .find(btn => btn.textContent === seasonsList.find(s => s.key === seasonKey)?.name);
-            if (activeBtn) {
-                activeBtn.classList.add('active');
+        function switchView(viewKey) {
+            currentView = viewKey;
+
+            const seasonInfo = seasonsList.find(s => s.key === viewKey);
+
+            if (viewKey === 'home') {
+                setViewMode('home');
+                updateSubtitle(currentSeason);
+                renderSeasonData(currentSeason, 'home');
+                return;
             }
 
-            // Update subtitle
-            const seasonInfo = seasonsList.find(s => s.key === seasonKey);
-            if (seasonInfo) {
-                if (seasonInfo.isOverall) {
-                    document.getElementById('season-subtitle').textContent = `${seasonInfo.name} • Histórico`;
-                } else {
-                    const isLastSeason = seasonKey === lastSeason;
-                    const statusText = isLastSeason ? 'En Curso' : 'Finalizada';
-                    document.getElementById('season-subtitle').textContent = 
-                        `${seasonInfo.name} • ${statusText}`;
-                }
-            }
-
-            // Show/hide historical stats
-            const isOverall = seasonsList.find(s => s.key === seasonKey)?.isOverall;
-            document.getElementById('historical-stats').style.display = 
-                isOverall ? 'block' : 'none';
-
-            if (isOverall) {
+            if (seasonInfo && seasonInfo.isOverall) {
+                setViewMode('overall');
+                updateSubtitle(viewKey);
                 renderOverallStats();
-            } else {
-                renderSeasonData(seasonKey);
+                return;
             }
+
+            setViewMode('season');
+            updateSubtitle(viewKey);
+            renderSeasonData(viewKey, 'season');
+        }
+
+        function updateSubtitle(seasonKey) {
+            const seasonInfo = seasonsList.find(s => s.key === seasonKey);
+            if (!seasonInfo) return;
+
+            if (seasonInfo.isOverall) {
+                document.getElementById('season-subtitle').textContent = `${seasonInfo.name} • Histórico`;
+                return;
+            }
+
+            const isLastSeason = seasonKey === lastSeason;
+            const statusText = isLastSeason ? 'En Curso' : 'Finalizada';
+            document.getElementById('season-subtitle').textContent = `${seasonInfo.name} • ${statusText}`;
         }
 
         function isSeasonInProgress(seasonKey) {
             return seasonKey === lastSeason;
+        }
+
+        function setViewMode(mode) {
+            const historical = document.getElementById('historical-stats');
+            const teamSection = document.getElementById('team-stats-section');
+            const completedSection = document.getElementById('completed-races-section');
+            const plannedSection = document.getElementById('planned-section');
+            const driverSection = document.getElementById('driver-stats-section');
+            const raceSelectorSection = document.getElementById('race-selector-section');
+            const lastRaceSection = document.getElementById('last-race-section');
+
+            if (mode === 'home') {
+                if (historical) historical.style.display = 'none';
+                if (teamSection) teamSection.style.display = 'none';
+                if (completedSection) completedSection.style.display = 'none';
+                if (plannedSection) plannedSection.style.display = 'none';
+                if (driverSection) driverSection.style.display = 'none';
+                if (raceSelectorSection) raceSelectorSection.style.display = 'none';
+                if (lastRaceSection) lastRaceSection.style.display = 'block';
+            } else if (mode === 'overall') {
+                if (historical) historical.style.display = 'block';
+                if (teamSection) teamSection.style.display = 'none';
+                if (completedSection) completedSection.style.display = 'none';
+                if (plannedSection) plannedSection.style.display = 'none';
+                if (driverSection) driverSection.style.display = 'block';
+                if (raceSelectorSection) raceSelectorSection.style.display = 'block';
+                if (lastRaceSection) lastRaceSection.style.display = 'none';
+            } else {
+                if (historical) historical.style.display = 'none';
+                if (teamSection) teamSection.style.display = 'block';
+                if (completedSection) completedSection.style.display = 'block';
+                if (plannedSection) plannedSection.style.display = 'block';
+                if (driverSection) driverSection.style.display = 'block';
+                if (raceSelectorSection) raceSelectorSection.style.display = 'block';
+                if (lastRaceSection) lastRaceSection.style.display = 'none';
+            }
         }
 
         function setStatCardTitles(mode) {
@@ -851,6 +1029,7 @@
             const allTeams = new Map();
             let totalRaces = 0;
             let totalDriversEver = new Set();
+            const attendanceTotals = {};
 
             // Get season info
             const regularSeasons = seasonsList.filter(s => !s.isOverall);
@@ -881,6 +1060,12 @@
 
                     const driverData = allDrivers.get(guid);
                     if (driver.team_id) driverData.teams.add(driver.team_id);
+                });
+
+                // Attendance totals
+                Object.entries(seasonData.attendance || {}).forEach(([driverId, rounds]) => {
+                    const attended = Object.values(rounds || {}).filter(val => val === 'A').length;
+                    attendanceTotals[driverId] = (attendanceTotals[driverId] || 0) + attended;
                 });
 
                 // Collect teams
@@ -972,6 +1157,10 @@
 
             // Render progression chart for top drivers
             renderHistoricalProgression(driversArray.slice(0, 8));
+
+            // Driver stats and race selector
+            renderDriverStatsOverall(driversArray, allDrivers, allTeams, attendanceTotals, totalRaces);
+            renderRaceSelector(buildOverallRaceItems(), 'overall');
 
             // Clear other sections
             document.getElementById('team-stats-container').innerHTML = 
@@ -1177,7 +1366,7 @@
             });
         }
 
-        function renderSeasonData(seasonKey) {
+        function renderSeasonData(seasonKey, mode = 'season') {
             const data = allData[seasonKey];
             
             if (!data) {
@@ -1210,9 +1399,16 @@
             // Render all sections
             renderProgressionChart(calculatedStandings, completedRaces, isInProgress);
             renderStandings(calculatedStandings, data.drivers, data.races, isInProgress);
-            renderTeamStats(data.drivers, data.teams, calculatedStandings);
-            renderCompletedRaces(completedRaces, data.drivers, data.teams);
-            renderPlannedRaces(plannedRaces, isInProgress);
+
+            if (mode !== 'home') {
+                renderDriverStats(data.drivers, data.teams, calculatedStandings, data.attendance, completedRaces.length);
+                renderRaceSelector(buildSeasonRaceItems(data), seasonKey);
+                renderTeamStats(data.drivers, data.teams, calculatedStandings);
+                renderCompletedRaces(completedRaces, data.drivers, data.teams);
+                renderPlannedRaces(plannedRaces, isInProgress);
+            } else {
+                renderLastRace(completedRaces, data.drivers, data.teams);
+            }
 
             // Last updated
             if (data.standings_updated_at) {
@@ -1485,6 +1681,243 @@
                 `;
                 container.appendChild(card);
             });
+        }
+
+        function renderDriverStats(drivers, teams, standings, attendance, totalRounds) {
+            const tbody = document.getElementById('driver-stats-body');
+            if (!tbody) return;
+            tbody.innerHTML = '';
+
+            if (!drivers || Object.keys(drivers).length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" class="no-data">No hay datos de pilotos</td></tr>';
+                return;
+            }
+
+            const rows = (standings || []).map(row => {
+                const driver = drivers[row.driverId];
+                if (!driver) return null;
+                const teamName = driver.team_id ? (teams[driver.team_id]?.name || '-') : '-';
+                const penalty = driver.penalty_points || 0;
+                const attendanceRecord = attendance?.[row.driverId] || {};
+                const attended = Object.values(attendanceRecord).filter(val => val === 'A').length;
+                const attendanceText = totalRounds > 0
+                    ? `${attended}/${totalRounds} (${Math.round((attended / totalRounds) * 100)}%)`
+                    : '-';
+
+                return {
+                    name: driver.name,
+                    teamName,
+                    points: row.Total || 0,
+                    penalty,
+                    attendanceText
+                };
+            }).filter(Boolean);
+
+            rows.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="driver-name">${row.name}</td>
+                    <td class="team-name">${row.teamName}</td>
+                    <td class="points">${row.points}</td>
+                    <td class="points">${row.penalty.toFixed(1)}</td>
+                    <td class="points">${row.attendanceText}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function renderDriverStatsOverall(driversArray, allDrivers, allTeams, attendanceTotals, totalRounds) {
+            const tbody = document.getElementById('driver-stats-body');
+            if (!tbody) return;
+            tbody.innerHTML = '';
+
+            if (!driversArray || driversArray.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" class="no-data">No hay datos de pilotos</td></tr>';
+                return;
+            }
+
+            driversArray.forEach(driver => {
+                const teamNames = Array.from(driver.teams)
+                    .map(tid => allTeams.get(tid)?.name)
+                    .filter(Boolean)
+                    .join(', ') || '-';
+
+                const attended = attendanceTotals?.[driver.guid] || 0;
+                const attendanceText = totalRounds > 0
+                    ? `${attended}/${totalRounds} (${Math.round((attended / totalRounds) * 100)}%)`
+                    : '-';
+
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="driver-name">${driver.name}</td>
+                    <td class="team-name">${teamNames}</td>
+                    <td class="points">${driver.totalPoints}</td>
+                    <td class="points">0.0</td>
+                    <td class="points">${attendanceText}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function buildSeasonRaceItems(data) {
+            const races = (data.races || [])
+                .filter(r => !r.planned && r.results?.length > 0)
+                .sort((a, b) => a.round - b.round);
+
+            return races.map(race => ({
+                id: race.id,
+                label: `R${race.round} • ${race.name}`,
+                race,
+                drivers: data.drivers,
+                teams: data.teams
+            }));
+        }
+
+        function buildOverallRaceItems() {
+            const items = [];
+            const regularSeasons = seasonsList
+                .filter(s => !s.isOverall)
+                .sort((a, b) => parseInt(a.key.substring(1)) - parseInt(b.key.substring(1)));
+
+            regularSeasons.forEach(season => {
+                const data = allData[season.key];
+                if (!data) return;
+
+                const races = (data.races || [])
+                    .filter(r => !r.planned && r.results?.length > 0)
+                    .sort((a, b) => a.round - b.round);
+
+                races.forEach(race => {
+                    const seasonNum = season.key.substring(1);
+                    items.push({
+                        id: `${season.key}_${race.id}`,
+                        label: `S${seasonNum} R${race.round} • ${race.name}`,
+                        race,
+                        drivers: data.drivers,
+                        teams: data.teams
+                    });
+                });
+            });
+
+            return items;
+        }
+
+        function renderRaceSelector(raceItems, viewKey) {
+            const select = document.getElementById('race-select');
+            const container = document.getElementById('race-results-container');
+            if (!select || !container) return;
+
+            select.innerHTML = '';
+
+            if (!raceItems || raceItems.length === 0) {
+                container.innerHTML = '<div class="no-data">No hay carreras disponibles</div>';
+                select.disabled = true;
+                return;
+            }
+
+            raceItems.forEach(item => {
+                select.appendChild(new Option(item.label, item.id));
+            });
+
+            select.disabled = false;
+            select.value = raceItems[0].id;
+            renderRaceResults(raceItems[0]);
+
+            select.onchange = (event) => {
+                const selected = raceItems.find(item => item.id === event.target.value);
+                renderRaceResults(selected);
+            };
+        }
+
+        function renderRaceResults(raceItem) {
+            const container = document.getElementById('race-results-container');
+            if (!container) return;
+
+            if (!raceItem || !raceItem.race) {
+                container.innerHTML = '<div class="no-data">No hay datos de carrera</div>';
+                return;
+            }
+
+            const race = raceItem.race;
+            const drivers = raceItem.drivers || {};
+            const teams = raceItem.teams || {};
+
+            let resultsHTML = '<div class="table-container"><table><thead><tr>' +
+                '<th class="center">Pos</th><th>Piloto</th><th>Equipo</th>' +
+                '<th class="center">Puntos</th><th class="center">Estado</th></tr></thead><tbody>';
+
+            (race.results || []).forEach(result => {
+                const driver = drivers[result.driver_id];
+                const team = driver && driver.team_id ? teams[driver.team_id] : null;
+
+                resultsHTML += `
+                    <tr>
+                        <td class="position">${result.position}</td>
+                        <td class="driver-name">${result.name || driver?.name || 'N/A'}</td>
+                        <td class="team-name">${team ? team.name : '-'}</td>
+                        <td class="points">${result.points || 0}</td>
+                        <td class="points">${result.status || 'FIN'}</td>
+                    </tr>
+                `;
+            });
+
+            resultsHTML += '</tbody></table></div>';
+
+            container.innerHTML = resultsHTML;
+        }
+
+        function renderLastRace(completedRaces, drivers, teams) {
+            const container = document.getElementById('last-race-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            if (!completedRaces || completedRaces.length === 0) {
+                container.innerHTML = '<div class="no-data">No hay carreras disputadas</div>';
+                return;
+            }
+
+            const sorted = [...completedRaces].sort((a, b) => b.round - a.round);
+            const race = sorted[0];
+
+            const raceDate = race.date ? new Date(race.date).toLocaleDateString('es-MX', {
+                year: 'numeric', month: 'long', day: 'numeric'
+            }) : 'Fecha no disponible';
+
+            let resultsHTML = '<div class="table-container"><table><thead><tr>' +
+                '<th class="center">Pos</th><th>Piloto</th><th>Equipo</th>' +
+                '<th class="center">Puntos</th><th class="center">Estado</th></tr></thead><tbody>';
+
+            (race.results || []).forEach(result => {
+                const driver = drivers[result.driver_id];
+                const team = driver && driver.team_id ? teams[driver.team_id] : null;
+
+                resultsHTML += `
+                    <tr>
+                        <td class="position">${result.position}</td>
+                        <td class="driver-name">${result.name || driver?.name || 'N/A'}</td>
+                        <td class="team-name">${team ? team.name : '-'}</td>
+                        <td class="points">${result.points || 0}</td>
+                        <td class="points">${result.status || 'FIN'}</td>
+                    </tr>
+                `;
+            });
+
+            resultsHTML += '</tbody></table></div>';
+
+            container.innerHTML = `
+                <div class="race-card">
+                    <h3>
+                        <span class="race-badge">R${race.round}</span>
+                        ${race.name}
+                    </h3>
+                    <div class="race-info">
+                        <div class="race-info-item"><strong>Fecha:</strong> ${raceDate}</div>
+                        ${race.track ? `<div class="race-info-item"><strong>Circuito:</strong> ${race.track}</div>` : ''}
+                        <div class="race-info-item"><strong>Participantes:</strong> ${race.results.length}</div>
+                    </div>
+                    ${resultsHTML}
+                </div>
+            `;
         }
 
         function renderCompletedRaces(races, drivers, teams) {
