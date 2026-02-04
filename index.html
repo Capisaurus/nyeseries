@@ -304,49 +304,6 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
 
-        .attendance-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .attendance-card {
-            background: var(--f2-bg-light);
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid var(--f2-blue-light);
-        }
-
-        .attendance-card h4 {
-            color: var(--f2-blue-dark);
-            margin-bottom: 10px;
-            font-size: 0.95em;
-            font-weight: 700;
-        }
-
-        .attendance-status {
-            display: flex;
-            gap: 10px;
-            font-size: 0.85em;
-        }
-
-        .status-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .status-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-
-        .status-green { background: #10b981; }
-        .status-yellow { background: #f59e0b; }
-        .status-red { background: #ef4444; }
-
         .team-stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -514,12 +471,6 @@
             <div class="team-stats-grid" id="team-stats-container"></div>
         </div>
 
-        <!-- Attendance -->
-        <div class="section" id="attendance-section" style="display: none;">
-            <h2 class="section-title">📊 Asistencia por Piloto</h2>
-            <div class="attendance-grid" id="attendance-container"></div>
-        </div>
-
         <!-- Completed Races -->
         <div class="section">
             <h2 class="section-title">🏁 Carreras Disputadas</h2>
@@ -554,6 +505,9 @@
                 const completedRaces = data.races.filter(r => !r.planned && r.results && r.results.length > 0);
                 const plannedRaces = data.races.filter(r => r.planned === true);
 
+                // 🔧 FIX: Calcular standings desde las carreras en lugar de usar el campo 'standings'
+                const calculatedStandings = calculateStandingsFromRaces(data.races, data.drivers, data.teams);
+
                 // Update stats
                 document.getElementById('current-round').textContent = data.current_round || 0;
                 document.getElementById('total-drivers').textContent = Object.keys(data.drivers || {}).length;
@@ -562,11 +516,10 @@
                 document.getElementById('total-teams').textContent = Object.keys(data.teams || {}).length;
                 document.getElementById('total-races').textContent = data.races.length;
 
-                // Render all sections
-                renderProgressionChart(data.standings, completedRaces);
-                renderStandings(data.standings, data.drivers, data.races);
-                renderTeamStats(data.drivers, data.teams, data.standings);
-                renderAttendance(data.attendance, data.drivers);
+                // Render all sections with CALCULATED standings
+                renderProgressionChart(calculatedStandings, completedRaces);
+                renderStandings(calculatedStandings, data.drivers, data.races);
+                renderTeamStats(data.drivers, data.teams, calculatedStandings);
                 renderCompletedRaces(completedRaces, data.drivers, data.teams);
                 renderPlannedRaces(plannedRaces);
 
@@ -587,6 +540,71 @@
             }
         }
 
+        // 🆕 NUEVA FUNCIÓN: Calcula standings correctos desde los resultados de las carreras
+        function calculateStandingsFromRaces(races, drivers, teams) {
+            const driverPoints = {};
+
+            // Inicializar todos los pilotos
+            for (const [driverId, driverData] of Object.entries(drivers)) {
+                driverPoints[driverId] = {
+                    name: driverData.name,
+                    team: driverData.team_id ? (teams[driverData.team_id]?.name || '') : '',
+                    rounds: {},
+                    total: 0,
+                    racesDisputed: 0,
+                    penaltyPoints: driverData.penalty_points || 0
+                };
+            }
+
+            // Calcular puntos por ronda desde los resultados
+            races.forEach(race => {
+                if (!race.planned && race.results) {
+                    const roundKey = 'R' + race.round;
+
+                    race.results.forEach(result => {
+                        const driverId = result.driver_id;
+
+                        // Si el driver no existe, crear entrada
+                        if (!driverPoints[driverId]) {
+                            driverPoints[driverId] = {
+                                name: result.name || driverId,
+                                team: '',
+                                rounds: {},
+                                total: 0,
+                                racesDisputed: 0,
+                                penaltyPoints: 0
+                            };
+                        }
+
+                        const points = result.points || 0;
+                        driverPoints[driverId].rounds[roundKey] = points;
+                        driverPoints[driverId].total += points;
+                        driverPoints[driverId].racesDisputed++;
+                    });
+                }
+            });
+
+            // Convertir a array y ordenar por puntos
+            const standingsArray = Object.entries(driverPoints)
+                .map(([driverId, data]) => ({
+                    driverId: driverId,
+                    'Piloto/Ronda': data.name,
+                    'Equipo': data.team,
+                    'Total': data.total,
+                    'racesDisputed': data.racesDisputed,
+                    'penaltyPoints': data.penaltyPoints,
+                    ...data.rounds
+                }))
+                .sort((a, b) => b.Total - a.Total);
+
+            // Añadir posiciones
+            standingsArray.forEach((driver, index) => {
+                driver['Posición'] = index + 1;
+            });
+
+            return standingsArray;
+        }
+
         function renderProgressionChart(standings, races) {
             if (!standings || standings.length === 0 || races.length === 0) {
                 document.querySelector('.chart-container').innerHTML = 
@@ -594,11 +612,9 @@
                 return;
             }
 
-            // Get top 10 drivers
             const topDrivers = standings.slice(0, 10);
             const rounds = races.map(r => r.round).sort((a, b) => a - b);
 
-            // Calculate cumulative points per round for each driver
             const datasets = topDrivers.map((driver, index) => {
                 const driverName = driver['Piloto/Ronda'];
                 const points = [];
@@ -611,7 +627,6 @@
                     points.push(cumulative);
                 });
 
-                // Color palette (F2 style blues and variations)
                 const colors = [
                     '#003366', '#0066cc', '#3399ff', '#ff6600', '#5a6d7e',
                     '#004d99', '#66b3ff', '#ff8533', '#8b98a5', '#002244'
@@ -687,16 +702,6 @@
             });
         }
 
-        function calculateDriverStats(driverId, races) {
-            let racesDisputed = 0;
-            races.forEach(race => {
-                if (!race.planned && race.results) {
-                    if (race.results.some(r => r.driver_id === driverId)) racesDisputed++;
-                }
-            });
-            return { racesDisputed };
-        }
-
         function renderStandings(standings, drivers, races) {
             const tbody = document.getElementById('standings-body');
             tbody.innerHTML = '';
@@ -713,16 +718,8 @@
                 else if (index === 1) tr.classList.add('podium-2');
                 else if (index === 2) tr.classList.add('podium-3');
 
-                let driverId = null, penaltyPoints = 0, racesDisputed = 0;
-
-                for (const [id, driver] of Object.entries(drivers || {})) {
-                    if (driver.name === row['Piloto/Ronda']) {
-                        driverId = id;
-                        penaltyPoints = driver.penalty_points || 0;
-                        racesDisputed = calculateDriverStats(id, races).racesDisputed;
-                        break;
-                    }
-                }
+                const racesDisputed = row.racesDisputed || 0;
+                const penaltyPoints = row.penaltyPoints || 0;
 
                 let penaltyClass = 'penalty-low';
                 if (penaltyPoints >= 10) penaltyClass = 'penalty-high';
@@ -759,7 +756,6 @@
 
             const teamStats = {};
 
-            // Calculate stats per team
             for (const [teamId, team] of Object.entries(teams)) {
                 teamStats[teamId] = {
                     name: team.name,
@@ -770,12 +766,10 @@
                 };
             }
 
-            // Add driver stats
             for (const [driverId, driver] of Object.entries(drivers)) {
                 if (driver.team_id && teamStats[driver.team_id]) {
                     teamStats[driver.team_id].drivers++;
 
-                    // Find driver in standings
                     const standing = standings.find(s => s['Piloto/Ronda'] === driver.name);
                     if (standing) {
                         const points = standing['Total'] || 0;
@@ -789,7 +783,6 @@
                 }
             }
 
-            // Sort by total points
             const sortedTeams = Object.entries(teamStats)
                 .sort(([,a], [,b]) => b.totalPoints - a.totalPoints);
 
@@ -808,50 +801,6 @@
                 `;
                 container.appendChild(card);
             });
-        }
-
-        function renderAttendance(attendance, drivers) {
-            const container = document.getElementById('attendance-container');
-            const section = document.getElementById('attendance-section');
-
-            if (!attendance || Object.keys(attendance).length === 0) {
-                section.style.display = 'none';
-                return;
-            }
-
-            section.style.display = 'block';
-            container.innerHTML = '';
-
-            for (const [driverId, rounds] of Object.entries(attendance)) {
-                const driver = drivers[driverId];
-                if (!driver) continue;
-
-                const card = document.createElement('div');
-                card.className = 'attendance-card';
-
-                let greenCount = 0, yellowCount = 0, redCount = 0;
-                for (const status of Object.values(rounds)) {
-                    if (status === 'A') greenCount++;
-                    else if (status === 'B') yellowCount++;
-                    else if (status === 'C') redCount++;
-                }
-
-                card.innerHTML = `
-                    <h4>${driver.name}</h4>
-                    <div class="attendance-status">
-                        <div class="status-item">
-                            <span class="status-dot status-green"></span> ${greenCount}
-                        </div>
-                        <div class="status-item">
-                            <span class="status-dot status-yellow"></span> ${yellowCount}
-                        </div>
-                        <div class="status-item">
-                            <span class="status-dot status-red"></span> ${redCount}
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            }
         }
 
         function renderCompletedRaces(races, drivers, teams) {
@@ -951,10 +900,7 @@
             });
         }
 
-        // Load data on start
         loadData();
-
-        // Auto-refresh every 2 minutes
         setInterval(loadData, 120000);
     </script>
 </body>
