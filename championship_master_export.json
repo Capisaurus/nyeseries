@@ -105,27 +105,195 @@
             "country": "",
             "guid": "76561198998489417",
             "penalty_points": 0.0
+        },
+        "76561198347359581": {
+            "name": "Raul Pacheco",
+            "team_id": "",
+            "number": "",
+            "country": "",
+            "guid": "76561198347359581",
+            "penalty_points": 0.0
+        },
+        "76561198106471603": {
+            "name": "F. Chiarotti",
+            "team_id": "",
+            "number": "",
+            "country": "",
+            "guid": "76561198106471603",
+            "penalty_points": 0.0
+        },
+        "76561198962529406": {
+            "name": "FRANCO DURAN sentey",
+            "team_id": "",
+            "number": "",
+            "country": "",
+            "guid": "76561198962529406",
+            "penalty_points": 0.0
+        },
+        "76561199722435247": {
+            "name": "A. Rendon",
+            "team_id": "",
+            "number": "",
+            "country": "",
+            "guid": "76561199722435247",
+            "penalty_points": 0.0
+        },
+        "76561198260597293": {
+            "name": "Yeison Lopez",
+            "team_id": "",
+            "number": "",
+            "country": "",
+            "guid": "76561198260597293",
+            "penalty_points": 0.0
         }
     },
     "teams": {},
     "races": [
         {
             "id": "1",
-            "name": "1",
+            "name": "F1 TEST PRE-TEMPORADA - AUSTRALIA",
             "round": 1,
             "date": "",
             "track": "",
-            "planned": true,
-            "results": []
+            "planned": false,
+            "results": [
+                {
+                    "driver_id": "76561198341529089",
+                    "position": 1,
+                    "points": 25.0,
+                    "status": "nan",
+                    "guid": "76561198341529089",
+                    "name": "L. Zelaya",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561198072014624",
+                    "position": 2,
+                    "points": 18.0,
+                    "status": "nan",
+                    "guid": "76561198072014624",
+                    "name": "D. Medina",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561198347359581",
+                    "position": 3,
+                    "points": 15.0,
+                    "status": "nan",
+                    "guid": "76561198347359581",
+                    "name": "Raul Pacheco",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561198106471603",
+                    "position": 4,
+                    "points": 12.0,
+                    "status": "nan",
+                    "guid": "76561198106471603",
+                    "name": "F. Chiarotti",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561198962529406",
+                    "position": 5,
+                    "points": 10.0,
+                    "status": "nan",
+                    "guid": "76561198962529406",
+                    "name": "FRANCO DURAN sentey",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561198047561565",
+                    "position": 6,
+                    "points": 8.0,
+                    "status": "nan",
+                    "guid": "76561198047561565",
+                    "name": "Carlos Herrarte",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561199098409330",
+                    "position": 7,
+                    "points": 6.0,
+                    "status": "nan",
+                    "guid": "76561199098409330",
+                    "name": "j.hernandez",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561198133919909",
+                    "position": 8,
+                    "points": 4.0,
+                    "status": "NC",
+                    "guid": "76561198133919909",
+                    "name": "Marcelo Barquin",
+                    "attendance": "green"
+                }
+            ]
         },
         {
             "id": "2",
-            "name": "2",
+            "name": "2° MINI CHAMP - ROUND 5 - INTERLAGOS",
             "round": 2,
             "date": "",
             "track": "",
-            "planned": true,
-            "results": []
+            "planned": false,
+            "results": [
+                {
+                    "driver_id": "76561198347359581",
+                    "position": 1,
+                    "points": 25.0,
+                    "status": "",
+                    "guid": "76561198347359581",
+                    "name": "Raul Pacheco",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561198341529089",
+                    "position": 2,
+                    "points": 18.0,
+                    "status": "",
+                    "guid": "76561198341529089",
+                    "name": "L. Zelaya",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561199722435247",
+                    "position": 3,
+                    "points": 15.0,
+                    "status": "",
+                    "guid": "76561199722435247",
+                    "name": "A. Rendon",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561198047561565",
+                    "position": 4,
+                    "points": 12.0,
+                    "status": "",
+                    "guid": "76561198047561565",
+                    "name": "Carlos Herrarte",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561198260597293",
+                    "position": 5,
+                    "points": 10.0,
+                    "status": "",
+                    "guid": "76561198260597293",
+                    "name": "Yeison Lopez",
+                    "attendance": "green"
+                },
+                {
+                    "driver_id": "76561198962529406",
+                    "position": 6,
+                    "points": 8.0,
+                    "status": "",
+                    "guid": "76561198962529406",
+                    "name": "FRANCO DURAN sentey",
+                    "attendance": "green"
+                }
+            ]
         },
         {
             "id": "3",
@@ -402,49 +570,98 @@
             "R3": 0.0
         }
     ],
-    "standings_updated_at": "2026-02-03T20:35:14",
+    "standings_updated_at": "2026-02-03T20:38:16",
     "attendance": {
         "76561198108075511": {
-            "3": "A"
+            "3": "A",
+            "1": "C",
+            "2": "C"
         },
         "76561198072014624": {
-            "3": "A"
+            "3": "A",
+            "1": "A",
+            "2": "C"
         },
         "76561198130584179": {
-            "3": "A"
+            "3": "A",
+            "1": "C",
+            "2": "C"
         },
         "76561198133919909": {
-            "3": "A"
+            "3": "A",
+            "1": "A",
+            "2": "C"
         },
         "76561198341529089": {
-            "3": "A"
+            "3": "A",
+            "1": "A",
+            "2": "A"
         },
         "76561199051748324": {
-            "3": "A"
+            "3": "A",
+            "1": "C",
+            "2": "C"
         },
         "76561199098409330": {
-            "3": "A"
+            "3": "A",
+            "1": "A",
+            "2": "C"
         },
         "76561198047561565": {
-            "3": "A"
+            "3": "A",
+            "1": "A",
+            "2": "A"
         },
         "76561199247430395": {
-            "3": "A"
+            "3": "A",
+            "1": "C",
+            "2": "C"
         },
         "76561198119665483": {
-            "3": "A"
+            "3": "A",
+            "1": "C",
+            "2": "C"
         },
         "76561199179027753": {
-            "3": "A"
+            "3": "A",
+            "1": "C",
+            "2": "C"
         },
         "76561198260894482": {
-            "3": "A"
+            "3": "A",
+            "2": "C",
+            "1": "C"
         },
         "76561198998489417": {
-            "3": "A"
+            "3": "A",
+            "1": "C",
+            "2": "C"
+        },
+        "76561198347359581": {
+            "1": "A",
+            "2": "A",
+            "3": "C"
+        },
+        "76561198106471603": {
+            "1": "A",
+            "2": "C",
+            "3": "C"
+        },
+        "76561198962529406": {
+            "1": "A",
+            "2": "A",
+            "3": "C"
+        },
+        "76561199722435247": {
+            "2": "A",
+            "3": "C"
+        },
+        "76561198260597293": {
+            "2": "A",
+            "3": "C"
         }
     },
     "penalty_points_by_round": {},
     "penalty_max": 12.0,
-    "updated_at": "2026-02-03T20:35:50"
+    "updated_at": "2026-02-03T20:38:26"
 }
