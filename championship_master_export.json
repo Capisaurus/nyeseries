@@ -1,1 +1,833 @@
-dwawd
+{
+    "version": 1,
+    "current_round": 4,
+    "drivers": {
+        "capisaurus": {
+            "name": "Capisaurus",
+            "team_id": "team_visa_cash_app_racing_bulls",
+            "number": "",
+            "country": "",
+            "guid": "capisaurus",
+            "penalty_points": 0.0
+        },
+        "leozever": {
+            "name": "Leozever",
+            "team_id": "team_scuderia_ferrari_hp",
+            "number": "",
+            "country": "",
+            "guid": "leozever",
+            "penalty_points": 0.0
+        },
+        "memingow": {
+            "name": "Memingow",
+            "team_id": "team_haas",
+            "number": "",
+            "country": "",
+            "guid": "memingow",
+            "penalty_points": 0.0
+        },
+        "puffy": {
+            "name": "Puffy",
+            "team_id": "team_scuderia_ferrari_hp",
+            "number": "",
+            "country": "",
+            "guid": "puffy",
+            "penalty_points": 0.0
+        },
+        "termopolio": {
+            "name": "Termopolio",
+            "team_id": "team_kick_sauber",
+            "number": "",
+            "country": "",
+            "guid": "termopolio",
+            "penalty_points": 0.0
+        },
+        "chokogarcia": {
+            "name": "Chokogarcia",
+            "team_id": "team_scuderia_ferrari_hp",
+            "number": "",
+            "country": "",
+            "guid": "chokogarcia",
+            "penalty_points": 0.0
+        },
+        "player": {
+            "name": "Player",
+            "team_id": "team_mercedes-amg_petronas",
+            "number": "",
+            "country": "",
+            "guid": "player",
+            "penalty_points": 0.0
+        },
+        "ulises": {
+            "name": "Ulises",
+            "team_id": "team_kick_sauber",
+            "number": "",
+            "country": "",
+            "guid": "ulises",
+            "penalty_points": 0.0
+        },
+        "76561198347359581": {
+            "name": "Raul Pacheco",
+            "team_id": "",
+            "number": "",
+            "country": "",
+            "guid": "76561198347359581",
+            "penalty_points": 0.0
+        },
+        "76561198341529089": {
+            "name": "L. Zelaya",
+            "team_id": "",
+            "number": "",
+            "country": "",
+            "guid": "76561198341529089",
+            "penalty_points": 0.0
+        },
+        "76561199722435247": {
+            "name": "A. Rendon",
+            "team_id": "",
+            "number": "",
+            "country": "",
+            "guid": "76561199722435247",
+            "penalty_points": 0.0
+        },
+        "76561198047561565": {
+            "name": "Carlos Herrarte",
+            "team_id": "",
+            "number": "",
+            "country": "",
+            "guid": "76561198047561565",
+            "penalty_points": 0.0
+        },
+        "76561198260597293": {
+            "name": "Yeison Lopez",
+            "team_id": "",
+            "number": "",
+            "country": "",
+            "guid": "76561198260597293",
+            "penalty_points": 0.0
+        },
+        "76561198962529406": {
+            "name": "FRANCO DURAN sentey",
+            "team_id": "",
+            "number": "",
+            "country": "",
+            "guid": "76561198962529406",
+            "penalty_points": 0.0
+        }
+    },
+    "teams": {
+        "team_visa_cash_app_racing_bulls": {
+            "name": "Visa Cash App Racing Bulls",
+            "color": ""
+        },
+        "team_scuderia_ferrari_hp": {
+            "name": "Scuderia Ferrari HP",
+            "color": ""
+        },
+        "team_haas": {
+            "name": "Haas",
+            "color": ""
+        },
+        "team_kick_sauber": {
+            "name": "KICK Sauber",
+            "color": ""
+        },
+        "team_mercedes-amg_petronas": {
+            "name": "Mercedes-AMG Petronas",
+            "color": ""
+        }
+    },
+    "races": [
+        {
+            "id": "1",
+            "name": "session_results_03022026_1600",
+            "round": 1,
+            "date": "",
+            "track": "",
+            "results": [
+                {
+                    "driver_id": "leozever",
+                    "position": 1,
+                    "points": 100.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Leozever"
+                },
+                {
+                    "driver_id": "memingow",
+                    "position": 2,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Memingow"
+                },
+                {
+                    "driver_id": "puffy",
+                    "position": 3,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Puffy"
+                },
+                {
+                    "driver_id": "termopolio",
+                    "position": 4,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Termopolio"
+                },
+                {
+                    "driver_id": "capisaurus",
+                    "position": 5,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Capisaurus"
+                },
+                {
+                    "driver_id": "chokogarcia",
+                    "position": 6,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Chokogarcia"
+                },
+                {
+                    "driver_id": "player",
+                    "position": 7,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Player"
+                },
+                {
+                    "driver_id": "ulises",
+                    "position": 8,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Ulises"
+                },
+                {
+                    "driver_id": "player",
+                    "position": 9,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Player"
+                },
+                {
+                    "driver_id": "player",
+                    "position": 10,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Player"
+                },
+                {
+                    "driver_id": "player",
+                    "position": 11,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Player"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "2° MINI CHAMP - ROUND 5 - INTERLAGOS",
+            "round": 2,
+            "date": "2026-01-23T21:18:00-08:00",
+            "track": "",
+            "results": [
+                {
+                    "driver_id": "76561198347359581",
+                    "position": 1,
+                    "points": 100.0,
+                    "status": "",
+                    "guid": "76561198347359581",
+                    "name": "Raul Pacheco"
+                },
+                {
+                    "driver_id": "76561198341529089",
+                    "position": 2,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "76561198341529089",
+                    "name": "L. Zelaya"
+                },
+                {
+                    "driver_id": "76561199722435247",
+                    "position": 3,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "76561199722435247",
+                    "name": "A. Rendon"
+                },
+                {
+                    "driver_id": "76561198047561565",
+                    "position": 4,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "76561198047561565",
+                    "name": "Carlos Herrarte"
+                },
+                {
+                    "driver_id": "76561198260597293",
+                    "position": 5,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "76561198260597293",
+                    "name": "Yeison Lopez"
+                },
+                {
+                    "driver_id": "76561198962529406",
+                    "position": 6,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "76561198962529406",
+                    "name": "FRANCO DURAN sentey"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "session_results_03022026_1600",
+            "round": 4,
+            "date": "",
+            "track": "",
+            "results": [
+                {
+                    "driver_id": "ulises",
+                    "position": 1,
+                    "points": 100.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Ulises"
+                },
+                {
+                    "driver_id": "leozever",
+                    "position": 2,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Leozever"
+                },
+                {
+                    "driver_id": "memingow",
+                    "position": 3,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Memingow"
+                },
+                {
+                    "driver_id": "puffy",
+                    "position": 4,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Puffy"
+                },
+                {
+                    "driver_id": "termopolio",
+                    "position": 5,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Termopolio"
+                },
+                {
+                    "driver_id": "capisaurus",
+                    "position": 6,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Capisaurus"
+                },
+                {
+                    "driver_id": "chokogarcia",
+                    "position": 7,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Chokogarcia"
+                },
+                {
+                    "driver_id": "player",
+                    "position": 8,
+                    "points": 0.0,
+                    "status": "",
+                    "guid": "",
+                    "name": "Player"
+                },
+                {
+                    "driver_id": "player",
+                    "position": 9,
+                    "points": 0.0,
+                    "status": "NC",
+                    "guid": "",
+                    "name": "Player"
+                },
+                {
+                    "driver_id": "player",
+                    "position": 10,
+                    "points": 0.0,
+                    "status": "NC",
+                    "guid": "",
+                    "name": "Player"
+                },
+                {
+                    "driver_id": "player",
+                    "position": 11,
+                    "points": 0.0,
+                    "status": "NC",
+                    "guid": "",
+                    "name": "Player"
+                }
+            ]
+        }
+    ],
+    "race_id_counter": 4,
+    "standings": [
+        {
+            "Posición": 1,
+            "GUID": NaN,
+            "Equipo": "KICK Sauber",
+            "Piloto/Ronda": "Ulises",
+            "R1": 0,
+            "R2": 0,
+            "R3": 0,
+            "R4": 100,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 100
+        },
+        {
+            "Posición": 2,
+            "GUID": 24413453.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto23",
+            "R1": 28,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 28
+        },
+        {
+            "Posición": 3,
+            "GUID": 23423432.0,
+            "Equipo": "Papoi RT",
+            "Piloto/Ronda": "Piloto1",
+            "R1": 25,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 25
+        },
+        {
+            "Posición": 4,
+            "GUID": 19954042.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto12",
+            "R1": 25,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 25
+        },
+        {
+            "Posición": 5,
+            "GUID": 21575646.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto16",
+            "R1": 23,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 23
+        },
+        {
+            "Posición": 6,
+            "GUID": 22386448.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto18",
+            "R1": 21,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 21
+        },
+        {
+            "Posición": 7,
+            "GUID": 19548641.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto11",
+            "R1": 20,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 20
+        },
+        {
+            "Posición": 8,
+            "GUID": 23602651.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto21",
+            "R1": 19,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 19
+        },
+        {
+            "Posición": 9,
+            "GUID": 17927037.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto7",
+            "R1": 17,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 17
+        },
+        {
+            "Posición": 10,
+            "GUID": 21170245.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto15",
+            "R1": 17,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 17
+        },
+        {
+            "Posición": 11,
+            "GUID": 23197250.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto20",
+            "R1": 16,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 16
+        },
+        {
+            "Posición": 12,
+            "GUID": 20359443.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto13",
+            "R1": 12,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 12
+        },
+        {
+            "Posición": 13,
+            "GUID": 24234234.0,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto3",
+            "R1": 10,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 10
+        },
+        {
+            "Posición": 14,
+            "GUID": 16710834.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto4",
+            "R1": 10,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 10
+        },
+        {
+            "Posición": 15,
+            "GUID": 17116235.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto5",
+            "R1": 9,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 9
+        },
+        {
+            "Posición": 16,
+            "GUID": 20764844.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto14",
+            "R1": 9,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 9
+        },
+        {
+            "Posición": 17,
+            "GUID": 24008052.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto22",
+            "R1": 9,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 9
+        },
+        {
+            "Posición": 18,
+            "GUID": 21981047.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto17",
+            "R1": 6,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 6
+        },
+        {
+            "Posición": 19,
+            "GUID": 18332438.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto8",
+            "R1": 5,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 5
+        },
+        {
+            "Posición": 20,
+            "GUID": 22791849.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto19",
+            "R1": 4,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 4
+        },
+        {
+            "Posición": 21,
+            "GUID": 17521636.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto6",
+            "R1": 2,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 2
+        },
+        {
+            "Posición": 22,
+            "GUID": 18737839.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto9",
+            "R1": 2,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 2
+        },
+        {
+            "Posición": 23,
+            "GUID": 19143240.6666667,
+            "Equipo": NaN,
+            "Piloto/Ronda": "Piloto10",
+            "R1": 2,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 2
+        },
+        {
+            "Posición": 24,
+            "GUID": 42432.0,
+            "Equipo": "Mercedes ",
+            "Piloto/Ronda": "Piloto2",
+            "R1": 1,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 1
+        },
+        {
+            "Posición": 25,
+            "GUID": NaN,
+            "Equipo": "Alpine",
+            "Piloto/Ronda": "Leozever",
+            "R1": 0,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 0
+        },
+        {
+            "Posición": 26,
+            "GUID": NaN,
+            "Equipo": "Red Bull",
+            "Piloto/Ronda": "Memingow",
+            "R1": 0,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 0
+        },
+        {
+            "Posición": 27,
+            "GUID": NaN,
+            "Equipo": "Scuderia Ferrari HP",
+            "Piloto/Ronda": "Puffy",
+            "R1": 0,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 0
+        },
+        {
+            "Posición": 28,
+            "GUID": NaN,
+            "Equipo": "KICK Sauber",
+            "Piloto/Ronda": "Termopolio",
+            "R1": 0,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 0
+        },
+        {
+            "Posición": 29,
+            "GUID": NaN,
+            "Equipo": "McLaren",
+            "Piloto/Ronda": "Capisaurus",
+            "R1": 0,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 0
+        },
+        {
+            "Posición": 30,
+            "GUID": NaN,
+            "Equipo": "Scuderia Ferrari HP",
+            "Piloto/Ronda": "Chokogarcia",
+            "R1": 0,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 0
+        },
+        {
+            "Posición": 31,
+            "GUID": NaN,
+            "Equipo": "Mercedes-AMG Petronas",
+            "Piloto/Ronda": "Player",
+            "R1": 0,
+            "R2": 0,
+            "R3": 0,
+            "R4": 0,
+            "R5": 0,
+            "R6": 0,
+            "R7": 0,
+            "Total": 0
+        }
+    ],
+    "standings_updated_at": "2026-02-03T18:27:45",
+    "updated_at": "2026-02-03T18:34:56",
+    "attendance": {}
+}
