@@ -3185,9 +3185,9 @@
     "season_status": "",
     "season_meta": {
         "academy_1": {
-            "name": "Academy 1",
-            "status": "In Progress",
-            "updated_at": "2026-02-04T19:46:42"
+            "name": "academy 1",
+            "status": "Finished",
+            "updated_at": "2026-02-04T20:43:54"
         },
         "academy1": {
             "name": "Academy 1",
@@ -3195,9 +3195,9 @@
             "updated_at": "2026-02-04T20:19:30"
         },
         "academy_2": {
-            "name": "Academy 2",
+            "name": "academy 2",
             "status": "Finished",
-            "updated_at": "2026-02-04T20:20:02"
+            "updated_at": "2026-02-04T20:48:52"
         },
         "series_1": {
             "name": "Series 1",
@@ -3216,8 +3216,8 @@
         },
         "season_2_sprint": {
             "name": "Season 2 Sprint",
-            "status": "In Progress",
-            "updated_at": "2026-02-04T20:21:54"
+            "status": "Finished",
+            "updated_at": "2026-02-04T20:27:24"
         },
         "season_4": {
             "name": "Season 4",
@@ -3235,7 +3235,7 @@
             "updated_at": "2026-02-04T20:23:57"
         }
     },
-    "updated_at": "2026-02-04T20:24:14",
+    "updated_at": "2026-02-04T20:48:54",
     "manual_points_by_round": {},
     "fastest_lap_points": 0.0,
     "fastest_lap_pos_limit": 0
