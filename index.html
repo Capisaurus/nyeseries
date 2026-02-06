@@ -2556,7 +2556,9 @@
                 '<th class="center">Pos</th><th>Piloto</th><th>Equipo</th>' +
                 '<th class="center">Puntos</th><th class="center">Estado</th></tr></thead><tbody>';
 
-            (race.results || []).forEach(result => {
+            // Ordenar resultados por posición antes de mostrarlos
+            const sortedResults = (race.results || []).slice().sort((a, b) => (a.position || 999) - (b.position || 999));
+            sortedResults.forEach(result => {
                 const driver = drivers[result.driver_id];
                 const team = driver && driver.team_id ? teams[driver.team_id] : null;
 
