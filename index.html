@@ -906,6 +906,14 @@
             return value.charAt(0).toUpperCase() + value.slice(1);
         }
 
+        function titleCaseWords(value) {
+            if (!value) return '';
+            return String(value)
+                .split(' ')
+                .map(word => titleCase(word.toLowerCase()))
+                .join(' ');
+        }
+
         function seasonIdToFile(seasonId) {
             if (!seasonId) return '';
             const lower = String(seasonId).toLowerCase();
@@ -914,11 +922,12 @@
             const parts = baseId.split('_');
             const prefix = parts[0] || 'season';
             const number = parts[1] || '';
-            const prefixTitle = prefix === 'Series'
+            const prefixLower = prefix.toLowerCase();
+            const prefixTitle = prefixLower === 'series'
                 ? 'Series'
-                : prefix === 'Academy'
+                : prefixLower === 'academy'
                     ? 'Academy'
-                    : titleCase(prefix);
+                    : titleCase(prefixLower);
             const sprintLabel = isSprint ? 'Sprint' : '';
             return `${prefixTitle}${number}${sprintLabel}.json`;
         }
@@ -930,7 +939,12 @@
             const parts = baseId.split('_');
             const prefix = parts[0] || 't';
             const number = parts[1] || '';
-            const prefixLetter = prefix === 'Series' ? 'S' : prefix === 'Academy' ? 'A' : prefix.charAt(0).toUpperCase();
+            const prefixLower = prefix.toLowerCase();
+            const prefixLetter = prefixLower === 'series'
+                ? 'S'
+                : prefixLower === 'academy'
+                    ? 'A'
+                    : prefix.charAt(0).toUpperCase();
             return `${prefixLetter}${number}${isSprint ? 'S' : ''}`;
         }
 
@@ -1014,10 +1028,11 @@
                     const text = await response.text();
                     const raw = JSON.parse(cleanJsonText(text));
                     allData[season.season_id] = normalizeSeasonData(raw);
+                    const displayName = titleCaseWords(season.season_name || season.season_id);
                     seasonsList.push({
                         key: season.season_id,
                         file,
-                        name: season.season_name || season.season_id,
+                        name: displayName,
                         isOverall: false,
                         status: season.status || '',
                         order: index,
@@ -1413,6 +1428,7 @@
                 allDrivers,
                 allTeams,
                 attendanceTotals,
+                overallMeta,
                 totalRounds: totalRaces,
                 driverPerformance: overallPerformance.statsByDriver
             };
@@ -2720,9 +2736,11 @@
                     .filter(Boolean)
                     .join(', ') || '-';
 
-                const attended = currentStatsContext.attendanceTotals?.[driver.guid] || 0;
-                const attendanceText = currentStatsContext.totalRounds > 0
-                    ? `${attended}/${currentStatsContext.totalRounds} (${Math.round((attended / currentStatsContext.totalRounds) * 100)}%)`
+                const meta = currentStatsContext.overallMeta?.get(driver.guid) || {};
+                const totalRacesOverall = allData.overall?.total_races || currentStatsContext.totalRounds || 0;
+                const attended = meta.total_races ?? currentStatsContext.attendanceTotals?.[driver.guid] || 0;
+                const attendanceText = totalRacesOverall > 0
+                    ? `${attended}/${totalRacesOverall} (${Math.round((attended / totalRacesOverall) * 100)}%)`
                     : '-';
                 const perf = currentStatsContext.driverPerformance?.[driver.guid] || {};
                 const avgFinish = perf.avgFinish ? perf.avgFinish.toFixed(2) : '-';
