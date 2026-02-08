@@ -1,0 +1,2640 @@
+{
+    "export_type": "season",
+    "championship_name": "NYE Series",
+    "season_id": "series_2",
+    "season_name": "series 2",
+    "total_rounds": 18,
+    "disputed_rounds": 18,
+    "pending_rounds": 0,
+    "races": [
+        {
+            "round": 1,
+            "race_id": "140",
+            "name": "R1 - Australia",
+            "date": "",
+            "track": "Australia",
+            "planned": false,
+            "winner": "Verstappen",
+            "fastest_lap": "Verstappen",
+            "dotd": "Schizain",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "Verstappen",
+                    "driver_id": "driver_verstappen",
+                    "team": "AlphaTauri",
+                    "points": 26.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "Schizain",
+                    "driver_id": "driver_schizain",
+                    "team": "Reserve Driver",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Gozark",
+                    "driver_id": "driver_gozark",
+                    "team": "McLaren",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 6.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "AMZ Racing",
+                    "driver_id": "driver_amz_racing",
+                    "team": "Alpine",
+                    "points": 4.0,
+                    "status": ""
+                },
+                {
+                    "position": 9,
+                    "driver": "Chuyto",
+                    "driver_id": "driver_chuyto",
+                    "team": "Alfa Romeo",
+                    "points": 2.0,
+                    "status": ""
+                },
+                {
+                    "position": 10,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 1.0,
+                    "status": ""
+                },
+                {
+                    "position": 12,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 0.0,
+                    "status": ""
+                },
+                {
+                    "position": 13,
+                    "driver": "MrSteveHyuga",
+                    "driver_id": "driver_mrstevehyuga",
+                    "team": "Williams",
+                    "points": 0.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 2,
+            "race_id": "141",
+            "name": "R2 - Saudi Arabia",
+            "date": "",
+            "track": "Saudi Arabia",
+            "planned": false,
+            "winner": "AMZ Racing",
+            "fastest_lap": "AMZ Racing",
+            "dotd": "NoSoyYo98",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "AMZ Racing",
+                    "driver_id": "driver_amz_racing",
+                    "team": "Alpine",
+                    "points": 26.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "NoSoyYo98",
+                    "driver_id": "driver_nosoyyo98",
+                    "team": "Mercedes",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Gozark",
+                    "driver_id": "driver_gozark",
+                    "team": "McLaren",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 6.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "Verstappen",
+                    "driver_id": "driver_verstappen",
+                    "team": "AlphaTauri",
+                    "points": 4.0,
+                    "status": ""
+                },
+                {
+                    "position": 9,
+                    "driver": "Chuyto",
+                    "driver_id": "driver_chuyto",
+                    "team": "Alfa Romeo",
+                    "points": 2.0,
+                    "status": ""
+                },
+                {
+                    "position": 10,
+                    "driver": "SteelWarrior",
+                    "driver_id": "driver_steelwarrior",
+                    "team": "McLaren",
+                    "points": 1.0,
+                    "status": ""
+                },
+                {
+                    "position": 11,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 0.0,
+                    "status": ""
+                },
+                {
+                    "position": 11,
+                    "driver": "AlexMatrix",
+                    "driver_id": "driver_alexmatrix",
+                    "team": "Williams",
+                    "points": 0.0,
+                    "status": ""
+                },
+                {
+                    "position": 12,
+                    "driver": "Victorxd",
+                    "driver_id": "driver_victorxd",
+                    "team": "Alpine",
+                    "points": 0.0,
+                    "status": ""
+                },
+                {
+                    "position": 13,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 0.0,
+                    "status": ""
+                },
+                {
+                    "position": 14,
+                    "driver": "Drasticalrose",
+                    "driver_id": "driver_drasticalrose",
+                    "team": "Ferrari",
+                    "points": 0.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 3,
+            "race_id": "142",
+            "name": "R3 - Great Britain",
+            "date": "",
+            "track": "Great Britain",
+            "planned": false,
+            "winner": "Gozark",
+            "fastest_lap": "Gozark",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "Gozark",
+                    "driver_id": "driver_gozark",
+                    "team": "McLaren",
+                    "points": 26.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 6.0,
+                    "status": "DNF"
+                },
+                {
+                    "position": 8,
+                    "driver": "Victorxd",
+                    "driver_id": "driver_victorxd",
+                    "team": "Alpine",
+                    "points": 4.0,
+                    "status": "DNF"
+                },
+                {
+                    "position": 9,
+                    "driver": "Chuyto",
+                    "driver_id": "driver_chuyto",
+                    "team": "Alfa Romeo",
+                    "points": 2.0,
+                    "status": "DNF"
+                }
+            ]
+        },
+        {
+            "round": 4,
+            "race_id": "143",
+            "name": "R4 - Austria",
+            "date": "",
+            "track": "",
+            "planned": false,
+            "winner": "NoSoyYo98",
+            "fastest_lap": "AntonioGC",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "NoSoyYo98",
+                    "driver_id": "driver_nosoyyo98",
+                    "team": "Mercedes",
+                    "points": 25.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Victorxd",
+                    "driver_id": "driver_victorxd",
+                    "team": "Alpine",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Chuyto",
+                    "driver_id": "driver_chuyto",
+                    "team": "Alfa Romeo",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "AntonioGC",
+                    "driver_id": "driver_antoniogc",
+                    "team": "Red Bull",
+                    "points": 7.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 4.0,
+                    "status": ""
+                },
+                {
+                    "position": 9,
+                    "driver": "Verstappen",
+                    "driver_id": "driver_verstappen",
+                    "team": "AlphaTauri",
+                    "points": 2.0,
+                    "status": ""
+                },
+                {
+                    "position": 10,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 1.0,
+                    "status": ""
+                },
+                {
+                    "position": 11,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 0.0,
+                    "status": ""
+                },
+                {
+                    "position": 12,
+                    "driver": "RubyCrayfish",
+                    "driver_id": "driver_rubycrayfish",
+                    "team": "Ferrari",
+                    "points": 0.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 5,
+            "race_id": "144",
+            "name": "R5 - Las Vegas",
+            "date": "",
+            "track": "",
+            "planned": false,
+            "winner": "AMZ Racing",
+            "fastest_lap": "NoSoyYo98",
+            "dotd": "AMZ Racing",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "AMZ Racing",
+                    "driver_id": "driver_amz_racing",
+                    "team": "Alpine",
+                    "points": 25.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "NoSoyYo98",
+                    "driver_id": "driver_nosoyyo98",
+                    "team": "Mercedes",
+                    "points": 19.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Victorxd",
+                    "driver_id": "driver_victorxd",
+                    "team": "Alpine",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Gozark",
+                    "driver_id": "driver_gozark",
+                    "team": "McLaren",
+                    "points": 6.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 4.0,
+                    "status": ""
+                },
+                {
+                    "position": 9,
+                    "driver": "Chuyto",
+                    "driver_id": "driver_chuyto",
+                    "team": "Alfa Romeo",
+                    "points": 2.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 6,
+            "race_id": "145",
+            "name": "R6 - Bahrain",
+            "date": "",
+            "track": "Bahrain",
+            "planned": false,
+            "winner": "AMZ Racing",
+            "fastest_lap": "AMZ Racing",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "AMZ Racing",
+                    "driver_id": "driver_amz_racing",
+                    "team": "Alpine",
+                    "points": 26.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "Gozark",
+                    "driver_id": "driver_gozark",
+                    "team": "McLaren",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Victorxd",
+                    "driver_id": "driver_victorxd",
+                    "team": "Alpine",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "NoSoyYo98",
+                    "driver_id": "driver_nosoyyo98",
+                    "team": "Mercedes",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 6.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 4.0,
+                    "status": ""
+                },
+                {
+                    "position": 9,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 2.0,
+                    "status": ""
+                },
+                {
+                    "position": 10,
+                    "driver": "Yindaxmx",
+                    "driver_id": "driver_yindaxmx",
+                    "team": "AlphaTauri",
+                    "points": 1.0,
+                    "status": ""
+                },
+                {
+                    "position": 11,
+                    "driver": "Chuyto",
+                    "driver_id": "driver_chuyto",
+                    "team": "Alfa Romeo",
+                    "points": 0.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 7,
+            "race_id": "146",
+            "name": "R7 - Singapore",
+            "date": "",
+            "track": "Singapore",
+            "planned": false,
+            "winner": "MrPresident2004",
+            "fastest_lap": "MrPresident2004",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 26.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Yindaxmx",
+                    "driver_id": "driver_yindaxmx",
+                    "team": "AlphaTauri",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 6.0,
+                    "status": "DNF"
+                },
+                {
+                    "position": 8,
+                    "driver": "Gozark",
+                    "driver_id": "driver_gozark",
+                    "team": "McLaren",
+                    "points": 4.0,
+                    "status": "DNF"
+                }
+            ]
+        },
+        {
+            "round": 8,
+            "race_id": "147",
+            "name": "R8 - Mexico",
+            "date": "",
+            "track": "Mexico",
+            "planned": false,
+            "winner": "MrPresident2004",
+            "fastest_lap": "NoSoyYo98",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 25.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Seb",
+                    "driver_id": "driver_seb",
+                    "team": "AlphaTauri",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "NoSoyYo98",
+                    "driver_id": "driver_nosoyyo98",
+                    "team": "Mercedes",
+                    "points": 11.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 6.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "Victorxd",
+                    "driver_id": "driver_victorxd",
+                    "team": "Alpine",
+                    "points": 4.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 9,
+            "race_id": "148",
+            "name": "R9 - Belgium",
+            "date": "",
+            "track": "Belgium",
+            "planned": false,
+            "winner": "NoSoyYo98",
+            "fastest_lap": "NoSoyYo98",
+            "dotd": "Thiago",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "NoSoyYo98",
+                    "driver_id": "driver_nosoyyo98",
+                    "team": "Mercedes",
+                    "points": 26.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "MrSteveHyuga",
+                    "driver_id": "driver_mrstevehyuga",
+                    "team": "Williams",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Yindaxmx",
+                    "driver_id": "driver_yindaxmx",
+                    "team": "AlphaTauri",
+                    "points": 6.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 4.0,
+                    "status": ""
+                },
+                {
+                    "position": 9,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 2.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 10,
+            "race_id": "149",
+            "name": "R10 - Japan",
+            "date": "",
+            "track": "Japan",
+            "planned": false,
+            "winner": "Izquierdoxdd",
+            "fastest_lap": "Gozark",
+            "dotd": "Gozark",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 25.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "Gozark",
+                    "driver_id": "driver_gozark",
+                    "team": "McLaren",
+                    "points": 19.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Yindaxmx",
+                    "driver_id": "driver_yindaxmx",
+                    "team": "AlphaTauri",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 6.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 4.0,
+                    "status": "DNF"
+                }
+            ]
+        },
+        {
+            "round": 11,
+            "race_id": "150",
+            "name": "R11 - Qatar",
+            "date": "",
+            "track": "Qatar",
+            "planned": false,
+            "winner": "ElGast",
+            "fastest_lap": "ElGast",
+            "dotd": "Memingow",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "ElGast",
+                    "driver_id": "driver_elgast",
+                    "team": "Reserve Driver",
+                    "points": 26.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "HarryH",
+                    "driver_id": "driver_harryh",
+                    "team": "Reserve Driver",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Yindaxmx",
+                    "driver_id": "driver_yindaxmx",
+                    "team": "AlphaTauri",
+                    "points": 6.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 4.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 12,
+            "race_id": "151",
+            "name": "R12 - Italia",
+            "date": "",
+            "track": "Monza",
+            "planned": false,
+            "winner": "ElGast",
+            "fastest_lap": "ElGast",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "ElGast",
+                    "driver_id": "driver_elgast",
+                    "team": "Reserve Driver",
+                    "points": 26.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "NoSoyYo98",
+                    "driver_id": "driver_nosoyyo98",
+                    "team": "Mercedes",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "HarryH",
+                    "driver_id": "driver_harryh",
+                    "team": "Reserve Driver",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Yindaxmx",
+                    "driver_id": "driver_yindaxmx",
+                    "team": "AlphaTauri",
+                    "points": 6.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 13,
+            "race_id": "152",
+            "name": "R13 - Brazil",
+            "date": "",
+            "track": "Brazil",
+            "planned": false,
+            "winner": "",
+            "fastest_lap": "MrPresident2004",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 3,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 22.5,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 16.5,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Yindaxmx",
+                    "driver_id": "driver_yindaxmx",
+                    "team": "AlphaTauri",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 6.0,
+                    "status": ""
+                },
+                {
+                    "position": 9,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 3.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 14,
+            "race_id": "153",
+            "name": "R14 - Abu Dhabi",
+            "date": "",
+            "track": "Abu Dhabi",
+            "planned": false,
+            "winner": "MrPresident2004",
+            "fastest_lap": "MrPresident2004",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 26.0,
+                    "status": ""
+                },
+                {
+                    "position": 1,
+                    "driver": "HarryH",
+                    "driver_id": "driver_harryh",
+                    "team": "Reserve Driver",
+                    "points": 25.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "NoSoyYo98",
+                    "driver_id": "driver_nosoyyo98",
+                    "team": "Mercedes",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Gozark",
+                    "driver_id": "driver_gozark",
+                    "team": "McLaren",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 6.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 15,
+            "race_id": "154",
+            "name": "R15 - United States",
+            "date": "",
+            "track": "",
+            "planned": false,
+            "winner": "Thiago",
+            "fastest_lap": "",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 25.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "NoSoyYo98",
+                    "driver_id": "driver_nosoyyo98",
+                    "team": "Mercedes",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 6.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "Yindaxmx",
+                    "driver_id": "driver_yindaxmx",
+                    "team": "AlphaTauri",
+                    "points": 4.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 16,
+            "race_id": "155",
+            "name": "R16 - Canada",
+            "date": "",
+            "track": "Canada",
+            "planned": false,
+            "winner": "Izquierdoxdd",
+            "fastest_lap": "Thiago",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 25.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 19.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "Yindaxmx",
+                    "driver_id": "driver_yindaxmx",
+                    "team": "AlphaTauri",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 12.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 8.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 17,
+            "race_id": "156",
+            "name": "R17 - Netherlands",
+            "date": "",
+            "track": "Netherlands",
+            "planned": false,
+            "winner": "Hector Zambrano",
+            "fastest_lap": "MrPresident2004",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 25.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 13.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 10.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 8.0,
+                    "status": ""
+                },
+                {
+                    "position": 6,
+                    "driver": "Yindaxmx",
+                    "driver_id": "driver_yindaxmx",
+                    "team": "AlphaTauri",
+                    "points": 8.0,
+                    "status": ""
+                }
+            ]
+        },
+        {
+            "round": 18,
+            "race_id": "157",
+            "name": "R18 - Brazil",
+            "date": "",
+            "track": "",
+            "planned": false,
+            "winner": "Izquierdoxdd",
+            "fastest_lap": "Izquierdoxdd",
+            "dotd": "",
+            "results": [
+                {
+                    "position": 1,
+                    "driver": "Izquierdoxdd",
+                    "driver_id": "driver_izquierdoxdd",
+                    "team": "Aston Martin",
+                    "points": 39.0,
+                    "status": ""
+                },
+                {
+                    "position": 2,
+                    "driver": "Thiago",
+                    "driver_id": "driver_thiago",
+                    "team": "Mercedes",
+                    "points": 27.0,
+                    "status": ""
+                },
+                {
+                    "position": 3,
+                    "driver": "Capisaurus",
+                    "driver_id": "driver_capisaurus",
+                    "team": "Ferrari",
+                    "points": 22.5,
+                    "status": ""
+                },
+                {
+                    "position": 4,
+                    "driver": "MrPresident2004",
+                    "driver_id": "driver_mrpresident2004",
+                    "team": "Ferrari",
+                    "points": 18.0,
+                    "status": ""
+                },
+                {
+                    "position": 5,
+                    "driver": "HarryH",
+                    "driver_id": "driver_harryh",
+                    "team": "Reserve Driver",
+                    "points": 15.0,
+                    "status": ""
+                },
+                {
+                    "position": 7,
+                    "driver": "Hector Zambrano",
+                    "driver_id": "driver_hector_zambrano",
+                    "team": "Red Bull",
+                    "points": 9.0,
+                    "status": ""
+                },
+                {
+                    "position": 8,
+                    "driver": "NoSoyYo98",
+                    "driver_id": "driver_nosoyyo98",
+                    "team": "Mercedes",
+                    "points": 6.0,
+                    "status": ""
+                },
+                {
+                    "position": 9,
+                    "driver": "Memingow",
+                    "driver_id": "driver_memingow",
+                    "team": "Aston Martin",
+                    "points": 3.0,
+                    "status": ""
+                }
+            ]
+        }
+    ],
+    "drivers": [
+        {
+            "driver_id": "driver_mrpresident2004",
+            "name": "MrPresident2004",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
+            "total_points": 301.5,
+            "rounds": {
+                "1": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 5,
+                    "points": 16.5,
+                    "status": ""
+                },
+                "14": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 4,
+                    "points": 13.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 4,
+                    "points": 18.0,
+                    "status": ""
+                }
+            },
+            "wins": 3,
+            "podiums": 12,
+            "fastest_laps": 4,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_izquierdoxdd",
+            "name": "Izquierdoxdd",
+            "team": "Alfa Romeo",
+            "team_id": "team_alfa_romeo",
+            "total_points": 267.5,
+            "rounds": {
+                "1": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 3,
+                    "points": 22.5,
+                    "status": ""
+                },
+                "14": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 1,
+                    "points": 39.0,
+                    "status": ""
+                }
+            },
+            "wins": 3,
+            "podiums": 11,
+            "fastest_laps": 1,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_memingow",
+            "name": "Memingow",
+            "team": "Aston Martin",
+            "team_id": "team_aston_martin",
+            "total_points": 189.0,
+            "rounds": {
+                "1": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 9,
+                    "points": 3.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 9,
+                    "points": 3.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 4,
+            "fastest_laps": 0,
+            "driver_of_the_day": 1
+        },
+        {
+            "driver_id": "driver_thiago",
+            "name": "Thiago",
+            "team": "Mercedes",
+            "team_id": "team_mercedes",
+            "total_points": 165.0,
+            "rounds": {
+                "1": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 8,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 2,
+                    "points": 27.0,
+                    "status": ""
+                }
+            },
+            "wins": 1,
+            "podiums": 5,
+            "fastest_laps": 1,
+            "driver_of_the_day": 1
+        },
+        {
+            "driver_id": "driver_nosoyyo98",
+            "name": "NoSoyYo98",
+            "team": "Reserve Driver",
+            "team_id": "team_reserve_driver",
+            "total_points": 155.0,
+            "rounds": {
+                "2": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 5,
+                    "points": 11.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 8,
+                    "points": 6.0,
+                    "status": ""
+                }
+            },
+            "wins": 2,
+            "podiums": 5,
+            "fastest_laps": 3,
+            "driver_of_the_day": 1
+        },
+        {
+            "driver_id": "driver_capisaurus",
+            "name": "Capisaurus",
+            "team": "Aston Martin",
+            "team_id": "team_aston_martin",
+            "total_points": 141.5,
+            "rounds": {
+                "1": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": "DNF"
+                },
+                "8": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 6,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 3,
+                    "points": 22.5,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 2,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_hector_zambrano",
+            "name": "Hector Zambrano",
+            "team": "Mercedes",
+            "team_id": "team_mercedes",
+            "total_points": 120.0,
+            "rounds": {
+                "1": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": "DNF"
+                },
+                "4": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": "DNF"
+                },
+                "11": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 4,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 7,
+                    "points": 9.0,
+                    "status": ""
+                }
+            },
+            "wins": 1,
+            "podiums": 1,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_gozark",
+            "name": "Gozark",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
+            "total_points": 99.0,
+            "rounds": {
+                "1": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": "DNF"
+                },
+                "10": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                }
+            },
+            "wins": 1,
+            "podiums": 3,
+            "fastest_laps": 2,
+            "driver_of_the_day": 1
+        },
+        {
+            "driver_id": "driver_amz_racing",
+            "name": "AMZ Racing",
+            "team": "Alpine",
+            "team_id": "team_alpine",
+            "total_points": 81.0,
+            "rounds": {
+                "1": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                }
+            },
+            "wins": 3,
+            "podiums": 3,
+            "fastest_laps": 2,
+            "driver_of_the_day": 1
+        },
+        {
+            "driver_id": "driver_yindaxmx",
+            "name": "Yindaxmx",
+            "team": "AlphaTauri",
+            "team_id": "team_alphatauri",
+            "total_points": 77.0,
+            "rounds": {
+                "6": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 5,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 1,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_harryh",
+            "name": "HarryH",
+            "team": "Reserve Driver",
+            "team_id": "team_reserve_driver",
+            "total_points": 67.0,
+            "rounds": {
+                "11": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 5,
+                    "points": 15.0,
+                    "status": ""
+                }
+            },
+            "wins": 1,
+            "podiums": 2,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_elgast",
+            "name": "ElGast",
+            "team": "Mercedes",
+            "team_id": "team_mercedes",
+            "total_points": 52.0,
+            "rounds": {
+                "11": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                }
+            },
+            "wins": 2,
+            "podiums": 2,
+            "fastest_laps": 2,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_victorxd",
+            "name": "Victorxd",
+            "team": "Alpine",
+            "team_id": "team_alpine",
+            "total_points": 42.0,
+            "rounds": {
+                "2": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": "DNF"
+                },
+                "4": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_verstappen",
+            "name": "Verstappen",
+            "team": "AlphaTauri",
+            "team_id": "team_alphatauri",
+            "total_points": 32.0,
+            "rounds": {
+                "1": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                }
+            },
+            "wins": 1,
+            "podiums": 1,
+            "fastest_laps": 1,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_mrstevehyuga",
+            "name": "MrSteveHyuga",
+            "team": "Haas",
+            "team_id": "team_haas",
+            "total_points": 18.0,
+            "rounds": {
+                "1": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 1,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_chuyto",
+            "name": "Chuyto",
+            "team": "Alfa Romeo",
+            "team_id": "team_alfa_romeo",
+            "total_points": 16.0,
+            "rounds": {
+                "1": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": "DNF"
+                },
+                "4": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_schizain",
+            "name": "Schizain",
+            "team": "Reserve Driver",
+            "team_id": "team_reserve_driver",
+            "total_points": 15.0,
+            "rounds": {
+                "1": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 1,
+            "fastest_laps": 0,
+            "driver_of_the_day": 1
+        },
+        {
+            "driver_id": "driver_seb",
+            "name": "Seb",
+            "team": "AlphaTauri",
+            "team_id": "team_alphatauri",
+            "total_points": 12.0,
+            "rounds": {
+                "8": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_antoniogc",
+            "name": "AntonioGC",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
+            "total_points": 7.0,
+            "rounds": {
+                "4": {
+                    "position": 7,
+                    "points": 7.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 0,
+            "fastest_laps": 1,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_steelwarrior",
+            "name": "SteelWarrior",
+            "team": "Reserve Driver",
+            "team_id": "team_reserve_driver",
+            "total_points": 1.0,
+            "rounds": {
+                "2": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_alexmatrix",
+            "name": "AlexMatrix",
+            "team": "Reserve Driver",
+            "team_id": "team_reserve_driver",
+            "total_points": 0.0,
+            "rounds": {
+                "2": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_drasticalrose",
+            "name": "Drasticalrose",
+            "team": "Reserve Driver",
+            "team_id": "team_reserve_driver",
+            "total_points": 0.0,
+            "rounds": {
+                "2": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
+            "driver_id": "driver_rubycrayfish",
+            "name": "RubyCrayfish",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
+            "total_points": 0.0,
+            "rounds": {
+                "4": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        }
+    ],
+    "exported_at": "2026-02-07T21:12:50"
+}
