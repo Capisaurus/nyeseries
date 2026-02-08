@@ -914,9 +914,9 @@
             const parts = baseId.split('_');
             const prefix = parts[0] || 'season';
             const number = parts[1] || '';
-            const prefixTitle = prefix === 'series'
+            const prefixTitle = prefix === 'Series'
                 ? 'Series'
-                : prefix === 'academy'
+                : prefix === 'Academy'
                     ? 'Academy'
                     : titleCase(prefix);
             const sprintLabel = isSprint ? 'Sprint' : '';
@@ -930,7 +930,7 @@
             const parts = baseId.split('_');
             const prefix = parts[0] || 't';
             const number = parts[1] || '';
-            const prefixLetter = prefix === 'series' ? 'S' : prefix === 'academy' ? 'A' : prefix.charAt(0).toUpperCase();
+            const prefixLetter = prefix === 'Series' ? 'S' : prefix === 'Academy' ? 'A' : prefix.charAt(0).toUpperCase();
             return `${prefixLetter}${number}${isSprint ? 'S' : ''}`;
         }
 
@@ -1264,6 +1264,13 @@
             let totalDriversEver = new Set();
             const attendanceTotals = {};
             const overallRaces = [];
+            const overallMeta = new Map();
+
+            (allData.overall?.drivers || []).forEach(driver => {
+                if (driver && driver.driver_id) {
+                    overallMeta.set(driver.driver_id, driver);
+                }
+            });
 
             // Get season info
             const regularSeasons = seasonsList.filter(s => !s.isOverall);
@@ -1417,7 +1424,15 @@
             renderHistoricalProgression(driversArray.slice(0, 8));
 
             // Driver stats and race selector
-            renderDriverStatsOverall(driversArray, allDrivers, allTeams, attendanceTotals, totalRaces, overallPerformance.statsByDriver);
+            renderDriverStatsOverall(
+                driversArray,
+                allDrivers,
+                allTeams,
+                attendanceTotals,
+                totalRaces,
+                overallPerformance.statsByDriver,
+                overallMeta
+            );
             renderAttendanceTableOverall(driversArray, allTeams, attendanceTotals, totalRaces);
             renderSuperlicenseTableOverall(driversArray, allTeams, allDrivers);
             renderRaceSelector(buildOverallRaceItems(), 'overall');
@@ -1875,7 +1890,6 @@
                 <div class="insight-card">
                     <div class="label">${contextLabel} Carreras disputadas</div>
                     <div class="value">${formatNumber(totalRaces)}</div>
-                    <div class="subtext">Solo carreras con resultados</div>
                 </div>
                 <div class="insight-card">
                     <div class="label">Participaciones totales</div>
@@ -2193,13 +2207,8 @@
                 const driver = drivers[row.driverId];
                 if (!driver) return null;
                 const teamName = driver.team_id ? (teams[driver.team_id]?.name || '-') : '-';
-                const penalty = driver.penalty_points || 0;
-                const hasAttendance = attendance && Object.keys(attendance).length > 0;
-                const attendanceRecord = attendance?.[row.driverId] || {};
-                const attended = Object.values(attendanceRecord).filter(val => val === 'A').length;
-                const attendanceText = hasAttendance && totalRounds > 0
-                    ? `${attended}/${totalRounds} (${Math.round((attended / totalRounds) * 100)}%)`
-                    : '-';
+                const fastestLaps = driver.fastest_laps ?? 0;
+                const dotd = driver.driver_of_the_day ?? 0;
                 const perf = performanceStats?.[row.driverId] || {};
 
                 return {
@@ -2214,8 +2223,8 @@
                     avgFinish: perf.avgFinish ? perf.avgFinish.toFixed(2) : '-',
                     avgPoints: perf.avgPoints ? perf.avgPoints.toFixed(1) : '0.0',
                     dnfs: perf.dnfs || 0,
-                    penalty,
-                    attendanceText
+                    fastestLaps,
+                    dotd
                 };
             }).filter(Boolean);
 
@@ -2232,8 +2241,8 @@
                     <td class="points">${row.avgFinish}</td>
                     <td class="points">${row.avgPoints}</td>
                     <td class="points">${row.dnfs}</td>
-                    <td class="points">${row.penalty.toFixed(1)}</td>
-                    <td class="points">${row.attendanceText}</td>
+                    <td class="points">${row.fastestLaps}</td>
+                    <td class="points">${row.dotd}</td>
                 `;
                 tbody.appendChild(tr);
             });
@@ -2241,7 +2250,7 @@
             attachDriverClickHandlers();
         }
 
-        function renderDriverStatsOverall(driversArray, allDrivers, allTeams, attendanceTotals, totalRounds, performanceStats = {}) {
+        function renderDriverStatsOverall(driversArray, allDrivers, allTeams, attendanceTotals, totalRounds, performanceStats = {}, overallMeta = null) {
             const tbody = document.getElementById('driver-stats-body');
             if (!tbody) return;
             tbody.innerHTML = '';
@@ -2257,13 +2266,10 @@
                     .filter(Boolean)
                     .join(', ') || '-';
 
-                const hasAttendance = attendanceTotals && Object.keys(attendanceTotals).length > 0;
-                const attended = attendanceTotals?.[driver.guid] || 0;
-                const attendanceText = hasAttendance && totalRounds > 0
-                    ? `${attended}/${totalRounds} (${Math.round((attended / totalRounds) * 100)}%)`
-                    : '-';
+                const meta = overallMeta?.get(driver.guid) || {};
+                const fastestLaps = meta.fastest_laps ?? 0;
+                const dotd = meta.driver_of_the_day ?? 0;
                 const perf = performanceStats?.[driver.guid] || {};
-                const penalty = allDrivers.get(driver.guid)?.penalty_points || 0;
 
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
@@ -2277,8 +2283,8 @@
                     <td class="points">${perf.avgFinish ? perf.avgFinish.toFixed(2) : '-'}</td>
                     <td class="points">${perf.avgPoints ? perf.avgPoints.toFixed(1) : '0.0'}</td>
                     <td class="points">${perf.dnfs || 0}</td>
-                    <td class="points">${penalty.toFixed(1)}</td>
-                    <td class="points">${attendanceText}</td>
+                    <td class="points">${fastestLaps}</td>
+                    <td class="points">${dotd}</td>
                 `;
                 tbody.appendChild(tr);
             });
