@@ -835,26 +835,9 @@
         <details class="section-details" id="driver-stats-section">
             <summary>Estadisticas por piloto</summary>
             <div class="section-body">
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Piloto</th>
-                                <th>Equipo</th>
-                                <th class="center">Puntos</th>
-                                <th class="center">Carreras</th>
-                                <th class="center">Victorias</th>
-                                <th class="center">Podios</th>
-                                <th class="center">Top 5</th>
-                                <th class="center">Avg Pos</th>
-                                <th class="center">Avg Pts</th>
-                                <th class="center">DNF</th>
-                                <th class="center">FL</th>
-                                <th class="center">DOTD</th>
-                            </tr>
-                        </thead>
-                        <tbody id="driver-stats-body"></tbody>
-                    </table>
+                <div class="race-selector">
+                    <label for="driver-select" class="race-select-label">Selecciona un piloto</label>
+                    <select id="driver-select" class="nav-select"></select>
                 </div>
                 <div id="driver-detail" class="driver-detail">
                     <div class="driver-detail-title">Selecciona un piloto para ver su detalle</div>
@@ -2209,103 +2192,58 @@
             });
         }
 
-        function renderDriverStats(drivers, teams, standings, attendance, totalRounds, performanceStats = {}) {
-            const tbody = document.getElementById('driver-stats-body');
-            if (!tbody) return;
-            tbody.innerHTML = '';
+        function renderDriverSelector(driverItems) {
+            const select = document.getElementById('driver-select');
+            const detailTitle = document.querySelector('#driver-detail .driver-detail-title');
+            const detailGrid = document.querySelector('#driver-detail .driver-detail-grid');
+            if (!select) return;
 
-            if (!drivers || Object.keys(drivers).length === 0) {
-                tbody.innerHTML = '<tr><td colspan="12" class="no-data">No hay datos de pilotos</td></tr>';
+            select.innerHTML = '';
+
+            if (!driverItems || driverItems.length === 0) {
+                select.disabled = true;
+                if (detailTitle) detailTitle.textContent = 'No hay datos de pilotos';
+                if (detailGrid) detailGrid.innerHTML = '';
                 return;
             }
 
-            const rows = (standings || []).map(row => {
-                const driver = drivers[row.driverId];
-                if (!driver) return null;
-                const teamName = driver.team_id ? (teams[driver.team_id]?.name || '-') : '-';
-                const fastestLaps = driver.fastest_laps ?? 0;
-                const dotd = driver.driver_of_the_day ?? 0;
-                const perf = performanceStats?.[row.driverId] || {};
-
-                return {
-                    driverId: row.driverId,
-                    name: driver.name,
-                    teamName,
-                    points: row.Total || 0,
-                    races: perf.races || 0,
-                    wins: perf.wins || 0,
-                    podiums: perf.podiums || 0,
-                    top5: perf.top5 || 0,
-                    avgFinish: perf.avgFinish ? perf.avgFinish.toFixed(2) : '-',
-                    avgPoints: perf.avgPoints ? perf.avgPoints.toFixed(1) : '0.0',
-                    dnfs: perf.dnfs || 0,
-                    fastestLaps,
-                    dotd
-                };
-            }).filter(Boolean);
-
-            rows.forEach(row => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td class="driver-name clickable" data-driver-id="${row.driverId}">${row.name}</td>
-                    <td class="team-name">${row.teamName}</td>
-                    <td class="points">${row.points}</td>
-                    <td class="points">${row.races}</td>
-                    <td class="points">${row.wins}</td>
-                    <td class="points">${row.podiums}</td>
-                    <td class="points">${row.top5}</td>
-                    <td class="points">${row.avgFinish}</td>
-                    <td class="points">${row.avgPoints}</td>
-                    <td class="points">${row.dnfs}</td>
-                    <td class="points">${row.fastestLaps}</td>
-                    <td class="points">${row.dotd}</td>
-                `;
-                tbody.appendChild(tr);
+            driverItems.forEach(item => {
+                select.appendChild(new Option(item.label, item.id));
             });
 
-            attachDriverClickHandlers();
+            select.disabled = false;
+            select.value = driverItems[0].id;
+            showDriverDetail(driverItems[0].id);
+
+            select.onchange = (event) => {
+                showDriverDetail(event.target.value);
+            };
+        }
+
+        function renderDriverStats(drivers, teams, standings, attendance, totalRounds, performanceStats = {}) {
+            if (!drivers || Object.keys(drivers).length === 0) {
+                renderDriverSelector([]);
+                return;
+            }
+
+            const items = (standings || [])
+                .map(row => ({ id: row.driverId, label: row['Piloto/Ronda'] }))
+                .filter(item => item.id);
+
+            renderDriverSelector(items);
         }
 
         function renderDriverStatsOverall(driversArray, allDrivers, allTeams, attendanceTotals, totalRounds, performanceStats = {}, overallMeta = null) {
-            const tbody = document.getElementById('driver-stats-body');
-            if (!tbody) return;
-            tbody.innerHTML = '';
-
             if (!driversArray || driversArray.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="12" class="no-data">No hay datos de pilotos</td></tr>';
+                renderDriverSelector([]);
                 return;
             }
 
-            driversArray.forEach(driver => {
-                const teamNames = Array.from(driver.teams)
-                    .map(tid => allTeams.get(tid)?.name)
-                    .filter(Boolean)
-                    .join(', ') || '-';
+            const items = driversArray
+                .map(driver => ({ id: driver.guid, label: driver.name }))
+                .filter(item => item.id);
 
-                const meta = overallMeta?.get(driver.guid) || {};
-                const fastestLaps = meta.fastest_laps ?? 0;
-                const dotd = meta.driver_of_the_day ?? 0;
-                const perf = performanceStats?.[driver.guid] || {};
-
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td class="driver-name clickable" data-driver-id="${driver.guid}">${driver.name}</td>
-                    <td class="team-name">${teamNames}</td>
-                    <td class="points">${driver.totalPoints}</td>
-                    <td class="points">${perf.races || 0}</td>
-                    <td class="points">${perf.wins || 0}</td>
-                    <td class="points">${perf.podiums || 0}</td>
-                    <td class="points">${perf.top5 || 0}</td>
-                    <td class="points">${perf.avgFinish ? perf.avgFinish.toFixed(2) : '-'}</td>
-                    <td class="points">${perf.avgPoints ? perf.avgPoints.toFixed(1) : '0.0'}</td>
-                    <td class="points">${perf.dnfs || 0}</td>
-                    <td class="points">${fastestLaps}</td>
-                    <td class="points">${dotd}</td>
-                `;
-                tbody.appendChild(tr);
-            });
-
-            attachDriverClickHandlers();
+            renderDriverSelector(items);
         }
 
         function buildSeasonRaceItems(data) {
@@ -2738,7 +2676,7 @@
 
                 const meta = currentStatsContext.overallMeta?.get(driver.guid) || {};
                 const totalRacesOverall = allData.overall?.total_races || currentStatsContext.totalRounds || 0;
-                const attended = meta.total_races ?? currentStatsContext.attendanceTotals?.[driver.guid] || 0;
+                const attended = meta.total_races ?? currentStatsContext.attendanceTotals?.[driver.guid] ?? 0;
                 const attendanceText = totalRacesOverall > 0
                     ? `${attended}/${totalRacesOverall} (${Math.round((attended / totalRacesOverall) * 100)}%)`
                     : '-';
