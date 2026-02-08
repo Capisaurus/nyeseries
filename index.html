@@ -2203,7 +2203,7 @@
             document.getElementById('completed-races').textContent = completedRaces.length;
             document.getElementById('planned-races').textContent = isInProgress ? plannedRaces.length : data.races.length;
             document.getElementById('total-teams').textContent = Object.keys(data.teams || {}).length;
-            document.getElementById('total-races').textContent = data.races.length;
+            // Eliminada la tarjeta 'total-races', no actualizar
 
             renderGlobalInsights(performance, seasonInfo?.name || 'Temporada');
             renderLeaderInsights(
