@@ -1326,7 +1326,7 @@
         </details>
 
         <details class="section-details" id="driver-stats-section">
-            <summary>Estadisticas por piloto</summary>
+            <summary>   piloto</summary>
             <div class="section-body">
                 <div class="race-selector">
                     <label for="driver-select" class="race-select-label">Selecciona un piloto</label>
@@ -2001,7 +2001,7 @@
                 driverPerformance: overallPerformance.statsByDriver
             };
 
-            // Render combined standings
+            // Render combined standings and tables
             renderCombinedStandings(driversArray, allTeams);
 
             // Render progression chart for top drivers
@@ -2017,8 +2017,14 @@
                 overallPerformance.statsByDriver,
                 overallMeta
             );
-            renderAttendanceTableOverall(driversArray, allTeams, attendanceTotals, totalRaces);
-            renderSuperlicenseTableOverall(driversArray, allTeams, allDrivers);
+            renderAttendanceTable({
+                mode: 'overall',
+                driversArray,
+                allTeams,
+                attendanceTotals,
+                totalRounds: totalRaces
+            });
+            renderSuperlicenseTableOverall(driversArray, allTeams, allDrivers); // Se puede refactorizar de forma similar
 
             // Clear other sections
             const teamContainer = document.getElementById('team-stats-container');
@@ -2300,7 +2306,14 @@
             if (mode !== 'home') {
                 if (completedRaces.length > 0) {
                     renderDriverStats(data.drivers, data.teams, calculatedStandings, data.attendance, completedRaces.length, performance.statsByDriver);
-                    renderAttendanceTable(data.drivers, data.teams, data.attendance, completedRaces.length, attendanceFallback);
+                    renderAttendanceTable({
+                        mode: 'season',
+                        drivers: data.drivers,
+                        teams: data.teams,
+                        attendance: data.attendance,
+                        totalRounds: completedRaces.length,
+                        attendanceFallback
+                    });
                     renderSuperlicenseTable(data.drivers, data.teams);
                     renderTeamStats(data.drivers, data.teams, calculatedStandings);
                     renderCompletedRaces(completedRaces, data.drivers, data.teams);
@@ -2990,27 +3003,46 @@
             return counts;
         }
 
-        function renderAttendanceTable(drivers, teams, attendance, totalRounds, attendanceFallback = {}) {
+        function renderAttendanceTable(context) {
             const tbody = document.getElementById('attendance-body');
             if (!tbody) return;
             tbody.innerHTML = '';
 
-            const driverEntries = Object.entries(drivers || {});
-            if (driverEntries.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="4" class="no-data">No hay datos de asistencia</td></tr>';
-                return;
+            let rows = [];
+            const { mode, totalRounds } = context;
+
+            if (mode === 'season') {
+                const { drivers, teams, attendance, attendanceFallback } = context;
+                const driverEntries = Object.entries(drivers || {});
+                if (driverEntries.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="4" class="no-data">No hay datos de asistencia</td></tr>';
+                    return;
+                }
+                rows = driverEntries.map(([driverId, driver]) => {
+                    const teamName = driver.team_id ? (teams[driver.team_id]?.name || '-') : '-';
+                    const attendanceRecord = attendance?.[driverId] || {};
+                    const hasRecord = Object.keys(attendanceRecord).length > 0;
+                    const attended = hasRecord ?
+                        Object.values(attendanceRecord).filter(val => val === 'A').length :
+                        (attendanceFallback?.[driverId] || 0);
+                    const percent = totalRounds > 0 ? Math.round((attended / totalRounds) * 100) : 0;
+                    return { driverId, name: driver.name, teamName, attended, percent };
+                });
+            } else if (mode === 'overall') {
+                const { driversArray, allTeams, attendanceTotals } = context;
+                if (!driversArray || driversArray.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="4" class="no-data">No hay datos de asistencia</td></tr>';
+                    return;
+                }
+                rows = driversArray.map(driver => {
+                    const teamNames = Array.from(driver.teams).map(tid => allTeams.get(tid)?.name).filter(Boolean).join(', ') || '-';
+                    const attended = attendanceTotals?.[driver.guid] || 0;
+                    const percent = totalRounds > 0 ? Math.round((attended / totalRounds) * 100) : 0;
+                    return { driverId: driver.guid, name: driver.name, teamName: teamNames, attended, percent };
+                });
             }
 
-            const rows = driverEntries.map(([driverId, driver]) => {
-                const teamName = driver.team_id ? (teams[driver.team_id]?.name || '-') : '-';
-                const attendanceRecord = attendance?.[driverId] || {};
-                const hasRecord = Object.keys(attendanceRecord).length > 0;
-                const attended = hasRecord
-                    ? Object.values(attendanceRecord).filter(val => val === 'A').length
-                    : (attendanceFallback?.[driverId] || 0);
-                const percent = totalRounds > 0 ? Math.round((attended / totalRounds) * 100) : 0;
-                return { driverId, name: driver.name, teamName, attended, percent };
-            }).sort((a, b) => b.attended - a.attended);
+            rows.sort((a, b) => b.attended - a.attended);
 
             rows.forEach(row => {
                 const tr = document.createElement('tr');
@@ -3049,40 +3081,6 @@
                     <td class="driver-name clickable" data-driver-id="${row.driverId}">${row.name}</td>
                     <td class="team-name">${row.teamName}</td>
                     <td class="points">${row.points.toFixed(1)}</td>
-                `;
-                tbody.appendChild(tr);
-            });
-
-            attachDriverClickHandlers();
-        }
-
-        function renderAttendanceTableOverall(driversArray, allTeams, attendanceTotals, totalRounds) {
-            const tbody = document.getElementById('attendance-body');
-            if (!tbody) return;
-            tbody.innerHTML = '';
-
-            if (!driversArray || driversArray.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="4" class="no-data">No hay datos de asistencia</td></tr>';
-                return;
-            }
-
-            const rows = driversArray.map(driver => {
-                const teamNames = Array.from(driver.teams)
-                    .map(tid => allTeams.get(tid)?.name)
-                    .filter(Boolean)
-                    .join(', ') || '-';
-                const attended = attendanceTotals?.[driver.guid] || 0;
-                const percent = totalRounds > 0 ? Math.round((attended / totalRounds) * 100) : 0;
-                return { driverId: driver.guid, name: driver.name, teamName: teamNames, attended, percent };
-            }).sort((a, b) => b.attended - a.attended);
-
-            rows.forEach(row => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td class="driver-name clickable" data-driver-id="${row.driverId}">${row.name}</td>
-                    <td class="team-name">${row.teamName}</td>
-                    <td class="points">${row.attended}/${totalRounds}</td>
-                    <td class="points">${totalRounds > 0 ? row.percent + '%' : '-'}</td>
                 `;
                 tbody.appendChild(tr);
             });
