@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N&E Series by N&E Racing</title>
+    <link rel="icon" type="image/png" href="SSNB.png">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <style>
         * {
@@ -218,19 +219,25 @@
 
         .table-container {
             overflow-x: auto;
+            overflow-y: auto;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-height: 500px;
+            position: relative;
         }
 
         table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 900px;
+            width: max-content;
+            border-collapse: separate;
+            border-spacing: 0;
         }
 
         thead {
             background: linear-gradient(135deg, var(--f2-blue-dark) 0%, var(--f2-blue-medium) 100%);
             color: var(--f2-white);
+            position: sticky;
+            top: 0;
+            z-index: 2;
         }
 
         th {
@@ -241,6 +248,10 @@
             font-size: 0.75em;
             letter-spacing: 0.5px;
             white-space: nowrap;
+            background: inherit;
+            position: sticky;
+            top: 0;
+            z-index: 2;
         }
 
         th.center {
@@ -251,6 +262,7 @@
             padding: 14px 12px;
             border-bottom: 1px solid var(--f2-bg-light);
             color: var(--f2-gray-dark);
+            background: var(--f2-white);
         }
 
         tbody tr {
@@ -267,12 +279,20 @@
             text-align: center;
             font-size: 1.2em;
             width: 60px;
+            position: sticky;
+            left: 0;
+            background: var(--f2-bg-light);
+            z-index: 1;
         }
 
         .driver-name {
             font-weight: 700;
             color: var(--f2-gray-dark);
             font-size: 1em;
+            position: sticky;
+            left: 60px;
+            background: var(--f2-bg-light);
+            z-index: 1;
         }
 
         .driver-name.clickable {
@@ -315,6 +335,10 @@
             color: var(--f2-gray-medium);
             font-size: 0.85em;
             font-weight: 500;
+            position: sticky;
+            left: 220px;
+            background: var(--f2-bg-light);
+            z-index: 1;
         }
 
         .points {
@@ -1810,6 +1834,23 @@
                     </tr>
                 `;
             } else {
+                // Obtener dinámicamente el número de rondas
+                let roundsCount = 0;
+                let roundsNames = [];
+                if (window.currentSeasonData && window.currentSeasonData.races) {
+                    roundsCount = window.currentSeasonData.races.length;
+                    roundsNames = window.currentSeasonData.races.map((r, idx) => r.name || `R${idx+1}`);
+                } else if (window.allData && window.allData[currentSeason] && window.allData[currentSeason].races) {
+                    roundsCount = window.allData[currentSeason].races.length;
+                    roundsNames = window.allData[currentSeason].races.map((r, idx) => r.name || `R${idx+1}`);
+                } else {
+                    roundsCount = 7;
+                    roundsNames = Array.from({length: 7}, (_, i) => `R${i+1}`);
+                }
+                let roundsHeaders = '';
+                for (let i = 0; i < roundsCount; i++) {
+                    roundsHeaders += `<th class="center">${roundsNames[i]}</th>`;
+                }
                 thead.innerHTML = `
                     <tr>
                         <th class="center">Pos</th>
@@ -1817,13 +1858,7 @@
                         <th>Equipo</th>
                         <th class="center">Disp.</th>
                         <th class="center">Pen.</th>
-                        <th class="center">R1</th>
-                        <th class="center">R2</th>
-                        <th class="center">R3</th>
-                        <th class="center">R4</th>
-                        <th class="center">R5</th>
-                        <th class="center">R6</th>
-                        <th class="center">R7</th>
+                        ${roundsHeaders}
                         <th class="center total-points">Total</th>
                     </tr>
                 `;
@@ -2231,7 +2266,10 @@
 
         function renderSeasonData(seasonKey, mode = 'season') {
             const data = allData[seasonKey];
-            
+            // Asegura que window.currentSeasonData siempre esté sincronizado
+            if (data) {
+                window.currentSeasonData = data;
+            }
             if (!data) {
                 document.querySelector('.container').innerHTML = 
                     '<div class="error-message">No se encontraron datos para esta temporada</div>';
@@ -2711,7 +2749,14 @@
                 return;
             }
 
-            const roundsCount = totalRounds || 7;
+            let roundsCount = 7;
+            if (window.currentSeasonData && window.currentSeasonData.races) {
+                roundsCount = window.currentSeasonData.races.length;
+            } else if (window.allData && window.allData[currentSeason] && window.allData[currentSeason].races) {
+                roundsCount = window.allData[currentSeason].races.length;
+            } else if (totalRounds) {
+                roundsCount = totalRounds;
+            }
 
             standings.forEach((row, index) => {
                 const tr = document.createElement('tr');
@@ -3700,215 +3745,7 @@
     </script>
 </body>
  </html>
-            // === UPCOMING CALENDAR ===
-            if (currentActiveData && currentActiveData.races) {
-                const allRaces = currentActiveData.races;
-                const plannedRaces = allRaces.filter(r => r.planned);
-                if (plannedRaces.length > 0) {
-                    // Find the next upcoming race
-                    const now = new Date();
-                    let nextRoundNum = null;
-                    for (const race of plannedRaces) {
-                        if (race.date && new Date(race.date) >= now) {
-                            nextRoundNum = race.round;
-                            break;
-                        }
-                    }
-
-                    html += `
-                        <div class="overview-card full-width">
-                            <div class="overview-card-header">Calendario ${currentActiveSeason.name}</div>
-                            <div class="overview-card-body">
-                                <div class="overview-calendar-grid">
-                                    ${plannedRaces.map(race => `
-                                        <div class="overview-calendar-item${race.round === nextRoundNum ? ' next-up' : ''}">
-                                            <div class="overview-calendar-round">${race.round === nextRoundNum ? 'PROXIMA - ' : ''}R${race.round}</div>
-                                            <div class="overview-calendar-name">${race.name}</div>
-                                            <div class="overview-calendar-track">${race.track}</div>
-                                            <div class="overview-calendar-date">${formatRaceDate(race.date)}</div>
-                                        </div>
-                                    `).join('')}
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }
-            }
-
-            // === LAST UPDATED ===
-            const exportedAt = championship?.exported_at || currentActiveData?.exported_at;
-            if (exportedAt) {
-                const date = new Date(exportedAt);
-                html += `<p class="last-updated">Ultima actualizacion: ${date.toLocaleString('es-MX', {
-                    year: 'numeric', month: 'long', day: 'numeric',
-                    hour: '2-digit', minute: '2-digit'
-                })}</p>`;
-            }
-
-            container.innerHTML = html;
-        }
-
-        loadAllData();
-        setInterval(loadAllData, 120000);
-    </script>
 </body>
 </html>
-            // === UPCOMING CALENDAR ===
-            if (currentActiveData && currentActiveData.races) {
-                const allRaces = currentActiveData.races;
-                const plannedRaces = allRaces.filter(r => r.planned);
-                if (plannedRaces.length > 0) {
-                    // Find the next upcoming race
-                    const now = new Date();
-                    let nextRoundNum = null;
-                    for (const race of plannedRaces) {
-                        if (race.date && new Date(race.date) >= now) {
-                            nextRoundNum = race.round;
-                            break;
-                        }
-                    }
-
-                    html += `
-                        <div class="overview-card full-width">
-                            <div class="overview-card-header">Calendario ${currentActiveSeason.name}</div>
-                            <div class="overview-card-body">
-                                <div class="overview-calendar-grid">
-                                    ${plannedRaces.map(race => `
-                                        <div class="overview-calendar-item${race.round === nextRoundNum ? ' next-up' : ''}">
-                                            <div class="overview-calendar-round">${race.round === nextRoundNum ? 'PROXIMA - ' : ''}R${race.round}</div>
-                                            <div class="overview-calendar-name">${race.name}</div>
-                                            <div class="overview-calendar-track">${race.track}</div>
-                                            <div class="overview-calendar-date">${formatRaceDate(race.date)}</div>
-                                        </div>
-                                    `).join('')}
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }
-            }
-
-            // === LAST UPDATED ===
-            const exportedAt = championship?.exported_at || currentActiveData?.exported_at;
-            if (exportedAt) {
-                const date = new Date(exportedAt);
-                html += `<p class="last-updated">Ultima actualizacion: ${date.toLocaleString('es-MX', {
-                    year: 'numeric', month: 'long', day: 'numeric',
-                    hour: '2-digit', minute: '2-digit'
-                })}</p>`;
-            }
-
-            container.innerHTML = html;
-        }
-
-        loadAllData();
-        setInterval(loadAllData, 120000);
-    </script>
-</body>
-</html>
-            // === UPCOMING CALENDAR ===
-            if (currentActiveData && currentActiveData.races) {
-                const allRaces = currentActiveData.races;
-                const plannedRaces = allRaces.filter(r => r.planned);
-                if (plannedRaces.length > 0) {
-                    // Find the next upcoming race
-                    const now = new Date();
-                    let nextRoundNum = null;
-                    for (const race of plannedRaces) {
-                        if (race.date && new Date(race.date) >= now) {
-                            nextRoundNum = race.round;
-                            break;
-                        }
-                    }
-
-                    html += `
-                        <div class="overview-card full-width">
-                            <div class="overview-card-header">Calendario ${currentActiveSeason.name}</div>
-                            <div class="overview-card-body">
-                                <div class="overview-calendar-grid">
-                                    ${plannedRaces.map(race => `
-                                        <div class="overview-calendar-item${race.round === nextRoundNum ? ' next-up' : ''}">
-                                            <div class="overview-calendar-round">${race.round === nextRoundNum ? 'PROXIMA - ' : ''}R${race.round}</div>
-                                            <div class="overview-calendar-name">${race.name}</div>
-                                            <div class="overview-calendar-track">${race.track}</div>
-                                            <div class="overview-calendar-date">${formatRaceDate(race.date)}</div>
-                                        </div>
-                                    `).join('')}
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }
-            }
-
-            // === LAST UPDATED ===
-            const exportedAt = championship?.exported_at || currentActiveData?.exported_at;
-            if (exportedAt) {
-                const date = new Date(exportedAt);
-                html += `<p class="last-updated">Ultima actualizacion: ${date.toLocaleString('es-MX', {
-                    year: 'numeric', month: 'long', day: 'numeric',
-                    hour: '2-digit', minute: '2-digit'
-                })}</p>`;
-            }
-
-            container.innerHTML = html;
-        }
-
-        loadAllData();
-        setInterval(loadAllData, 120000);
-    </script>
-</body>
-</html>
-            // === UPCOMING CALENDAR ===
-            if (currentActiveData && currentActiveData.races) {
-                const allRaces = currentActiveData.races;
-                const plannedRaces = allRaces.filter(r => r.planned);
-                if (plannedRaces.length > 0) {
-                    // Find the next upcoming race
-                    const now = new Date();
-                    let nextRoundNum = null;
-                    for (const race of plannedRaces) {
-                        if (race.date && new Date(race.date) >= now) {
-                            nextRoundNum = race.round;
-                            break;
-                        }
-                    }
-
-                    html += `
-                        <div class="overview-card full-width">
-                            <div class="overview-card-header">Calendario ${currentActiveSeason.name}</div>
-                            <div class="overview-card-body">
-                                <div class="overview-calendar-grid">
-                                    ${plannedRaces.map(race => `
-                                        <div class="overview-calendar-item${race.round === nextRoundNum ? ' next-up' : ''}">
-                                            <div class="overview-calendar-round">${race.round === nextRoundNum ? 'PROXIMA - ' : ''}R${race.round}</div>
-                                            <div class="overview-calendar-name">${race.name}</div>
-                                            <div class="overview-calendar-track">${race.track}</div>
-                                            <div class="overview-calendar-date">${formatRaceDate(race.date)}</div>
-                                        </div>
-                                    `).join('')}
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }
-            }
-
-            // === LAST UPDATED ===
-            const exportedAt = championship?.exported_at || currentActiveData?.exported_at;
-            if (exportedAt) {
-                const date = new Date(exportedAt);
-                html += `<p class="last-updated">Ultima actualizacion: ${date.toLocaleString('es-MX', {
-                    year: 'numeric', month: 'long', day: 'numeric',
-                    hour: '2-digit', minute: '2-digit'
-                })}</p>`;
-            }
-
-            container.innerHTML = html;
-        }
-
-        loadAllData();
-        setInterval(loadAllData, 120000);
-    </script>
 </body>
 </html>
