@@ -1290,6 +1290,41 @@
             </div>
         </details>
 
+        <details class="section-details" id="planned-section">
+            <summary>Próximas Carreras</summary>
+            <div class="section-body">
+                <div id="planned-races-container"></div>
+            </div>
+        </details>
+
+        <details class="section-details" id="progression-section">
+            <summary>Progresión del Campeonato</summary>
+            <div class="section-body">
+                <div class="chart-container" id="progression-chart-container">
+                    <canvas id="progressionChart"></canvas>
+                </div>
+            </div>
+        </details>
+
+        <details class="section-details" id="attendance-section">
+            <summary>Asistencia</summary>
+            <div class="section-body">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Piloto</th>
+                                <th>Equipo</th>
+                                <th class="center">Carreras Asistidas</th>
+                                <th class="center">% Asistencia</th>
+                            </tr>
+                        </thead>
+                        <tbody id="attendance-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </details>
+
         <details class="section-details" id="driver-stats-section">
             <summary>Estadisticas por piloto</summary>
             <div class="section-body">
@@ -1300,6 +1335,24 @@
                 <div id="driver-detail" class="driver-detail">
                     <div class="driver-detail-title">Selecciona un piloto para ver su detalle</div>
                     <div class="driver-detail-grid"></div>
+                </div>
+            </div>
+        </details>
+
+        <details class="section-details" id="superlicense-section">
+            <summary>Puntos de Superlicencia</summary>
+            <div class="section-body">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Piloto</th>
+                                <th>Equipo</th>
+                                <th class="center">Puntos de Penalización</th>
+                            </tr>
+                        </thead>
+                        <tbody id="superlicense-body"></tbody>
+                    </table>
                 </div>
             </div>
         </details>
@@ -3593,6 +3646,271 @@
                 `;
             }
 
+            // === UPCOMING CALENDAR ===
+            if (currentActiveData && currentActiveData.races) {
+                const allRaces = currentActiveData.races;
+                const plannedRaces = allRaces.filter(r => r.planned);
+                if (plannedRaces.length > 0) {
+                    // Find the next upcoming race
+                    const now = new Date();
+                    let nextRoundNum = null;
+                    for (const race of plannedRaces) {
+                        if (race.date && new Date(race.date) >= now) {
+                            nextRoundNum = race.round;
+                            break;
+                        }
+                    }
+
+                    html += `
+                        <div class="overview-card full-width">
+                            <div class="overview-card-header">Calendario ${currentActiveSeason.name}</div>
+                            <div class="overview-card-body">
+                                <div class="overview-calendar-grid">
+                                    ${plannedRaces.map(race => `
+                                        <div class="overview-calendar-item${race.round === nextRoundNum ? ' next-up' : ''}">
+                                            <div class="overview-calendar-round">${race.round === nextRoundNum ? 'PROXIMA - ' : ''}R${race.round}</div>
+                                            <div class="overview-calendar-name">${race.name}</div>
+                                            <div class="overview-calendar-track">${race.track}</div>
+                                            <div class="overview-calendar-date">${formatRaceDate(race.date)}</div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            // === LAST UPDATED ===
+            const exportedAt = championship?.exported_at || currentActiveData?.exported_at;
+            if (exportedAt) {
+                const date = new Date(exportedAt);
+                html += `<p class="last-updated">Ultima actualizacion: ${date.toLocaleString('es-MX', {
+                    year: 'numeric', month: 'long', day: 'numeric',
+                    hour: '2-digit', minute: '2-digit'
+                })}</p>`;
+            }
+
+            container.innerHTML = html;
+        }
+
+        loadAllData();
+        setInterval(loadAllData, 120000);
+    </script>
+</body>
+</html>
+            // === UPCOMING CALENDAR ===
+            if (currentActiveData && currentActiveData.races) {
+                const allRaces = currentActiveData.races;
+                const plannedRaces = allRaces.filter(r => r.planned);
+                if (plannedRaces.length > 0) {
+                    // Find the next upcoming race
+                    const now = new Date();
+                    let nextRoundNum = null;
+                    for (const race of plannedRaces) {
+                        if (race.date && new Date(race.date) >= now) {
+                            nextRoundNum = race.round;
+                            break;
+                        }
+                    }
+
+                    html += `
+                        <div class="overview-card full-width">
+                            <div class="overview-card-header">Calendario ${currentActiveSeason.name}</div>
+                            <div class="overview-card-body">
+                                <div class="overview-calendar-grid">
+                                    ${plannedRaces.map(race => `
+                                        <div class="overview-calendar-item${race.round === nextRoundNum ? ' next-up' : ''}">
+                                            <div class="overview-calendar-round">${race.round === nextRoundNum ? 'PROXIMA - ' : ''}R${race.round}</div>
+                                            <div class="overview-calendar-name">${race.name}</div>
+                                            <div class="overview-calendar-track">${race.track}</div>
+                                            <div class="overview-calendar-date">${formatRaceDate(race.date)}</div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            // === LAST UPDATED ===
+            const exportedAt = championship?.exported_at || currentActiveData?.exported_at;
+            if (exportedAt) {
+                const date = new Date(exportedAt);
+                html += `<p class="last-updated">Ultima actualizacion: ${date.toLocaleString('es-MX', {
+                    year: 'numeric', month: 'long', day: 'numeric',
+                    hour: '2-digit', minute: '2-digit'
+                })}</p>`;
+            }
+
+            container.innerHTML = html;
+        }
+
+        loadAllData();
+        setInterval(loadAllData, 120000);
+    </script>
+</body>
+</html>
+            // === UPCOMING CALENDAR ===
+            if (currentActiveData && currentActiveData.races) {
+                const allRaces = currentActiveData.races;
+                const plannedRaces = allRaces.filter(r => r.planned);
+                if (plannedRaces.length > 0) {
+                    // Find the next upcoming race
+                    const now = new Date();
+                    let nextRoundNum = null;
+                    for (const race of plannedRaces) {
+                        if (race.date && new Date(race.date) >= now) {
+                            nextRoundNum = race.round;
+                            break;
+                        }
+                    }
+
+                    html += `
+                        <div class="overview-card full-width">
+                            <div class="overview-card-header">Calendario ${currentActiveSeason.name}</div>
+                            <div class="overview-card-body">
+                                <div class="overview-calendar-grid">
+                                    ${plannedRaces.map(race => `
+                                        <div class="overview-calendar-item${race.round === nextRoundNum ? ' next-up' : ''}">
+                                            <div class="overview-calendar-round">${race.round === nextRoundNum ? 'PROXIMA - ' : ''}R${race.round}</div>
+                                            <div class="overview-calendar-name">${race.name}</div>
+                                            <div class="overview-calendar-track">${race.track}</div>
+                                            <div class="overview-calendar-date">${formatRaceDate(race.date)}</div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            // === LAST UPDATED ===
+            const exportedAt = championship?.exported_at || currentActiveData?.exported_at;
+            if (exportedAt) {
+                const date = new Date(exportedAt);
+                html += `<p class="last-updated">Ultima actualizacion: ${date.toLocaleString('es-MX', {
+                    year: 'numeric', month: 'long', day: 'numeric',
+                    hour: '2-digit', minute: '2-digit'
+                })}</p>`;
+            }
+
+            container.innerHTML = html;
+        }
+
+        loadAllData();
+        setInterval(loadAllData, 120000);
+    </script>
+</body>
+</html>
+            // === UPCOMING CALENDAR ===
+            if (currentActiveData && currentActiveData.races) {
+                const allRaces = currentActiveData.races;
+                const plannedRaces = allRaces.filter(r => r.planned);
+                if (plannedRaces.length > 0) {
+                    // Find the next upcoming race
+                    const now = new Date();
+                    let nextRoundNum = null;
+                    for (const race of plannedRaces) {
+                        if (race.date && new Date(race.date) >= now) {
+                            nextRoundNum = race.round;
+                            break;
+                        }
+                    }
+
+                    html += `
+                        <div class="overview-card full-width">
+                            <div class="overview-card-header">Calendario ${currentActiveSeason.name}</div>
+                            <div class="overview-card-body">
+                                <div class="overview-calendar-grid">
+                                    ${plannedRaces.map(race => `
+                                        <div class="overview-calendar-item${race.round === nextRoundNum ? ' next-up' : ''}">
+                                            <div class="overview-calendar-round">${race.round === nextRoundNum ? 'PROXIMA - ' : ''}R${race.round}</div>
+                                            <div class="overview-calendar-name">${race.name}</div>
+                                            <div class="overview-calendar-track">${race.track}</div>
+                                            <div class="overview-calendar-date">${formatRaceDate(race.date)}</div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            // === LAST UPDATED ===
+            const exportedAt = championship?.exported_at || currentActiveData?.exported_at;
+            if (exportedAt) {
+                const date = new Date(exportedAt);
+                html += `<p class="last-updated">Ultima actualizacion: ${date.toLocaleString('es-MX', {
+                    year: 'numeric', month: 'long', day: 'numeric',
+                    hour: '2-digit', minute: '2-digit'
+                })}</p>`;
+            }
+
+            container.innerHTML = html;
+        }
+
+        loadAllData();
+        setInterval(loadAllData, 120000);
+    </script>
+</body>
+</html>
+            // === UPCOMING CALENDAR ===
+            if (currentActiveData && currentActiveData.races) {
+                const allRaces = currentActiveData.races;
+                const plannedRaces = allRaces.filter(r => r.planned);
+                if (plannedRaces.length > 0) {
+                    // Find the next upcoming race
+                    const now = new Date();
+                    let nextRoundNum = null;
+                    for (const race of plannedRaces) {
+                        if (race.date && new Date(race.date) >= now) {
+                            nextRoundNum = race.round;
+                            break;
+                        }
+                    }
+
+                    html += `
+                        <div class="overview-card full-width">
+                            <div class="overview-card-header">Calendario ${currentActiveSeason.name}</div>
+                            <div class="overview-card-body">
+                                <div class="overview-calendar-grid">
+                                    ${plannedRaces.map(race => `
+                                        <div class="overview-calendar-item${race.round === nextRoundNum ? ' next-up' : ''}">
+                                            <div class="overview-calendar-round">${race.round === nextRoundNum ? 'PROXIMA - ' : ''}R${race.round}</div>
+                                            <div class="overview-calendar-name">${race.name}</div>
+                                            <div class="overview-calendar-track">${race.track}</div>
+                                            <div class="overview-calendar-date">${formatRaceDate(race.date)}</div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            // === LAST UPDATED ===
+            const exportedAt = championship?.exported_at || currentActiveData?.exported_at;
+            if (exportedAt) {
+                const date = new Date(exportedAt);
+                html += `<p class="last-updated">Ultima actualizacion: ${date.toLocaleString('es-MX', {
+                    year: 'numeric', month: 'long', day: 'numeric',
+                    hour: '2-digit', minute: '2-digit'
+                })}</p>`;
+            }
+
+            container.innerHTML = html;
+        }
+
+        loadAllData();
+        setInterval(loadAllData, 120000);
+    </script>
+</body>
+</html>
             // === UPCOMING CALENDAR ===
             if (currentActiveData && currentActiveData.races) {
                 const allRaces = currentActiveData.races;
