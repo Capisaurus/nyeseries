@@ -16,6 +16,7 @@
         {
             "driver_id": "mtsfrg",
             "name": "Ulises",
+            "number": "",
             "team": "Haas",
             "position": 1,
             "points": 78.0,
@@ -33,6 +34,7 @@
         {
             "driver_id": "sz_angel",
             "name": "Sz Angel",
+            "number": "",
             "team": "Mercedes",
             "position": 2,
             "points": 54.0,
@@ -50,6 +52,7 @@
         {
             "driver_id": "leozever",
             "name": "Leozever",
+            "number": "",
             "team": "Williams",
             "position": 3,
             "points": 45.0,
@@ -67,6 +70,7 @@
         {
             "driver_id": "memingow",
             "name": "Memingow",
+            "number": "",
             "team": "Red Bull",
             "position": 4,
             "points": 36.0,
@@ -84,6 +88,7 @@
         {
             "driver_id": "gabriel.b01",
             "name": "Gabriel.b01",
+            "number": "",
             "team": "Sauber",
             "position": 5,
             "points": 30.0,
@@ -101,6 +106,7 @@
         {
             "driver_id": "puffy",
             "name": "Puffy",
+            "number": "44",
             "team": "Haas",
             "position": 6,
             "points": 24.0,
@@ -118,6 +124,7 @@
         {
             "driver_id": "termopolio",
             "name": "Termopolio",
+            "number": "",
             "team": "Red Bull",
             "position": 7,
             "points": 18.0,
@@ -135,6 +142,7 @@
         {
             "driver_id": "sgc_lionel",
             "name": "SGC Lionel",
+            "number": "",
             "team": "Reserva",
             "position": 8,
             "points": 12.0,
@@ -152,6 +160,7 @@
         {
             "driver_id": "siegerng",
             "name": "SiegerNG",
+            "number": "",
             "team": "Aston Martin",
             "position": 9,
             "points": 6.0,
@@ -169,6 +178,7 @@
         {
             "driver_id": "capisaurus",
             "name": "Capisaurus",
+            "number": "76",
             "team": "Ferrari",
             "position": 10,
             "points": 3.0,
@@ -185,5 +195,5 @@
         }
     ],
     "sprint_results": [],
-    "exported_at": "2026-02-21T19:26:23"
+    "exported_at": "2026-02-21T19:40:46"
 }
