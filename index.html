@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,11 +43,11 @@
         .header {
             background: linear-gradient(90deg, var(--primary-gray-dark) 0%, var(--primary-gray-medium) 100%);
             padding: 30px 20px;
-            box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
             position: sticky;
             top: 0;
             z-index: 100;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .header-content {
@@ -62,7 +63,7 @@
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
         }
 
         .subtitle {
@@ -98,7 +99,7 @@
         .nav-select {
             background: var(--primary-gray-light);
             color: var(--f2-white);
-            border: 1px solid rgba(255,255,255,0.15);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 10px;
             padding: 12px 14px;
             font-weight: 600;
@@ -110,7 +111,7 @@
 
         .nav-select:focus {
             border-color: var(--f2-blue-accent);
-            box-shadow: 0 0 0 2px rgba(51,153,255,0.25);
+            box-shadow: 0 0 0 2px rgba(51, 153, 255, 0.25);
         }
 
         .main-content {
@@ -123,6 +124,7 @@
             max-width: 1600px;
             margin: 0 auto;
             padding: 24px 20px 40px;
+            overflow: hidden;
         }
 
         .stats-grid {
@@ -136,14 +138,14 @@
             background: linear-gradient(135deg, var(--f2-white) 0%, var(--f2-bg-light) 100%);
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
             border-left: 4px solid var(--f2-blue-accent);
             transition: all 0.3s ease;
         }
 
         .stat-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 34px rgba(0,0,0,0.2);
+            box-shadow: 0 12px 34px rgba(0, 0, 0, 0.2);
             border-left-color: var(--f2-orange);
         }
 
@@ -168,20 +170,23 @@
             border-radius: 15px;
             padding: 30px;
             margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-            border: 1px solid rgba(0,0,0,0.04);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            max-width: 100%;
+            overflow: hidden;
         }
 
         .section-details {
             background: var(--f2-white);
             border-radius: 15px;
             margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-            border: 1px solid rgba(0,0,0,0.04);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(0, 0, 0, 0.04);
             overflow: hidden;
+            max-width: 100%;
         }
 
-        .section-details > summary {
+        .section-details>summary {
             list-style: none;
             cursor: pointer;
             padding: 24px 30px;
@@ -194,11 +199,11 @@
             user-select: none;
         }
 
-        .section-details[open] > summary {
+        .section-details[open]>summary {
             border-bottom-color: var(--f2-blue-light);
         }
 
-        .section-details > summary::-webkit-details-marker {
+        .section-details>summary::-webkit-details-marker {
             display: none;
         }
 
@@ -221,14 +226,19 @@
             overflow-x: auto;
             overflow-y: auto;
             border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
             max-height: 500px;
             position: relative;
             width: 100%;
             max-width: 100vw;
             margin: 0 auto 12px auto;
             background: var(--f2-white);
-            border: 1px solid rgba(0,0,0,0.03);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        /* Standings table always shows horizontal scrollbar */
+        #standings-section .table-container {
+            overflow-x: scroll;
         }
 
         table {
@@ -237,6 +247,12 @@
             border-collapse: separate;
             border-spacing: 0;
             font-size: 0.95em;
+        }
+
+        /* Standings table: allow natural width for horizontal scroll */
+        #standings-section table {
+            width: max-content;
+            min-width: 100%;
         }
 
         thead {
@@ -267,50 +283,6 @@
 
         td {
             padding: 10px 8px;
-                    @media (max-width: 700px) {
-                        .container {
-                            padding: 8px 0 16px 0;
-                        }
-                        .section, .section-details {
-                            border-radius: 7px;
-                            margin-bottom: 8px;
-                            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-                            padding: 8px 2px 8px 2px;
-                        }
-                        .section-body {
-                            padding: 0 2px 8px 2px;
-                        }
-                        .table-container {
-                            max-width: 95vw;
-                            margin: 0 auto 8px auto;
-                            border-radius: 12px;
-                            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-                            padding: 0;
-                        }
-                        table {
-                            font-size: 0.78em !important;
-                            min-width: 220px;
-                        }
-                        th, td {
-                            padding: 6px 4px !important;
-                        }
-                        #standings-section .table-container {
-                            max-width: 94vw !important;
-                            min-width: 0 !important;
-                        }
-                        #standings-section table {
-                            font-size: 0.78em !important;
-                            width: 100% !important;
-                            min-width: 0 !important;
-                        }
-                        #standings-section th, #standings-section td {
-                            padding: 6px 4px !important;
-                        }
-                        /* Match overview card width */
-                        .overview-card, .table-container {
-                            max-width: 94vw !important;
-                        }
-                    }
             border-bottom: 1px solid var(--f2-bg-light);
             color: var(--f2-gray-dark);
             background: var(--f2-white);
@@ -341,22 +313,50 @@
             color: var(--f2-gray-dark);
             font-size: 1em;
             position: sticky;
-            left: 60px;
+            left: 25px;
             background: var(--f2-bg-light);
             z-index: 1;
+            white-space: nowrap;
+            min-width: 120px;
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
             transition: width 0.2s, font-size 0.2s;
         }
 
+        /* Ensure sticky columns have OPAQUE background on hover/podium */
+        tbody tr:hover .position,
+        tbody tr:hover .driver-name {
+            background: #dbeeff;
+        }
+
+        .podium-1 .position,
+        .podium-1 .driver-name {
+            background: #fff3cc;
+        }
+
+        .podium-2 .position,
+        .podium-2 .driver-name {
+            background: #e8e8e8;
+        }
+
+        .podium-3 .position,
+        .podium-3 .driver-name {
+            background: #f0dcc4;
+        }
+
         .driver-name.initials-only {
-            font-size: 0.95em;
+            font-size: 0.85em;
             letter-spacing: 1px;
-            min-width: 32px;
-            max-width: 32px;
+            min-width: 40px;
+            max-width: 40px;
             overflow: hidden;
             white-space: nowrap;
             text-align: center;
+            padding-left: 2px;
+            padding-right: 2px;
         }
-        
+
 
         .driver-name.clickable {
             color: var(--f2-blue-accent);
@@ -370,7 +370,7 @@
             padding: 18px;
             background: var(--f2-bg-light);
             border-radius: 12px;
-            border: 1px solid rgba(0,0,0,0.06);
+            border: 1px solid rgba(0, 0, 0, 0.06);
             display: grid;
             gap: 12px;
         }
@@ -398,8 +398,7 @@
             color: var(--f2-gray-medium);
             font-size: 0.85em;
             font-weight: 500;
-            background: var(--f2-bg-light);
-            /* No sticky for team column */
+            white-space: nowrap;
         }
 
         .points {
@@ -417,42 +416,55 @@
         }
 
         .podium-1 {
-            background: linear-gradient(90deg, rgba(255,215,0,0.3) 0%, rgba(255,215,0,0.1) 100%);
+            background: linear-gradient(90deg, rgba(255, 215, 0, 0.3) 0%, rgba(255, 215, 0, 0.1) 100%);
             border-left: 5px solid var(--gold);
         }
 
         .podium-2 {
-            background: linear-gradient(90deg, rgba(192,192,192,0.3) 0%, rgba(192,192,192,0.1) 100%);
+            background: linear-gradient(90deg, rgba(192, 192, 192, 0.3) 0%, rgba(192, 192, 192, 0.1) 100%);
             border-left: 5px solid var(--silver);
         }
 
         .podium-3 {
-            background: linear-gradient(90deg, rgba(205,127,50,0.3) 0%, rgba(205,127,50,0.1) 100%);
+            background: linear-gradient(90deg, rgba(205, 127, 50, 0.3) 0%, rgba(205, 127, 50, 0.1) 100%);
             border-left: 5px solid var(--bronze);
         }
 
-        .penalty-low { color: #10b981; font-weight: 600; }
-        .penalty-medium { color: #f59e0b; font-weight: 700; }
-        .penalty-high { color: #ef4444; font-weight: 800; }
+        .penalty-low {
+            color: #10b981;
+            font-weight: 600;
+        }
+
+        .penalty-medium {
+            color: #f59e0b;
+            font-weight: 700;
+        }
+
+        .penalty-high {
+            color: #ef4444;
+            font-weight: 800;
+        }
 
         .race-card {
             background: var(--f2-white);
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0,51,102,0.1);
+            box-shadow: 0 4px 15px rgba(0, 51, 102, 0.1);
             border-left: 5px solid var(--f2-blue-light);
             transition: all 0.3s ease;
+            max-width: 100%;
+            overflow: hidden;
         }
 
         .race-card:hover {
-            box-shadow: 0 8px 25px rgba(0,51,102,0.2);
+            box-shadow: 0 8px 25px rgba(0, 51, 102, 0.2);
             transform: translateX(5px);
         }
 
         .race-card.planned {
             border-left-color: var(--f2-orange);
-            background: linear-gradient(90deg, rgba(255,102,0,0.05) 0%, var(--f2-white) 100%);
+            background: linear-gradient(90deg, rgba(255, 102, 0, 0.05) 0%, var(--f2-white) 100%);
         }
 
         .races-grid {
@@ -524,7 +536,7 @@
             background: var(--f2-white);
             color: var(--f2-gray-dark);
             border: 1px solid var(--f2-bg-light);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .chart-container {
@@ -534,7 +546,7 @@
             background: var(--f2-white);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
 
         .team-stats-grid {
@@ -549,7 +561,7 @@
             padding: 20px;
             border-radius: 10px;
             border-left: 5px solid var(--f2-blue-medium);
-            box-shadow: 0 4px 12px rgba(0,51,102,0.1);
+            box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
         }
 
         .team-card h4 {
@@ -577,12 +589,12 @@
 
         .last-updated {
             text-align: center;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255, 255, 255, 0.9);
             margin-top: 30px;
             font-size: 0.9em;
             font-weight: 500;
             padding: 15px;
-            background: rgba(0,51,102,0.3);
+            background: rgba(0, 51, 102, 0.3);
             border-radius: 8px;
         }
 
@@ -606,17 +618,17 @@
             transition: all 0.3s ease;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
         }
 
         .season-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 18px rgba(0,51,102,0.35);
+            box-shadow: 0 6px 18px rgba(0, 51, 102, 0.35);
         }
 
         .season-btn.active {
             background: linear-gradient(135deg, var(--f2-blue-accent) 0%, #5bb2ff 100%);
-            box-shadow: 0 8px 20px rgba(51,153,255,0.4);
+            box-shadow: 0 8px 20px rgba(51, 153, 255, 0.4);
         }
 
         .historical-stats-grid {
@@ -630,14 +642,14 @@
             background: linear-gradient(135deg, var(--f2-white) 0%, var(--f2-bg-light) 100%);
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0,51,102,0.15);
+            box-shadow: 0 6px 20px rgba(0, 51, 102, 0.15);
             border-left: 4px solid var(--f2-orange);
             transition: all 0.3s ease;
         }
 
         .historical-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,51,102,0.25);
+            box-shadow: 0 10px 30px rgba(0, 51, 102, 0.25);
         }
 
         .historical-card h3 {
@@ -684,7 +696,7 @@
             background: linear-gradient(135deg, var(--f2-white) 0%, #f7f9fc 100%);
             border-radius: 12px;
             padding: 20px 22px;
-            box-shadow: 0 6px 16px rgba(0,51,102,0.12);
+            box-shadow: 0 6px 16px rgba(0, 51, 102, 0.12);
             border-left: 4px solid var(--f2-blue-accent);
         }
 
@@ -725,7 +737,7 @@
             background: var(--f2-white);
             border-radius: 12px;
             padding: 25px;
-            box-shadow: 0 4px 15px rgba(0,51,102,0.1);
+            box-shadow: 0 4px 15px rgba(0, 51, 102, 0.1);
             border-top: 5px solid var(--f2-blue-medium);
         }
 
@@ -774,7 +786,7 @@
             text-align: center;
             margin: 20px 0;
             font-weight: 600;
-            box-shadow: 0 4px 15px rgba(239,68,68,0.3);
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
         }
 
         .no-data {
@@ -785,24 +797,133 @@
         }
 
         @media (max-width: 1024px) {
-            h1 { font-size: 2.2em; }
-            .chart-container { height: 550px; }
+            h1 {
+                font-size: 2.2em;
+            }
+
+            .chart-container {
+                height: 550px;
+            }
         }
 
         @media (max-width: 768px) {
-            h1 { font-size: 1.8em; }
-            .stats-grid { grid-template-columns: repeat(2, 1fr); }
-            .chart-container { height: 400px; }
-            .section { padding: 20px; }
-            table { font-size: 0.85em; }
-            th, td { padding: 10px 8px; }
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .chart-container {
+                height: 400px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            th,
+            td {
+                padding: 10px 8px;
+            }
         }
 
         @media (max-width: 480px) {
-            .stats-grid { grid-template-columns: 1fr; }
-            .header { padding: 20px 15px; }
-            h1 { font-size: 1.5em; }
-            .chart-container { height: 320px; }
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .chart-container {
+                height: 320px;
+            }
+        }
+
+        /* Mobile-specific layout fixes (previously nested inside td incorrectly) */
+        @media (max-width: 700px) {
+            .container {
+                padding: 8px 0 16px 0;
+            }
+
+            .section,
+            .section-details {
+                border-radius: 7px;
+                margin-bottom: 8px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+                padding: 8px 2px 8px 2px;
+            }
+
+            .section-body {
+                padding: 0 2px 8px 2px;
+            }
+
+            .table-container {
+                max-width: 95vw;
+                margin: 0 auto 8px auto;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+                padding: 0;
+            }
+
+            table {
+                font-size: 0.78em !important;
+                min-width: 220px;
+            }
+
+            th,
+            td {
+                padding: 6px 4px !important;
+            }
+
+            #standings-section .table-container {
+                max-width: 94vw !important;
+                min-width: 0 !important;
+            }
+
+            #standings-section table {
+                font-size: 0.78em !important;
+                width: 100% !important;
+                min-width: 0 !important;
+            }
+
+            #standings-section th,
+            #standings-section td {
+                padding: 6px 4px !important;
+            }
+
+            .overview-card,
+            .table-container {
+                max-width: 94vw !important;
+            }
+
+            .overview-banner-title {
+                font-size: 1.6em;
+            }
+
+            .countdown-number,
+            .overview-countdown-big {
+                font-size: 2.5em;
+            }
+
+            .season-comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .overview-card .overview-card-body iframe {
+                height: 350px !important;
+            }
         }
 
         /* ===== OVERVIEW STYLES ===== */
@@ -817,7 +938,7 @@
             text-align: center;
             color: var(--f2-white);
             margin-bottom: 30px;
-            box-shadow: 0 12px 40px rgba(0,51,102,0.3);
+            box-shadow: 0 12px 40px rgba(0, 51, 102, 0.3);
             position: relative;
             overflow: hidden;
         }
@@ -829,7 +950,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, transparent 70%);
         }
 
         .overview-banner-badge {
@@ -877,7 +998,7 @@
             font-weight: 900;
             line-height: 1;
             color: var(--f2-orange);
-            text-shadow: 0 4px 15px rgba(255,102,0,0.4);
+            text-shadow: 0 4px 15px rgba(255, 102, 0, 0.4);
         }
 
         .countdown-label {
@@ -897,7 +1018,7 @@
             width: 80%;
             max-width: 400px;
             height: 8px;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             border-radius: 10px;
             margin: 15px auto;
             overflow: hidden;
@@ -923,7 +1044,7 @@
             border-radius: 12px;
             padding: 22px 18px;
             text-align: center;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
             border-top: 4px solid var(--f2-blue-accent);
             transition: transform 0.3s ease;
         }
@@ -957,21 +1078,29 @@
         }
 
         @media (max-width: 900px) {
-            .overview-two-col { grid-template-columns: 1fr; }
-            .overview-banner-title { font-size: 2em; }
-            .countdown-number { font-size: 3em; }
+            .overview-two-col {
+                grid-template-columns: 1fr;
+            }
+
+            .overview-banner-title {
+                font-size: 2em;
+            }
+
+            .countdown-number {
+                font-size: 3em;
+            }
         }
 
         .overview-card {
             background: var(--f2-white);
             border-radius: 14px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             transition: box-shadow 0.3s ease;
         }
 
         .overview-card:hover {
-            box-shadow: 0 12px 35px rgba(0,0,0,0.16);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.16);
         }
 
         .overview-card.full-width {
@@ -1028,21 +1157,21 @@
             padding: 14px 12px;
             border-radius: 10px;
             text-align: center;
-            border: 1px solid rgba(0,0,0,0.06);
+            border: 1px solid rgba(0, 0, 0, 0.06);
         }
 
         .overview-podium-item.podium-1 {
-            background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05));
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
             border-color: var(--gold);
         }
 
         .overview-podium-item.podium-2 {
-            background: linear-gradient(135deg, rgba(192,192,192,0.15), rgba(192,192,192,0.05));
+            background: linear-gradient(135deg, rgba(192, 192, 192, 0.15), rgba(192, 192, 192, 0.05));
             border-color: var(--silver);
         }
 
         .overview-podium-item.podium-3 {
-            background: linear-gradient(135deg, rgba(205,127,50,0.15), rgba(205,127,50,0.05));
+            background: linear-gradient(135deg, rgba(205, 127, 50, 0.15), rgba(205, 127, 50, 0.05));
             border-color: var(--bronze);
         }
 
@@ -1134,21 +1263,21 @@
         }
 
         .overview-standing-row:hover {
-            background: rgba(51,153,255,0.06);
+            background: rgba(51, 153, 255, 0.06);
         }
 
         .overview-standing-row.podium-1 {
-            background: linear-gradient(90deg, rgba(255,215,0,0.18), transparent);
+            background: linear-gradient(90deg, rgba(255, 215, 0, 0.18), transparent);
             border-left: 4px solid var(--gold);
         }
 
         .overview-standing-row.podium-2 {
-            background: linear-gradient(90deg, rgba(192,192,192,0.18), transparent);
+            background: linear-gradient(90deg, rgba(192, 192, 192, 0.18), transparent);
             border-left: 4px solid var(--silver);
         }
 
         .overview-standing-row.podium-3 {
-            background: linear-gradient(90deg, rgba(205,127,50,0.18), transparent);
+            background: linear-gradient(90deg, rgba(205, 127, 50, 0.18), transparent);
             border-left: 4px solid var(--bronze);
         }
 
@@ -1232,13 +1361,13 @@
 
         .overview-calendar-item:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .overview-calendar-item.next-up {
             border-left-color: var(--f2-blue-accent);
-            background: linear-gradient(135deg, rgba(51,153,255,0.08), var(--f2-bg-light));
-            box-shadow: 0 4px 15px rgba(51,153,255,0.15);
+            background: linear-gradient(135deg, rgba(51, 153, 255, 0.08), var(--f2-bg-light));
+            box-shadow: 0 4px 15px rgba(51, 153, 255, 0.15);
         }
 
         .overview-calendar-round {
@@ -1269,12 +1398,21 @@
         }
 
         @media (max-width: 768px) {
-            .overview-podium { flex-direction: column; }
-            .overview-standing-row { grid-template-columns: 40px 1fr auto; }
-            .overview-standing-team { display: none; }
+            .overview-podium {
+                flex-direction: column;
+            }
+
+            .overview-standing-row {
+                grid-template-columns: 40px 1fr auto;
+            }
+
+            .overview-standing-team {
+                display: none;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="app-layout">
         <main class="main-content">
@@ -1290,170 +1428,170 @@
             </div>
 
             <div class="container">
-        <!-- Overview Container (solo visible en vista Overview) -->
-        <div id="overview-container"></div>
+                <!-- Overview Container (solo visible en vista Overview) -->
+                <div id="overview-container"></div>
 
-        <!-- Stats Cards -->
-        <div class="stats-grid" id="stats-grid">
-            <div class="stat-card">
-                <h3>Ronda Actual</h3>
-                <div class="value" id="current-round">-</div>
-            </div>
-            <div class="stat-card">
-                <h3>Total Pilotos</h3>
-                <div class="value" id="total-drivers">-</div>
-            </div>
-            <div class="stat-card">
-                <h3>Carreras Disputadas</h3>
-                <div class="value" id="completed-races">-</div>
-            </div>
-            <div class="stat-card">
-                <h3>Equipos</h3>
-                <div class="value" id="total-teams">-</div>
-            </div>
-        </div>
-
-        <details class="section-details" id="global-insights-section" open>
-            <summary>Resumen general</summary>
-            <div class="section-body">
-                <div class="insight-grid" id="global-insights-grid"></div>
-                <div class="section-subtitle">Lideres del rendimiento</div>
-                <div class="insight-grid" id="leader-insights-grid"></div>
-            </div>
-        </details>
-
-        <details class="section-details" id="historical-section" style="display: none;">
-            <summary>Historico</summary>
-            <div class="section-body">
-                <div class="historical-stats-grid" id="historical-stats-container"></div>
-                <div class="section-subtitle">Temporadas</div>
-                <div class="season-comparison-grid" id="season-comparison-container"></div>
-            </div>
-        </details>
-
-        <details class="section-details" id="last-race-section" open>
-            <summary>Ultima carrera</summary>
-            <div class="section-body">
-                <div id="last-race-container"></div>
-            </div>
-        </details>
-
-        <details class="section-details" id="next-race-section" open>
-            <summary>Próxima carrera</summary>
-            <div class="section-body">
-                <div id="next-race-container"></div>
-            </div>
-        </details>
-
-
-
-        <details class="section-details" id="upcoming-calendar-section" open>
-            <summary>Calendario Próxima Temporada</summary>
-            <div class="section-body">
-                <div id="upcoming-calendar-content"></div>
-            </div>
-        </details>
-
-        <details class="section-details" id="standings-section" open>
-            <summary id="standings-title">Clasificacion general</summary>
-            <div class="section-body">
-                <div class="table-container">
-                    <table>
-                        <thead id="standings-head">
-                            <tr>
-                                <th class="center">Pos</th>
-                                <th>Piloto</th>
-                                <th>Equipo</th>
-                                <th class="center">Puntos</th>
-                                <th class="center">Victorias</th>
-                                <th class="center">Podios</th>
-                                <th class="center">FL</th>
-                                <th class="center">DOTD</th>
-                            </tr>
-                        </thead>
-                        <tbody id="standings-body"></tbody>
-                    </table>
+                <!-- Stats Cards -->
+                <div class="stats-grid" id="stats-grid">
+                    <div class="stat-card">
+                        <h3>Ronda Actual</h3>
+                        <div class="value" id="current-round">-</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Pilotos</h3>
+                        <div class="value" id="total-drivers">-</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Carreras Disputadas</h3>
+                        <div class="value" id="completed-races">-</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Equipos</h3>
+                        <div class="value" id="total-teams">-</div>
+                    </div>
                 </div>
-            </div>
-        </details>
+
+                <details class="section-details" id="global-insights-section" open>
+                    <summary>Resumen general</summary>
+                    <div class="section-body">
+                        <div class="insight-grid" id="global-insights-grid"></div>
+                        <div class="section-subtitle">Lideres del rendimiento</div>
+                        <div class="insight-grid" id="leader-insights-grid"></div>
+                    </div>
+                </details>
+
+                <details class="section-details" id="historical-section" style="display: none;">
+                    <summary>Historico</summary>
+                    <div class="section-body">
+                        <div class="historical-stats-grid" id="historical-stats-container"></div>
+                        <div class="section-subtitle">Temporadas</div>
+                        <div class="season-comparison-grid" id="season-comparison-container"></div>
+                    </div>
+                </details>
+
+                <details class="section-details" id="last-race-section" open>
+                    <summary>Ultima carrera</summary>
+                    <div class="section-body">
+                        <div id="last-race-container"></div>
+                    </div>
+                </details>
+
+                <details class="section-details" id="next-race-section" open>
+                    <summary>Próxima carrera</summary>
+                    <div class="section-body">
+                        <div id="next-race-container"></div>
+                    </div>
+                </details>
 
 
 
-        <details class="section-details" id="progression-section">
-            <summary>Progresión del Campeonato</summary>
-            <div class="section-body">
-                <div class="chart-container" id="progression-chart-container">
-                    <canvas id="progressionChart"></canvas>
-                </div>
-            </div>
-        </details>
+                <details class="section-details" id="upcoming-calendar-section" open>
+                    <summary>Calendario Próxima Temporada</summary>
+                    <div class="section-body">
+                        <div id="upcoming-calendar-content"></div>
+                    </div>
+                </details>
 
-        <details class="section-details" id="attendance-section">
-            <summary>Asistencia</summary>
-            <div class="section-body">
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Piloto</th>
-                                <th>Equipo</th>
-                                <th class="center">Carreras Asistidas</th>
-                                <th class="center">% Asistencia</th>
-                            </tr>
-                        </thead>
-                        <tbody id="attendance-body"></tbody>
-                    </table>
-                </div>
-            </div>
-        </details>
-
-        <details class="section-details" id="driver-stats-section">
-            <summary>   piloto</summary>
-            <div class="section-body">
-                <div class="race-selector">
-                    <label for="driver-select" class="race-select-label">Selecciona un piloto</label>
-                    <select id="driver-select" class="nav-select"></select>
-                </div>
-                <div id="driver-detail" class="driver-detail">
-                    <div class="driver-detail-title">Selecciona un piloto para ver su detalle</div>
-                    <div class="driver-detail-grid"></div>
-                </div>
-            </div>
-        </details>
-
-        <details class="section-details" id="superlicense-section">
-            <summary>Puntos de Superlicencia</summary>
-            <div class="section-body">
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Piloto</th>
-                                <th>Equipo</th>
-                                <th class="center">Puntos de Penalización</th>
-                            </tr>
-                        </thead>
-                        <tbody id="superlicense-body"></tbody>
-                    </table>
-                </div>
-            </div>
-        </details>
-
-        <details class="section-details" id="team-stats-section">
-            <summary>Estadísticas por equipo</summary>
-            <div class="section-body">
-                <div class="team-stats-grid" id="team-stats-container"></div>
-            </div>
-        </details>
+                <details class="section-details" id="standings-section" open>
+                    <summary id="standings-title">Clasificacion general</summary>
+                    <div class="section-body">
+                        <div class="table-container">
+                            <table>
+                                <thead id="standings-head">
+                                    <tr>
+                                        <th class="center">Pos</th>
+                                        <th>Piloto</th>
+                                        <th>Equipo</th>
+                                        <th class="center">Puntos</th>
+                                        <th class="center">Victorias</th>
+                                        <th class="center">Podios</th>
+                                        <th class="center">FL</th>
+                                        <th class="center">DOTD</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="standings-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </details>
 
 
 
-        <details class="section-details" id="completed-races-section">
-            <summary>Carreras disputadas</summary>
-            <div class="section-body">
-                <div id="completed-races-container"></div>
-            </div>
-        </details>
+                <details class="section-details" id="progression-section">
+                    <summary>Progresión del Campeonato</summary>
+                    <div class="section-body">
+                        <div class="chart-container" id="progression-chart-container">
+                            <canvas id="progressionChart"></canvas>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="section-details" id="attendance-section">
+                    <summary>Asistencia</summary>
+                    <div class="section-body">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Piloto</th>
+                                        <th>Equipo</th>
+                                        <th class="center">Carreras Asistidas</th>
+                                        <th class="center">% Asistencia</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="attendance-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="section-details" id="driver-stats-section">
+                    <summary> piloto</summary>
+                    <div class="section-body">
+                        <div class="race-selector">
+                            <label for="driver-select" class="race-select-label">Selecciona un piloto</label>
+                            <select id="driver-select" class="nav-select"></select>
+                        </div>
+                        <div id="driver-detail" class="driver-detail">
+                            <div class="driver-detail-title">Selecciona un piloto para ver su detalle</div>
+                            <div class="driver-detail-grid"></div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="section-details" id="superlicense-section">
+                    <summary>Puntos de Superlicencia</summary>
+                    <div class="section-body">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Piloto</th>
+                                        <th>Equipo</th>
+                                        <th class="center">Puntos de Penalización</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="superlicense-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="section-details" id="team-stats-section">
+                    <summary>Estadísticas por equipo</summary>
+                    <div class="section-body">
+                        <div class="team-stats-grid" id="team-stats-container"></div>
+                    </div>
+                </details>
+
+
+
+                <details class="section-details" id="completed-races-section">
+                    <summary>Carreras disputadas</summary>
+                    <div class="section-body">
+                        <div id="completed-races-container"></div>
+                    </div>
+                </details>
 
                 <p class="last-updated" id="last-updated"></p>
             </div>
@@ -1461,55 +1599,42 @@
     </div>
 
     <script>
-                // Helper to get initials from a name
-                function getInitials(name) {
-                    if (!name) return '';
-                    const parts = name.trim().split(/\s+/);
-                    if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
-                    return (parts[0][0] + (parts[1]?.[0] || '')).toUpperCase();
-                }
+        // Helper to get initials from a name
+        function getInitials(name) {
+            if (!name) return '';
+            const parts = name.trim().split(/\s+/);
+            if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+            return (parts[0][0] + (parts[1]?.[0] || '')).toUpperCase();
+        }
 
-                // Add scroll event for standings table to show initials
-                function setupStandingsInitialsScroll() {
-                    const container = document.querySelector('#standings-section .table-container');
-                    if (!container) return;
-                    container.addEventListener('scroll', function() {
-                        const threshold = 60; // px, adjust as needed
-                        const driverCells = container.querySelectorAll('.driver-name');
-                        if (container.scrollLeft > threshold) {
-                            driverCells.forEach(cell => {
-                                if (!cell.dataset.initials) {
-                                    cell.dataset.initials = getInitials(cell.textContent);
-                                }
-                                cell.textContent = cell.dataset.initials;
-                                cell.classList.add('initials-only');
-                            });
-                        } else {
-                            driverCells.forEach(cell => {
-                                if (cell.dataset.fullname) {
-                                    cell.textContent = cell.dataset.fullname;
-                                }
-                                cell.classList.remove('initials-only');
-                            });
-                        }
-                    });
-                }
-
-                // Patch renderStandings to store full name in data attribute
-                const origRenderStandings = window.renderStandings;
-                window.renderStandings = function(...args) {
-                    origRenderStandings.apply(this, args);
-                    // After rendering, set data-fullname for each driver cell
-                    const container = document.querySelector('#standings-section .table-container');
-                    if (!container) return;
-                    const driverCells = container.querySelectorAll('.driver-name');
+        // Add scroll event for standings table to show initials
+        function setupStandingsInitialsScroll() {
+            const container = document.querySelector('#standings-section .table-container');
+            if (!container) return;
+            container.addEventListener('scroll', function () {
+                const threshold = 30; // px — trigger initials early for smoother UX
+                const driverCells = container.querySelectorAll('.driver-name');
+                if (container.scrollLeft > threshold) {
                     driverCells.forEach(cell => {
-                        cell.dataset.fullname = cell.textContent;
+                        if (!cell.dataset.initials) {
+                            cell.dataset.initials = getInitials(cell.textContent);
+                        }
+                        cell.textContent = cell.dataset.initials;
+                        cell.classList.add('initials-only');
                     });
-                };
+                } else {
+                    driverCells.forEach(cell => {
+                        if (cell.dataset.fullname) {
+                            cell.textContent = cell.dataset.fullname;
+                        }
+                        cell.classList.remove('initials-only');
+                    });
+                }
+            });
+        }
 
-                // Setup initials scroll on DOMContentLoaded
-                document.addEventListener('DOMContentLoaded', setupStandingsInitialsScroll);
+        // Setup initials scroll on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', setupStandingsInitialsScroll);
         let progressionChart = null;
         let currentSeason = null;
         let currentView = 'home';
@@ -1520,10 +1645,24 @@
         let globalNextRace = null;
         let currentStatsContext = null;
 
+        // Countdown helper: calculates days and hours until 8:00 PM GMT-6 on a given date
+        // GMT-6 offset: 20:00 GMT-6 = 02:00 UTC next day
+        function getCountdownTo8PM_GMT6(dateStr) {
+            const [y, m, d] = dateStr.split('T')[0].split('-').map(Number);
+            // Target: 20:00 GMT-6 = 20:00 + 6h offset = 26:00 = next day 02:00 UTC
+            const targetMs = Date.UTC(y, m - 1, d, 26, 0, 0);
+            const nowMs = Date.now();
+            const diffMs = targetMs - nowMs;
+            if (diffMs <= 0) return { days: 0, hours: 0 };
+            const totalHours = Math.ceil(diffMs / (1000 * 60 * 60));
+            const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+            return { days, hours: totalHours };
+        }
+
         function cleanJsonText(text) {
             return text.replace(/:\s*NaN\s*,/g, ': null,')
-                       .replace(/:\s*NaN\s*}/g, ': null}')
-                       .replace(/:\s*NaN\s*\]/g, ': null]');
+                .replace(/:\s*NaN\s*}/g, ': null}')
+                .replace(/:\s*NaN\s*\]/g, ': null]');
         }
 
         function titleCase(value) {
@@ -1575,10 +1714,10 @@
 
         function formatRaceDate(dateString) {
             if (!dateString) return 'Fecha por confirmar';
-            
+
             // Detectar si la fecha incluye componente de hora (tiene T o espacio con hora)
             const hasTime = dateString.includes('T') || /\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}/.test(dateString);
-            
+
             if (hasTime) {
                 // Formatear con fecha y hora
                 const date = new Date(dateString);
@@ -1737,9 +1876,9 @@
         async function loadAllData() {
             try {
                 const hasData = await detectSeasons();
-                
+
                 if (!hasData) {
-                    document.querySelector('.container').innerHTML = 
+                    document.querySelector('.container').innerHTML =
                         '<div class="error-message">No se encontraron temporadas. Verifica que existan Championship.json y archivos Series*.json o Academy*.json en la carpeta.</div>';
                     return;
                 }
@@ -1751,7 +1890,7 @@
                 switchView('home');
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.querySelector('.container').innerHTML = 
+                document.querySelector('.container').innerHTML =
                     '<div class="error-message">Error al cargar los datos: ' + error.message + '</div>';
             }
         }
@@ -1837,7 +1976,6 @@
             const superlicenseSection = document.getElementById('superlicense-section');
             const lastRaceSection = document.getElementById('last-race-section');
             const nextRaceSection = document.getElementById('next-race-section');
-            const upcomingCalSection = document.getElementById('upcoming-calendar-section');
             const progressionSection = document.getElementById('progression-section');
             const overviewContainer = document.getElementById('overview-container');
             const statsGrid = document.getElementById('stats-grid');
@@ -1859,7 +1997,6 @@
                 if (standingsSection) standingsSection.style.display = 'none';
                 if (lastRaceSection) lastRaceSection.style.display = 'none';
                 if (nextRaceSection) nextRaceSection.style.display = 'none';
-                if (upcomingCalSection) upcomingCalSection.style.display = 'none';
                 if (progressionSection) progressionSection.style.display = 'none';
             } else if (mode === 'overall') {
                 if (overviewContainer) overviewContainer.style.display = 'none';
@@ -1875,7 +2012,6 @@
                 if (superlicenseSection) superlicenseSection.style.display = 'block';
                 if (lastRaceSection) lastRaceSection.style.display = 'none';
                 if (nextRaceSection) nextRaceSection.style.display = 'none';
-                if (upcomingCalSection) upcomingCalSection.style.display = 'none';
                 if (progressionSection) progressionSection.style.display = 'block';
             } else {
                 // Detectar si la temporada está finalizada
@@ -1897,7 +2033,6 @@
                 if (superlicenseSection) superlicenseSection.style.display = 'block';
                 if (lastRaceSection) lastRaceSection.style.display = 'none';
                 if (nextRaceSection) nextRaceSection.style.display = 'none';
-                if (upcomingCalSection) upcomingCalSection.style.display = 'block';
                 if (progressionSection) progressionSection.style.display = 'block';
             }
         }
@@ -1909,21 +2044,16 @@
                 if (statCards[1]) statCards[1].textContent = 'Pilotos Históricos';
                 if (statCards[2]) statCards[2].textContent = 'Carreras Totales';
                 if (statCards[3]) statCards[3].textContent = 'Temporadas Completadas';
-                if (statCards[4]) statCards[4].textContent = 'Equipos Históricos';
-                // Eliminada la sexta tarjeta
             } else if (mode === 'season-finished') {
                 if (statCards[0]) statCards[0].textContent = 'Rondas Totales';
                 if (statCards[1]) statCards[1].textContent = 'Total Pilotos';
                 if (statCards[2]) statCards[2].textContent = 'Carreras Disputadas';
                 if (statCards[3]) statCards[3].textContent = 'Equipos';
-                // Eliminada la sexta tarjeta
             } else {
                 if (statCards[0]) statCards[0].textContent = 'Ronda Actual';
                 if (statCards[1]) statCards[1].textContent = 'Total Pilotos';
                 if (statCards[2]) statCards[2].textContent = 'Carreras Disputadas';
                 if (statCards[3]) statCards[3].textContent = 'Por Disputar';
-                if (statCards[4]) statCards[4].textContent = 'Equipos';
-                // Eliminada la sexta tarjeta
             }
         }
 
@@ -1957,7 +2087,7 @@
                 }
                 let roundsHeaders = '';
                 for (let i = 0; i < roundsCount; i++) {
-                    roundsHeaders += `<th class="center">R${i+1}</th>`;
+                    roundsHeaders += `<th class="center">R${i + 1}</th>`;
                 }
                 thead.innerHTML = `
                     <tr>
@@ -2006,7 +2136,7 @@
                 // Collect drivers
                 Object.entries(seasonData.drivers || {}).forEach(([guid, driver]) => {
                     totalDriversEver.add(guid);
-                    
+
                     if (!allDrivers.has(guid)) {
                         allDrivers.set(guid, {
                             name: driver.name,
@@ -2078,7 +2208,7 @@
             // Render historical stats
             const histContainer = document.getElementById('historical-stats-container');
             const leaderTitle = regularSeasons.length > completedSeasons.length ? 'Líder General Actual' : 'Campeón Histórico';
-            
+
             histContainer.innerHTML = `
                 <div class="historical-card">
                     <h3>${leaderTitle}</h3>
@@ -2159,7 +2289,7 @@
                 attendanceTotals,
                 totalRounds: totalRaces
             });
-            renderSuperlicenseTableOverall(driversArray, allTeams, allDrivers); // Se puede refactorizar de forma similar
+            renderSuperlicenseTable(null, null, driversArray, allTeams, allDrivers);
 
             // Clear other sections
             const teamContainer = document.getElementById('team-stats-container');
@@ -2170,9 +2300,9 @@
             if (completedContainer) {
                 completedContainer.innerHTML = '<div class="no-data">Vista histórica - Detalles de carreras disponibles en cada temporada individual</div>';
             }
-            const plannedSection = document.getElementById('planned-section');
-            if (plannedSection) {
-                plannedSection.style.display = 'none';
+            const plannedSec = document.getElementById('upcoming-calendar-section');
+            if (plannedSec) {
+                plannedSec.style.display = 'none';
             }
         }
 
@@ -2221,7 +2351,7 @@
 
             driversArray.slice(0, 20).forEach((driver, index) => {
                 const tr = document.createElement('tr');
-                
+
                 if (index === 0) tr.classList.add('podium-1');
                 else if (index === 1) tr.classList.add('podium-2');
                 else if (index === 2) tr.classList.add('podium-3');
@@ -2249,7 +2379,7 @@
         function renderHistoricalProgression(topDrivers) {
             const container = document.getElementById('progression-chart-container');
             if (!topDrivers || topDrivers.length === 0) {
-                if (container) container.innerHTML = 
+                if (container) container.innerHTML =
                     '<div class="no-data">No hay suficientes datos para mostrar la progresión</div>';
                 return;
             }
@@ -2379,7 +2509,7 @@
                 window.currentSeasonData = data;
             }
             if (!data) {
-                document.querySelector('.container').innerHTML = 
+                document.querySelector('.container').innerHTML =
                     '<div class="error-message">No se encontraron datos para esta temporada</div>';
                 return;
             }
@@ -2467,7 +2597,7 @@
             // Last updated
             if (data.standings_updated_at) {
                 const date = new Date(data.standings_updated_at);
-                document.getElementById('last-updated').textContent = 
+                document.getElementById('last-updated').textContent =
                     `Última actualización: ${date.toLocaleString('es-MX', {
                         year: 'numeric', month: 'long', day: 'numeric',
                         hour: '2-digit', minute: '2-digit'
@@ -2741,7 +2871,7 @@
         function renderProgressionChart(standings, races, isInProgress) {
             const container = document.getElementById('progression-chart-container');
             if (!standings || standings.length === 0 || races.length === 0) {
-                if (container) container.innerHTML = 
+                if (container) container.innerHTML =
                     '<div class="no-data">No hay suficientes datos para mostrar la progresión</div>';
                 return;
             }
@@ -2901,6 +3031,12 @@
             });
 
             attachDriverClickHandlers();
+
+            // Store full name data attribute for initials-on-scroll feature
+            const driverCells = document.querySelectorAll('#standings-section .driver-name');
+            driverCells.forEach(cell => {
+                cell.dataset.fullname = cell.textContent;
+            });
         }
 
         function renderTeamStats(drivers, teams, standings) {
@@ -2943,7 +3079,7 @@
             }
 
             const sortedTeams = Object.entries(teamStats)
-                .sort(([,a], [,b]) => b.totalPoints - a.totalPoints);
+                .sort(([, a], [, b]) => b.totalPoints - a.totalPoints);
 
             sortedTeams.forEach(([teamId, stats]) => {
                 const card = document.createElement('div');
@@ -3210,55 +3346,42 @@
             attachDriverClickHandlers();
         }
 
-        function renderSuperlicenseTable(drivers, teams) {
+        function renderSuperlicenseTable(drivers, teams, driversArrayOverall, allTeamsOverall, allDriversOverall) {
             const tbody = document.getElementById('superlicense-body');
             if (!tbody) return;
             tbody.innerHTML = '';
 
-            const driverEntries = Object.entries(drivers || {});
-            if (driverEntries.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="3" class="no-data">No hay datos de superlicencia</td></tr>';
-                return;
+            let rows = [];
+
+            if (driversArrayOverall) {
+                // Overall mode
+                if (driversArrayOverall.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="3" class="no-data">No hay datos de superlicencia</td></tr>';
+                    return;
+                }
+                rows = driversArrayOverall.map(driver => {
+                    const teamNames = Array.from(driver.teams)
+                        .map(tid => allTeamsOverall.get(tid)?.name)
+                        .filter(Boolean)
+                        .join(', ') || '-';
+                    const penalty = allDriversOverall.get(driver.guid)?.penalty_points || 0;
+                    return { driverId: driver.guid, name: driver.name, teamName: teamNames, points: penalty };
+                });
+            } else {
+                // Season mode
+                const driverEntries = Object.entries(drivers || {});
+                if (driverEntries.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="3" class="no-data">No hay datos de superlicencia</td></tr>';
+                    return;
+                }
+                rows = driverEntries.map(([driverId, driver]) => {
+                    const teamName = driver.team_id ? (teams[driver.team_id]?.name || '-') : '-';
+                    const points = driver.penalty_points || 0;
+                    return { driverId, name: driver.name, teamName, points };
+                });
             }
 
-            const rows = driverEntries.map(([driverId, driver]) => {
-                const teamName = driver.team_id ? (teams[driver.team_id]?.name || '-') : '-';
-                const points = driver.penalty_points || 0;
-                return { driverId, name: driver.name, teamName, points };
-            }).sort((a, b) => b.points - a.points);
-
-            rows.forEach(row => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td class="driver-name clickable" data-driver-id="${row.driverId}">${row.name}</td>
-                    <td class="team-name">${row.teamName}</td>
-                    <td class="points">${row.points.toFixed(1)}</td>
-                `;
-                tbody.appendChild(tr);
-            });
-
-            attachDriverClickHandlers();
-        }
-
-        function renderSuperlicenseTableOverall(driversArray, allTeams, allDrivers) {
-            const tbody = document.getElementById('superlicense-body');
-            if (!tbody) return;
-            tbody.innerHTML = '';
-
-            if (!driversArray || driversArray.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="3" class="no-data">No hay datos de superlicencia</td></tr>';
-                return;
-            }
-
-            const rows = driversArray.map(driver => {
-                const teamNames = Array.from(driver.teams)
-                    .map(tid => allTeams.get(tid)?.name)
-                    .filter(Boolean)
-                    .join(', ') || '-';
-
-                const penalty = allDrivers.get(driver.guid)?.penalty_points || 0;
-                return { driverId: driver.guid, name: driver.name, teamName: teamNames, points: penalty };
-            }).sort((a, b) => b.points - a.points);
+            rows.sort((a, b) => b.points - a.points);
 
             rows.forEach(row => {
                 const tr = document.createElement('tr');
@@ -3332,16 +3455,19 @@
         }
 
         function attachDriverClickHandlers() {
-            const tbody = document.getElementById('driver-stats-body');
             const standingsBody = document.getElementById('standings-body');
+            const attendanceBody = document.getElementById('attendance-body');
+            const superlicenseBody = document.getElementById('superlicense-body');
 
-            if (tbody) {
-                tbody.onclick = (event) => {
-                    const target = event.target.closest('[data-driver-id]');
-                    if (!target) return;
-                    showDriverDetail(target.dataset.driverId);
-                };
-            }
+            [attendanceBody, superlicenseBody].forEach(body => {
+                if (body) {
+                    body.onclick = (event) => {
+                        const target = event.target.closest('[data-driver-id]');
+                        if (!target) return;
+                        showDriverDetail(target.dataset.driverId);
+                    };
+                }
+            });
 
             if (standingsBody) {
                 standingsBody.onclick = (event) => {
@@ -3593,9 +3719,10 @@
             const firstRace = currentActiveData?.races?.[0];
 
             if (!hasStarted && firstRace) {
-                const raceDate = new Date(firstRace.date);
-                const now = new Date();
-                const diffDays = Math.ceil((raceDate - now) / (1000 * 60 * 60 * 24));
+                // Countdown to 8:00 PM GMT-6 on race date
+                const countdown1 = getCountdownTo8PM_GMT6(firstRace.date);
+                const countdownValue = countdown1.days > 0 ? countdown1.days : countdown1.hours;
+                const countdownLabel = countdown1.days > 0 ? 'dias para el inicio' : 'horas para el inicio';
 
                 html += `
                     <div class="overview-banner">
@@ -3603,8 +3730,8 @@
                         <div class="overview-banner-title">${currentActiveSeason.name}</div>
                         <div class="overview-banner-subtitle">${currentActiveData.total_rounds} carreras programadas</div>
                         <div class="overview-banner-countdown">
-                            <div class="countdown-number">${Math.max(0, diffDays)}</div>
-                            <div class="countdown-label">dias para el inicio</div>
+                            <div class="countdown-number">${Math.max(0, countdownValue)}</div>
+                            <div class="countdown-label">${countdownLabel}</div>
                         </div>
                         <div class="overview-banner-detail">${firstRace.name} &bull; ${firstRace.track} &bull; ${formatRaceDate(firstRace.date)}</div>
                     </div>
@@ -3691,22 +3818,18 @@
             html += '<div class="overview-card">';
             html += '<div class="overview-card-header next-race">Proxima Carrera</div>';
             if (nextRace) {
-                // Calcular días hasta la siguiente carrera usando horario de México
-                const rDate = new Date(nextRace.date);
-                // Convertir la fecha actual a horario de México (America/Mexico_City)
-                const now = new Date();
-                const nowMexico = new Date(now.toLocaleString('en-US', { timeZone: 'America/Mexico_City' }));
-                const rDateMexico = new Date(rDate.toLocaleString('en-US', { timeZone: 'America/Mexico_City' }));
-                const msPerDay = 1000 * 60 * 60 * 24;
-                const daysUntil = Math.ceil((rDateMexico - nowMexico) / msPerDay);
+                // Countdown to 8:00 PM GMT-6 on race date
+                const countdown2 = getCountdownTo8PM_GMT6(nextRace.date);
+                const countdownVal = countdown2.days > 0 ? countdown2.days : countdown2.hours;
+                const countdownLbl = countdown2.days > 0 ? 'dias' : 'horas';
 
                 html += `
                     <div class="overview-card-body">
                         <div class="overview-race-title">${nextRace.name}</div>
                         <div class="overview-race-info">${nextRace.track || ''}</div>
                         <div class="overview-countdown-inline">
-                            <div class="overview-countdown-big">${Math.max(0, daysUntil)}</div>
-                            <div class="overview-countdown-text">dias</div>
+                            <div class="overview-countdown-big">${Math.max(0, countdownVal)}</div>
+                            <div class="overview-countdown-text">${countdownLbl}</div>
                         </div>
                         <div class="overview-race-date">${formatRaceDate(nextRace.date)}</div>
                         ${nextRace.seasonName ? `<div class="overview-race-season">${nextRace.seasonName}</div>` : ''}
@@ -3728,7 +3851,10 @@
                             src="https://trip-editors-concept-drawn.trycloudflare.com/" 
                             width="100%" 
                             height="600" 
-                            style="border:none; border-radius: 0 0 10px 10px; overflow: hidden; display: block;">
+                            loading="lazy"
+                            style="border:none; border-radius: 0 0 10px 10px; overflow: hidden; display: block;"
+                            onerror="this.style.display='none'">
+                            <p style="text-align:center; padding:20px; color:var(--f2-gray-medium);">No se puede cargar el contenido.</p>
                         </iframe>
                     </div>
                 </div>
@@ -3868,10 +3994,5 @@
         setInterval(loadAllData, 12000000);
     </script>
 </body>
- </html>
-</body>
-</html>
-</body>
-</html>
 
-
+</html>
