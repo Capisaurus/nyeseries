@@ -1,6 +1,6 @@
 {
     "export_type": "race",
-    "championship_name": "ne series",
+    "championship_name": "NyE Series",
     "season_id": "series_6",
     "season_name": "",
     "race_id": "220",
@@ -185,5 +185,5 @@
         }
     ],
     "sprint_results": [],
-    "exported_at": "2026-02-11T15:11:35"
+    "exported_at": "2026-02-21T18:18:15"
 }
