@@ -1,6 +1,6 @@
 {
     "export_type": "season",
-    "championship_name": "ne series",
+    "championship_name": "NyE Series",
     "season_id": "series_2_sprint",
     "season_name": "Series 2 sprint",
     "total_rounds": 10,
@@ -916,8 +916,8 @@
         {
             "driver_id": "capisaurus",
             "name": "Capisaurus",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 94.0,
             "rounds": {
                 "1": {
@@ -1283,8 +1283,8 @@
         {
             "driver_id": "steelwarrior",
             "name": "SteelWarrior",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 31.0,
             "rounds": {
                 "3": {
@@ -1482,5 +1482,5 @@
             ]
         }
     ],
-    "exported_at": "2026-02-11T15:11:34"
+    "exported_at": "2026-02-21T18:17:55"
 }

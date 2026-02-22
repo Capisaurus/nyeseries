@@ -1,6 +1,6 @@
 {
     "export_type": "season",
-    "championship_name": "ne series",
+    "championship_name": "NyE Series",
     "season_id": "series_7",
     "season_name": "Series 7",
     "total_rounds": 15,
@@ -129,5 +129,5 @@
         }
     ],
     "drivers": [],
-    "exported_at": "2026-02-11T15:11:35"
+    "exported_at": "2026-02-21T18:17:56"
 }

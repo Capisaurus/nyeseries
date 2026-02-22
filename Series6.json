@@ -1,6 +1,6 @@
 {
     "export_type": "season",
-    "championship_name": "ne series",
+    "championship_name": "NyE Series",
     "season_id": "series_6",
     "season_name": "Series 6",
     "total_rounds": 12,
@@ -1677,8 +1677,8 @@
         {
             "driver_id": "puffy",
             "name": "Puffy",
-            "team": "Alpine",
-            "team_id": "team_alpine",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 132.0,
             "rounds": {
                 "1": {
@@ -1757,8 +1757,8 @@
         {
             "driver_id": "termopolio",
             "name": "Termopolio",
-            "team": "Williams",
-            "team_id": "team_williams",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 104.0,
             "rounds": {
                 "1": {
@@ -1902,8 +1902,8 @@
         {
             "driver_id": "dragon6590z",
             "name": "Dragon6590z",
-            "team": "Red Bull",
-            "team_id": "team_red_bull",
+            "team": "Haas",
+            "team_id": "team_haas",
             "total_points": 81.0,
             "rounds": {
                 "1": {
@@ -2073,8 +2073,8 @@
         {
             "driver_id": "gabriel.b01",
             "name": "Gabriel.b01",
-            "team": "Sauber",
-            "team_id": "team_sauber",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 52.0,
             "rounds": {
                 "1": {
@@ -2128,8 +2128,8 @@
         {
             "driver_id": "aaronxob",
             "name": "Aaronxob",
-            "team": "McLaren",
-            "team_id": "team_mclaren",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
             "total_points": 50.0,
             "rounds": {
                 "1": {
@@ -2188,8 +2188,8 @@
         {
             "driver_id": "siegerng",
             "name": "SiegerNG",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
             "total_points": 45.0,
             "rounds": {
                 "1": {
@@ -2263,8 +2263,8 @@
         {
             "driver_id": "capisaurus",
             "name": "Capisaurus",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 44.0,
             "rounds": {
                 "1": {
@@ -2348,8 +2348,8 @@
         {
             "driver_id": "pina",
             "name": "Pina",
-            "team": "Sauber",
-            "team_id": "team_sauber",
+            "team": "Williams",
+            "team_id": "team_williams",
             "total_points": 41.0,
             "rounds": {
                 "1": {
@@ -2938,5 +2938,5 @@
             ]
         }
     ],
-    "exported_at": "2026-02-11T15:11:35"
+    "exported_at": "2026-02-21T18:17:56"
 }

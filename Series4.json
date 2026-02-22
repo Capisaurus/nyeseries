@@ -1,6 +1,6 @@
 {
     "export_type": "season",
-    "championship_name": "ne series",
+    "championship_name": "NyE Series",
     "season_id": "series_4",
     "season_name": "Series 4",
     "total_rounds": 13,
@@ -1886,8 +1886,8 @@
         {
             "driver_id": "dragon6590z",
             "name": "Dragon6590z",
-            "team": "Red Bull",
-            "team_id": "team_red_bull",
+            "team": "Haas",
+            "team_id": "team_haas",
             "total_points": 199.0,
             "rounds": {
                 "1": {
@@ -2057,8 +2057,8 @@
         {
             "driver_id": "puffy",
             "name": "Puffy",
-            "team": "Alpine",
-            "team_id": "team_alpine",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 156.0,
             "rounds": {
                 "1": {
@@ -3044,8 +3044,8 @@
         {
             "driver_id": "capisaurus",
             "name": "Capisaurus",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 13.0,
             "rounds": {
                 "1": {
@@ -3472,5 +3472,5 @@
             ]
         }
     ],
-    "exported_at": "2026-02-11T15:11:34"
+    "exported_at": "2026-02-21T18:17:55"
 }

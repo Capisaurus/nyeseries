@@ -1,6 +1,6 @@
 {
     "export_type": "season",
-    "championship_name": "ne series",
+    "championship_name": "NyE Series",
     "season_id": "series_3",
     "season_name": "Series 3",
     "total_rounds": 14,
@@ -600,8 +600,8 @@
                 },
                 {
                     "position": 11,
-                    "driver": "LovingTheZero",
-                    "driver_id": "lovingthezero",
+                    "driver": "Termopolio",
+                    "driver_id": "termopolio",
                     "team": "Ferrari",
                     "points": 0.0,
                     "status": ""
@@ -633,7 +633,7 @@
             "planned": false,
             "winner": "Puffy",
             "fastest_lap": "Taco Antax",
-            "dotd": "LovingTheZero",
+            "dotd": "Termopolio",
             "results": [
                 {
                     "position": 1,
@@ -653,8 +653,8 @@
                 },
                 {
                     "position": 3,
-                    "driver": "LovingTheZero",
-                    "driver_id": "lovingthezero",
+                    "driver": "Termopolio",
+                    "driver_id": "termopolio",
                     "team": "Ferrari",
                     "points": 15.0,
                     "status": ""
@@ -834,8 +834,8 @@
                 },
                 {
                     "position": 13,
-                    "driver": "LovingTheZero",
-                    "driver_id": "lovingthezero",
+                    "driver": "Termopolio",
+                    "driver_id": "termopolio",
                     "team": "Ferrari",
                     "points": 0.0,
                     "status": ""
@@ -1052,8 +1052,8 @@
                 },
                 {
                     "position": 10,
-                    "driver": "LovingTheZero",
-                    "driver_id": "lovingthezero",
+                    "driver": "Termopolio",
+                    "driver_id": "termopolio",
                     "team": "Ferrari",
                     "points": 1.0,
                     "status": ""
@@ -1177,8 +1177,8 @@
                 },
                 {
                     "position": 12,
-                    "driver": "LovingTheZero",
-                    "driver_id": "lovingthezero",
+                    "driver": "Termopolio",
+                    "driver_id": "termopolio",
                     "team": "Ferrari",
                     "points": 0.0,
                     "status": ""
@@ -1262,8 +1262,8 @@
                 },
                 {
                     "position": 8,
-                    "driver": "LovingTheZero",
-                    "driver_id": "lovingthezero",
+                    "driver": "Termopolio",
+                    "driver_id": "termopolio",
                     "team": "Ferrari",
                     "points": 4.0,
                     "status": ""
@@ -1700,8 +1700,8 @@
         {
             "driver_id": "puffy",
             "name": "Puffy",
-            "team": "Alpine",
-            "team_id": "team_alpine",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 199.0,
             "rounds": {
                 "3": {
@@ -2136,8 +2136,8 @@
         {
             "driver_id": "capisaurus",
             "name": "Capisaurus",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 60.0,
             "rounds": {
                 "1": {
@@ -2561,10 +2561,10 @@
             ]
         },
         {
-            "driver_id": "lovingthezero",
-            "name": "LovingTheZero",
-            "team": "Ferrari",
-            "team_id": "team_ferrari",
+            "driver_id": "termopolio",
+            "name": "Termopolio",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 20.0,
             "rounds": {
                 "5": {
@@ -3073,5 +3073,5 @@
             ]
         }
     ],
-    "exported_at": "2026-02-11T15:11:34"
+    "exported_at": "2026-02-21T18:17:55"
 }

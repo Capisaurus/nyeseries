@@ -1,6 +1,6 @@
 {
     "export_type": "season",
-    "championship_name": "ne series",
+    "championship_name": "NyE Series",
     "season_id": "series_1",
     "season_name": "Series 1",
     "total_rounds": 14,
@@ -1501,8 +1501,8 @@
         {
             "driver_id": "steelwarrior",
             "name": "SteelWarrior",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 184.0,
             "rounds": {
                 "1": {
@@ -1795,8 +1795,8 @@
         {
             "driver_id": "capisaurus",
             "name": "Capisaurus",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 112.0,
             "rounds": {
                 "1": {
@@ -2697,5 +2697,5 @@
             ]
         }
     ],
-    "exported_at": "2026-02-11T15:11:33"
+    "exported_at": "2026-02-21T18:17:54"
 }

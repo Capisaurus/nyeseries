@@ -1,6 +1,6 @@
 {
     "export_type": "championship",
-    "championship_name": "ne series",
+    "championship_name": "NyE Series",
     "total_seasons": 10,
     "total_races": 114,
     "seasons": [
@@ -127,8 +127,8 @@
         {
             "driver_id": "puffy",
             "name": "Puffy",
-            "team": "Alpine",
-            "team_id": "team_alpine",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "country": "",
             "total_races": 48,
             "total_points": 774.0,
@@ -160,9 +160,9 @@
         {
             "driver_id": "capisaurus",
             "name": "Capisaurus",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
-            "country": "",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
+            "country": "Netherlands",
             "total_races": 111,
             "total_points": 616.5,
             "wins": 0,
@@ -333,6 +333,35 @@
             ]
         },
         {
+            "driver_id": "termopolio",
+            "name": "Termopolio",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
+            "country": "",
+            "total_races": 28,
+            "total_points": 359.0,
+            "wins": 4,
+            "sprint_wins": 0,
+            "poles": 0,
+            "podiums": 8,
+            "fastest_laps": 11,
+            "driver_of_the_day": 1,
+            "teams_history": [
+                {
+                    "team_id": "team_ferrari",
+                    "team_name": "Ferrari"
+                },
+                {
+                    "team_id": "team_red_bull",
+                    "team_name": "Red Bull"
+                },
+                {
+                    "team_id": "team_williams",
+                    "team_name": "Williams"
+                }
+            ]
+        },
+        {
             "driver_id": "taco_antax",
             "name": "Taco Antax",
             "team": "Haas",
@@ -358,35 +387,10 @@
             ]
         },
         {
-            "driver_id": "termopolio",
-            "name": "Termopolio",
-            "team": "Williams",
-            "team_id": "team_williams",
-            "country": "",
-            "total_races": 22,
-            "total_points": 339.0,
-            "wins": 4,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 7,
-            "fastest_laps": 11,
-            "driver_of_the_day": 0,
-            "teams_history": [
-                {
-                    "team_id": "team_red_bull",
-                    "team_name": "Red Bull"
-                },
-                {
-                    "team_id": "team_williams",
-                    "team_name": "Williams"
-                }
-            ]
-        },
-        {
             "driver_id": "dragon6590z",
             "name": "Dragon6590z",
-            "team": "Red Bull",
-            "team_id": "team_red_bull",
+            "team": "Haas",
+            "team_id": "team_haas",
             "country": "",
             "total_races": 17,
             "total_points": 280.0,
@@ -435,8 +439,8 @@
         {
             "driver_id": "steelwarrior",
             "name": "SteelWarrior",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "country": "",
             "total_races": 21,
             "total_points": 246.0,
@@ -1316,8 +1320,8 @@
         {
             "driver_id": "gabriel.b01",
             "name": "Gabriel.b01",
-            "team": "Sauber",
-            "team_id": "team_sauber",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "country": "",
             "total_races": 6,
             "total_points": 52.0,
@@ -1366,8 +1370,8 @@
         {
             "driver_id": "aaronxob",
             "name": "Aaronxob",
-            "team": "McLaren",
-            "team_id": "team_mclaren",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
             "country": "",
             "total_races": 7,
             "total_points": 50.0,
@@ -1454,8 +1458,8 @@
         {
             "driver_id": "siegerng",
             "name": "SiegerNG",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
             "country": "",
             "total_races": 10,
             "total_points": 45.0,
@@ -1496,8 +1500,8 @@
         {
             "driver_id": "pina",
             "name": "Pina",
-            "team": "Sauber",
-            "team_id": "team_sauber",
+            "team": "Williams",
+            "team_id": "team_williams",
             "country": "",
             "total_races": 5,
             "total_points": 41.0,
@@ -1817,27 +1821,6 @@
                 {
                     "team_id": "team_sauber",
                     "team_name": "Sauber"
-                }
-            ]
-        },
-        {
-            "driver_id": "lovingthezero",
-            "name": "LovingTheZero",
-            "team": "Ferrari",
-            "team_id": "team_ferrari",
-            "country": "",
-            "total_races": 6,
-            "total_points": 20.0,
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 1,
-            "fastest_laps": 0,
-            "driver_of_the_day": 1,
-            "teams_history": [
-                {
-                    "team_id": "team_ferrari",
-                    "team_name": "Ferrari"
                 }
             ]
         },
@@ -2339,8 +2322,8 @@
         {
             "driver_id": "issei",
             "name": "Issei",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "country": "",
             "total_races": 2,
             "total_points": 8.0,
@@ -3324,5 +3307,5 @@
             ]
         }
     ],
-    "exported_at": "2026-02-11T15:11:35"
+    "exported_at": "2026-02-21T18:17:56"
 }
