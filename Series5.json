@@ -1331,8 +1331,8 @@
             "driver_id": "puffy",
             "name": "Puffy",
             "number": "44",
-            "team": "Ferrari",
-            "team_id": "team_ferrari",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 287.0,
             "rounds": {
                 "1": {
@@ -1419,8 +1419,8 @@
             "driver_id": "termopolio",
             "name": "Termopolio",
             "number": "",
-            "team": "Williams",
-            "team_id": "team_williams",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 235.0,
             "rounds": {
                 "1": {
@@ -1716,8 +1716,8 @@
             "driver_id": "izquierdoxdd",
             "name": "Izquierdoxdd",
             "number": "",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
+            "team": "Alfa Romeo",
+            "team_id": "team_alfa_romeo",
             "total_points": 123.0,
             "rounds": {
                 "1": {
@@ -1794,8 +1794,8 @@
             "driver_id": "capisaurus",
             "name": "Capisaurus",
             "number": "76",
-            "team": "Ferrari",
-            "team_id": "team_ferrari",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 97.0,
             "rounds": {
                 "1": {
@@ -1882,8 +1882,8 @@
             "driver_id": "chokogarcia",
             "name": "Chokogarcia",
             "number": "",
-            "team": "Williams",
-            "team_id": "team_williams",
+            "team": "AlphaTauri",
+            "team_id": "team_alphatauri",
             "total_points": 86.0,
             "rounds": {
                 "1": {
@@ -2180,8 +2180,8 @@
             "driver_id": "fernandoangarita",
             "name": "Fernandoangarita",
             "number": "",
-            "team": "McLaren",
-            "team_id": "team_mclaren",
+            "team": "Reserva",
+            "team_id": "team_reserve_driver",
             "total_points": 27.0,
             "rounds": {
                 "1": {
@@ -2335,8 +2335,8 @@
             "driver_id": "issei",
             "name": "Issei",
             "number": "",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "Mercedes",
+            "team_id": "team_mercedes",
             "total_points": 8.0,
             "rounds": {
                 "1": {
@@ -2410,5 +2410,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-02-21T21:36:34"
+    "exported_at": "2026-02-21T21:58:28"
 }

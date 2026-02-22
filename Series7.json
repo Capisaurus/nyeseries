@@ -68,8 +68,8 @@
                 },
                 {
                     "position": 7,
-                    "driver": "N&E | Capisaurus",
-                    "driver_id": "necapisaurus",
+                    "driver": "Capisaurus",
+                    "driver_id": "capisaurus",
                     "team": "McLaren",
                     "points": 6.0,
                     "status": ""
@@ -365,9 +365,9 @@
             "driver_of_the_day": 0
         },
         {
-            "driver_id": "necapisaurus",
-            "name": "N&E | Capisaurus",
-            "number": "",
+            "driver_id": "capisaurus",
+            "name": "Capisaurus",
+            "number": "76",
             "team": "McLaren",
             "team_id": "team_mclaren",
             "total_points": 6.0,
@@ -449,36 +449,6 @@
             "driver_of_the_day": 0
         },
         {
-            "driver_id": "capisaurus",
-            "name": "Capisaurus",
-            "number": "76",
-            "team": "McLaren",
-            "team_id": "team_mclaren",
-            "total_points": 0.0,
-            "rounds": {},
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
-            "driver_id": "connor",
-            "name": "Connor",
-            "number": "",
-            "team": "Sauber",
-            "team_id": "team_sauber",
-            "total_points": 0.0,
-            "rounds": {},
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
             "driver_id": "dragon6590z",
             "name": "Dragon6590z",
             "number": "",
@@ -540,67 +510,7 @@
             "podiums": 0,
             "fastest_laps": 0,
             "driver_of_the_day": 0
-        },
-        {
-            "driver_id": "pina",
-            "name": "Pina",
-            "number": "",
-            "team": "Williams",
-            "team_id": "team_williams",
-            "total_points": 0.0,
-            "rounds": {},
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
-            "driver_id": "player",
-            "name": "Player",
-            "number": "",
-            "team": "Haas",
-            "team_id": "team_haas",
-            "total_points": 0.0,
-            "rounds": {},
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
-            "driver_id": "puffy",
-            "name": "Puffy",
-            "number": "44",
-            "team": "Red Bull",
-            "team_id": "team_red_bull",
-            "total_points": 0.0,
-            "rounds": {},
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
-            "driver_id": "sz_angel",
-            "name": "Sz Angel",
-            "number": "",
-            "team": "Mercedes",
-            "team_id": "team_mercedes",
-            "total_points": 0.0,
-            "rounds": {},
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-02-21T21:36:35"
+    "exported_at": "2026-02-21T21:58:28"
 }

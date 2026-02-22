@@ -775,8 +775,8 @@
             "driver_id": "nosoyyo98",
             "name": "NoSoyYo98",
             "number": "",
-            "team": "Mercedes",
-            "team_id": "team_mercedes",
+            "team": "Reserva",
+            "team_id": "team_reserve_driver",
             "total_points": 209.0,
             "rounds": {
                 "1": {
@@ -841,8 +841,8 @@
             "driver_id": "mrpresident2004",
             "name": "MrPresident2004",
             "number": "",
-            "team": "Red Bull",
-            "team_id": "team_red_bull",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
             "total_points": 166.0,
             "rounds": {
                 "1": {
@@ -907,8 +907,8 @@
             "driver_id": "capisaurus",
             "name": "Capisaurus",
             "number": "76",
-            "team": "Ferrari",
-            "team_id": "team_ferrari",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 94.0,
             "rounds": {
                 "1": {
@@ -1070,8 +1070,8 @@
             "driver_id": "izquierdoxdd",
             "name": "Izquierdoxdd",
             "number": "",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
+            "team": "Alfa Romeo",
+            "team_id": "team_alfa_romeo",
             "total_points": 66.0,
             "rounds": {
                 "3": {
@@ -1203,8 +1203,8 @@
             "driver_id": "kion343",
             "name": "Kion343",
             "number": "",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "Williams",
+            "team_id": "team_williams",
             "total_points": 33.0,
             "rounds": {
                 "7": {
@@ -1239,8 +1239,8 @@
             "driver_id": "steelwarrior",
             "name": "SteelWarrior",
             "number": "",
-            "team": "Ferrari",
-            "team_id": "team_ferrari",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 31.0,
             "rounds": {
                 "3": {
@@ -1265,8 +1265,8 @@
             "driver_id": "cienfuegosj23",
             "name": "Cienfuegosj23",
             "number": "",
-            "team": "Red Bull",
-            "team_id": "team_red_bull",
+            "team": "Reserva",
+            "team_id": "team_reserve_driver",
             "total_points": 23.0,
             "rounds": {
                 "3": {
@@ -1407,5 +1407,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-02-21T21:36:34"
+    "exported_at": "2026-02-21T21:58:27"
 }
