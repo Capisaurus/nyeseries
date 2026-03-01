@@ -1456,7 +1456,7 @@
         {
             "driver_id": "mtsfrg",
             "name": "Ulises",
-            "number": "",
+            "number": "85",
             "team": "Haas",
             "team_id": "team_haas",
             "total_points": 245.0,
@@ -1517,7 +1517,7 @@
         {
             "driver_id": "sz_angel",
             "name": "Sz Angel",
-            "number": "",
+            "number": "18",
             "team": "Mercedes",
             "team_id": "team_mercedes",
             "total_points": 220.0,
@@ -1873,8 +1873,8 @@
             "driver_id": "dragon6590z",
             "name": "Dragon6590z",
             "number": "",
-            "team": "Red Bull",
-            "team_id": "team_red_bull",
+            "team": "Haas",
+            "team_id": "team_haas",
             "total_points": 81.0,
             "rounds": {
                 "1": {
@@ -1910,7 +1910,7 @@
         {
             "driver_id": "memingow",
             "name": "Memingow",
-            "number": "",
+            "number": "23",
             "team": "Aston Martin",
             "team_id": "team_aston_martin",
             "total_points": 74.0,
@@ -2133,7 +2133,7 @@
         {
             "driver_id": "siegerng",
             "name": "SiegerNG",
-            "number": "",
+            "number": "5",
             "team": "Ferrari",
             "team_id": "team_ferrari",
             "total_points": 45.0,
@@ -2327,8 +2327,8 @@
             "driver_id": "connor",
             "name": "Connor",
             "number": "",
-            "team": "Sauber",
-            "team_id": "team_sauber",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 22.0,
             "rounds": {
                 "1": {
@@ -2793,5 +2793,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-02-21T21:58:28"
+    "exported_at": "2026-03-01T00:00:45"
 }

@@ -1496,7 +1496,7 @@
         {
             "driver_id": "sz_angel",
             "name": "Sz Angel",
-            "number": "",
+            "number": "18",
             "team": "Mercedes",
             "team_id": "team_mercedes",
             "total_points": 186.0,
@@ -1569,7 +1569,7 @@
         {
             "driver_id": "memingow",
             "name": "Memingow",
-            "number": "",
+            "number": "23",
             "team": "Aston Martin",
             "team_id": "team_aston_martin",
             "total_points": 158.0,
@@ -2215,7 +2215,7 @@
         {
             "driver_id": "aaron22220909",
             "name": "Aaron22220909",
-            "number": "",
+            "number": "12",
             "team": "Sauber",
             "team_id": "team_sauber",
             "total_points": 14.0,
@@ -2334,7 +2334,7 @@
         {
             "driver_id": "issei",
             "name": "Issei",
-            "number": "",
+            "number": "99",
             "team": "Mercedes",
             "team_id": "team_mercedes",
             "total_points": 8.0,
@@ -2410,5 +2410,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-02-21T21:58:28"
+    "exported_at": "2026-03-01T00:00:45"
 }
