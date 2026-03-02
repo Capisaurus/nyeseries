@@ -37,7 +37,7 @@
             "number": "",
             "team": "Haas",
             "position": 2,
-            "points": 18.0,
+            "points": 29.0,
             "status": "",
             "best_lap": "1:30.454",
             "best_lap_sec": "90.45400000000001",
@@ -55,7 +55,7 @@
             "number": "",
             "team": "Red Bull",
             "position": 3,
-            "points": 15.0,
+            "points": 17.0,
             "status": "",
             "best_lap": "1:30.522",
             "best_lap_sec": "90.52199999999999",
@@ -73,7 +73,7 @@
             "number": "23",
             "team": "Aston Martin",
             "position": 4,
-            "points": 12.0,
+            "points": 18.0,
             "status": "",
             "best_lap": "1:32.718",
             "best_lap_sec": "92.718",
@@ -91,7 +91,7 @@
             "number": "",
             "team": "McLaren",
             "position": 5,
-            "points": 10.0,
+            "points": 14.0,
             "status": "",
             "best_lap": "1:32.318",
             "best_lap_sec": "92.318",
@@ -127,7 +127,7 @@
             "number": "99",
             "team": "Mercedes",
             "position": 7,
-            "points": 6.0,
+            "points": 10.0,
             "status": "",
             "best_lap": "1:33.257",
             "best_lap_sec": "93.257",
@@ -140,8 +140,8 @@
             "events": []
         },
         {
-            "driver_id": "cobos",
-            "name": "Cobos",
+            "driver_id": "gabriel.b01",
+            "name": "Gabriel.b01",
             "number": "",
             "team": "Racing Bulls",
             "position": 8,
@@ -212,9 +212,9 @@
             "events": []
         },
         {
-            "driver_id": "aaron22",
-            "name": "aaron22",
-            "number": "",
+            "driver_id": "aaron22220909",
+            "name": "Aaron22220909",
+            "number": "12",
             "team": "Ferrari",
             "position": 12,
             "points": 0.0,
@@ -249,5 +249,5 @@
         }
     ],
     "sprint_results": [],
-    "exported_at": "2026-03-01T00:07:49"
+    "exported_at": "2026-03-02T11:35:23"
 }
