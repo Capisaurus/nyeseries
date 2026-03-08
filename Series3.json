@@ -1,8 +1,8 @@
 {
     "export_type": "season",
-    "championship_name": "NyE Series",
+    "championship_name": "Nye Series",
     "season_id": "series_3",
-    "season_name": "Series 3",
+    "season_name": "series 3",
     "total_rounds": 14,
     "disputed_rounds": 14,
     "pending_rounds": 0,
@@ -2815,6 +2815,21 @@
             "driver_of_the_day": 0
         },
         {
+            "driver_id": "lovingthezero",
+            "name": "LovingTheZero",
+            "number": "",
+            "team": "",
+            "team_id": "",
+            "total_points": 0.0,
+            "rounds": {},
+            "wins": 0,
+            "sprint_wins": 0,
+            "poles": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
             "driver_id": "memoxrey",
             "name": "MemoXRey",
             "number": "",
@@ -2904,5 +2919,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-02T11:35:22"
+    "exported_at": "2026-03-08T13:25:33"
 }

@@ -1,8 +1,8 @@
 {
     "export_type": "season",
-    "championship_name": "NyE Series",
+    "championship_name": "Nye Series",
     "season_id": "academy_1",
-    "season_name": "Academy 1",
+    "season_name": "academy 1",
     "total_rounds": 9,
     "disputed_rounds": 9,
     "pending_rounds": 0,
@@ -2584,5 +2584,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-02T11:35:20"
+    "exported_at": "2026-03-08T13:25:31"
 }

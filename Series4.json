@@ -1,8 +1,8 @@
 {
     "export_type": "season",
-    "championship_name": "NyE Series",
+    "championship_name": "Nye Series",
     "season_id": "series_4",
-    "season_name": "Series 4",
+    "season_name": "series 4",
     "total_rounds": 13,
     "disputed_rounds": 13,
     "pending_rounds": 0,
@@ -3372,5 +3372,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-02T11:35:22"
+    "exported_at": "2026-03-08T13:25:33"
 }
