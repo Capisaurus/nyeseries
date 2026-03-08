@@ -167,12 +167,12 @@
             "team": "McLaren",
             "team_id": "team_mclaren",
             "country": "Netherlands",
-            "total_races": 113,
-            "total_points": 622.5,
+            "total_races": 114,
+            "total_points": 637.5,
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
-            "podiums": 6,
+            "podiums": 7,
             "fastest_laps": 1,
             "driver_of_the_day": 3,
             "teams_history": [
@@ -2097,28 +2097,6 @@
             ]
         },
         {
-            "driver_id": "ne__capisaurus",
-            "name": "N&E | Capisaurus",
-            "number": "",
-            "team": "",
-            "team_id": "",
-            "country": "",
-            "total_races": 1,
-            "total_points": 15.0,
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 1,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0,
-            "teams_history": [
-                {
-                    "team_id": "team_mclaren",
-                    "team_name": "McLaren"
-                }
-            ]
-        },
-        {
             "driver_id": "schizain",
             "name": "Schizain",
             "number": "",
@@ -3271,6 +3249,23 @@
             ]
         },
         {
+            "driver_id": "ne__capisaurus",
+            "name": "N&E | Capisaurus",
+            "number": "",
+            "team": "",
+            "team_id": "",
+            "country": "",
+            "total_races": 0,
+            "total_points": 0.0,
+            "wins": 0,
+            "sprint_wins": 0,
+            "poles": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0,
+            "teams_history": []
+        },
+        {
             "driver_id": "oskkker",
             "name": "Oskkker",
             "number": "",
@@ -3608,5 +3603,5 @@
             ]
         }
     ],
-    "exported_at": "2026-03-08T13:25:34"
+    "exported_at": "2026-03-08T13:26:23"
 }

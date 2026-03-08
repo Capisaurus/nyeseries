@@ -50,9 +50,9 @@
             "events": []
         },
         {
-            "driver_id": "ne__capisaurus",
-            "name": "N&E | Capisaurus",
-            "number": "",
+            "driver_id": "capisaurus",
+            "name": "Capisaurus",
+            "number": "76",
             "team": "McLaren",
             "position": 3,
             "points": 15.0,
@@ -141,5 +141,5 @@
         }
     ],
     "sprint_results": [],
-    "exported_at": "2026-03-08T13:25:34"
+    "exported_at": "2026-03-08T13:26:24"
 }

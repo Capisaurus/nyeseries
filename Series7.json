@@ -270,8 +270,8 @@
                 },
                 {
                     "position": 3,
-                    "driver": "N&E | Capisaurus",
-                    "driver_id": "ne__capisaurus",
+                    "driver": "Capisaurus",
+                    "driver_id": "capisaurus",
                     "team": "McLaren",
                     "points": 15.0,
                     "status": ""
@@ -513,6 +513,37 @@
             "driver_of_the_day": 0
         },
         {
+            "driver_id": "capisaurus",
+            "name": "Capisaurus",
+            "number": "76",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
+            "total_points": 21.0,
+            "rounds": {
+                "1": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": "NC"
+                },
+                "3": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "sprint_wins": 0,
+            "poles": 0,
+            "podiums": 1,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
             "driver_id": "memingow",
             "name": "Memingow",
             "number": "23",
@@ -664,27 +695,6 @@
             "driver_of_the_day": 0
         },
         {
-            "driver_id": "ne__capisaurus",
-            "name": "N&E | Capisaurus",
-            "number": "",
-            "team": "",
-            "team_id": "",
-            "total_points": 15.0,
-            "rounds": {
-                "3": {
-                    "position": 3,
-                    "points": 15.0,
-                    "status": ""
-                }
-            },
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 1,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
             "driver_id": "itssulen",
             "name": "ItsSulen",
             "number": "",
@@ -748,32 +758,6 @@
                     "position": 11,
                     "points": 0.0,
                     "status": ""
-                }
-            },
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
-            "driver_id": "capisaurus",
-            "name": "Capisaurus",
-            "number": "76",
-            "team": "McLaren",
-            "team_id": "team_mclaren",
-            "total_points": 6.0,
-            "rounds": {
-                "1": {
-                    "position": 7,
-                    "points": 6.0,
-                    "status": ""
-                },
-                "2": {
-                    "position": 13,
-                    "points": 0.0,
-                    "status": "NC"
                 }
             },
             "wins": 0,
@@ -862,5 +846,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-08T13:25:33"
+    "exported_at": "2026-03-08T13:26:23"
 }
