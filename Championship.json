@@ -347,6 +347,36 @@
             ]
         },
         {
+            "driver_id": "termopolio",
+            "name": "Termopolio",
+            "number": "",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
+            "country": "",
+            "total_races": 31,
+            "total_points": 387.0,
+            "wins": 4,
+            "sprint_wins": 0,
+            "poles": 0,
+            "podiums": 8,
+            "fastest_laps": 11,
+            "driver_of_the_day": 1,
+            "teams_history": [
+                {
+                    "team_id": "team_ferrari",
+                    "team_name": "Ferrari"
+                },
+                {
+                    "team_id": "team_red_bull",
+                    "team_name": "Red Bull"
+                },
+                {
+                    "team_id": "team_williams",
+                    "team_name": "Williams"
+                }
+            ]
+        },
+        {
             "driver_id": "steelwarrior",
             "name": "SteelWarrior",
             "number": "",
@@ -377,36 +407,6 @@
                 {
                     "team_id": "team_reserve_driver",
                     "team_name": "Reserva"
-                }
-            ]
-        },
-        {
-            "driver_id": "termopolio",
-            "name": "Termopolio",
-            "number": "",
-            "team": "Red Bull",
-            "team_id": "team_red_bull",
-            "country": "",
-            "total_races": 30,
-            "total_points": 369.0,
-            "wins": 4,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 8,
-            "fastest_laps": 11,
-            "driver_of_the_day": 1,
-            "teams_history": [
-                {
-                    "team_id": "team_ferrari",
-                    "team_name": "Ferrari"
-                },
-                {
-                    "team_id": "team_red_bull",
-                    "team_name": "Red Bull"
-                },
-                {
-                    "team_id": "team_williams",
-                    "team_name": "Williams"
                 }
             ]
         },
@@ -2005,28 +2005,6 @@
             ]
         },
         {
-            "driver_id": "lovingthezero",
-            "name": "LovingTheZero",
-            "number": "",
-            "team": "",
-            "team_id": "",
-            "country": "",
-            "total_races": 1,
-            "total_points": 18.0,
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0,
-            "teams_history": [
-                {
-                    "team_id": "team_red_bull",
-                    "team_name": "Red Bull"
-                }
-            ]
-        },
-        {
             "driver_id": "yahuger",
             "name": "Yahuger",
             "number": "",
@@ -3166,6 +3144,23 @@
             "teams_history": []
         },
         {
+            "driver_id": "lovingthezero",
+            "name": "LovingTheZero",
+            "number": "",
+            "team": "",
+            "team_id": "",
+            "country": "",
+            "total_races": 0,
+            "total_points": 0.0,
+            "wins": 0,
+            "sprint_wins": 0,
+            "poles": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0,
+            "teams_history": []
+        },
+        {
             "driver_id": "lucifergv",
             "name": "LuciferGv",
             "number": "",
@@ -3603,5 +3598,5 @@
             ]
         }
     ],
-    "exported_at": "2026-03-08T14:00:38"
+    "exported_at": "2026-03-08T14:10:19"
 }

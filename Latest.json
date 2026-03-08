@@ -68,8 +68,8 @@
             "events": []
         },
         {
-            "driver_id": "lovingthezero",
-            "name": "LovingTheZero",
+            "driver_id": "termopolio",
+            "name": "Termopolio",
             "number": "",
             "team": "Red Bull",
             "position": 4,
@@ -141,5 +141,5 @@
         }
     ],
     "sprint_results": [],
-    "exported_at": "2026-03-08T14:00:38"
+    "exported_at": "2026-03-08T14:10:19"
 }

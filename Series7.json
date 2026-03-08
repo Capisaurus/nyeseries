@@ -278,8 +278,8 @@
                 },
                 {
                     "position": 4,
-                    "driver": "LovingTheZero",
-                    "driver_id": "lovingthezero",
+                    "driver": "Termopolio",
+                    "driver_id": "termopolio",
                     "team": "Red Bull",
                     "points": 18.0,
                     "status": ""
@@ -471,6 +471,37 @@
             "driver_of_the_day": 0
         },
         {
+            "driver_id": "termopolio",
+            "name": "Termopolio",
+            "number": "",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
+            "total_points": 28.0,
+            "rounds": {
+                "1": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 4,
+                    "points": 18.0,
+                    "status": ""
+                }
+            },
+            "wins": 0,
+            "sprint_wins": 0,
+            "poles": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
             "driver_id": "mtsfgrg",
             "name": "MTSFGRG",
             "number": "",
@@ -622,27 +653,6 @@
             "driver_of_the_day": 0
         },
         {
-            "driver_id": "lovingthezero",
-            "name": "LovingTheZero",
-            "number": "",
-            "team": "",
-            "team_id": "",
-            "total_points": 18.0,
-            "rounds": {
-                "3": {
-                    "position": 4,
-                    "points": 18.0,
-                    "status": ""
-                }
-            },
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
             "driver_id": "capisaurus",
             "name": "Capisaurus",
             "number": "76",
@@ -742,32 +752,6 @@
             "driver_of_the_day": 0
         },
         {
-            "driver_id": "termopolio",
-            "name": "Termopolio",
-            "number": "",
-            "team": "Red Bull",
-            "team_id": "team_red_bull",
-            "total_points": 10.0,
-            "rounds": {
-                "1": {
-                    "position": 5,
-                    "points": 10.0,
-                    "status": ""
-                },
-                "2": {
-                    "position": 11,
-                    "points": 0.0,
-                    "status": ""
-                }
-            },
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
             "driver_id": "issei",
             "name": "Issei",
             "number": "99",
@@ -846,5 +830,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-08T14:00:38"
+    "exported_at": "2026-03-08T14:10:19"
 }
