@@ -168,7 +168,7 @@
             "team_id": "team_mclaren",
             "country": "Netherlands",
             "total_races": 114,
-            "total_points": 628.5,
+            "total_points": 631.5,
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -202,7 +202,7 @@
             "team_id": "team_aston_martin",
             "country": "",
             "total_races": 91,
-            "total_points": 620.0,
+            "total_points": 625.0,
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -354,7 +354,7 @@
             "team_id": "team_mclaren",
             "country": "",
             "total_races": 32,
-            "total_points": 371.0,
+            "total_points": 378.5,
             "wins": 3,
             "sprint_wins": 0,
             "poles": 0,
@@ -444,7 +444,7 @@
             "team_id": "team_haas",
             "country": "",
             "total_races": 20,
-            "total_points": 323.0,
+            "total_points": 335.5,
             "wins": 3,
             "sprint_wins": 1,
             "poles": 0,
@@ -712,7 +712,7 @@
             "team_id": "team_aston_martin",
             "country": "",
             "total_races": 14,
-            "total_points": 150.0,
+            "total_points": 154.0,
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1803,6 +1803,28 @@
             ]
         },
         {
+            "driver_id": "mtsfgrg",
+            "name": "MTSFGRG",
+            "number": "",
+            "team": "",
+            "team_id": "",
+            "country": "",
+            "total_races": 1,
+            "total_points": 27.0,
+            "wins": 0,
+            "sprint_wins": 0,
+            "poles": 0,
+            "podiums": 1,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0,
+            "teams_history": [
+                {
+                    "team_id": "team_haas",
+                    "team_name": "Haas"
+                }
+            ]
+        },
+        {
             "driver_id": "docfer",
             "name": "DocFer",
             "number": "",
@@ -1983,8 +2005,8 @@
             ]
         },
         {
-            "driver_id": "mtsfgrg",
-            "name": "MTSFGRG",
+            "driver_id": "lovingthezero",
+            "name": "LovingTheZero",
             "number": "",
             "team": "",
             "team_id": "",
@@ -1994,13 +2016,13 @@
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
-            "podiums": 1,
+            "podiums": 0,
             "fastest_laps": 0,
             "driver_of_the_day": 0,
             "teams_history": [
                 {
-                    "team_id": "team_haas",
-                    "team_name": "Haas"
+                    "team_id": "team_red_bull",
+                    "team_name": "Red Bull"
                 }
             ]
         },
@@ -2233,28 +2255,6 @@
                 {
                     "team_id": "team_racing_bulls",
                     "team_name": "Racing Bulls"
-                }
-            ]
-        },
-        {
-            "driver_id": "lovingthezero",
-            "name": "LovingTheZero",
-            "number": "",
-            "team": "",
-            "team_id": "",
-            "country": "",
-            "total_races": 1,
-            "total_points": 12.0,
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0,
-            "teams_history": [
-                {
-                    "team_id": "team_red_bull",
-                    "team_name": "Red Bull"
                 }
             ]
         },
@@ -3603,5 +3603,5 @@
             ]
         }
     ],
-    "exported_at": "2026-03-08T13:59:08"
+    "exported_at": "2026-03-08T14:00:38"
 }
