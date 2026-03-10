@@ -262,8 +262,8 @@
                 },
                 {
                     "position": 2,
-                    "driver": "MTSFGRG",
-                    "driver_id": "mtsfgrg",
+                    "driver": "Ulises",
+                    "driver_id": "mtsfrg",
                     "team": "Haas",
                     "points": 27.0,
                     "status": ""
@@ -440,6 +440,32 @@
             "driver_of_the_day": 0
         },
         {
+            "driver_id": "mtsfrg",
+            "name": "Ulises",
+            "number": "85",
+            "team": "Haas",
+            "team_id": "team_haas",
+            "total_points": 52.0,
+            "rounds": {
+                "1": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 2,
+                    "points": 27.0,
+                    "status": ""
+                }
+            },
+            "wins": 1,
+            "sprint_wins": 0,
+            "poles": 0,
+            "podiums": 2,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0
+        },
+        {
             "driver_id": "steelwarrior",
             "name": "SteelWarrior",
             "number": "",
@@ -502,27 +528,6 @@
             "driver_of_the_day": 0
         },
         {
-            "driver_id": "mtsfgrg",
-            "name": "MTSFGRG",
-            "number": "",
-            "team": "",
-            "team_id": "",
-            "total_points": 27.0,
-            "rounds": {
-                "3": {
-                    "position": 2,
-                    "points": 27.0,
-                    "status": ""
-                }
-            },
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 1,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
             "driver_id": "memingow",
             "name": "Memingow",
             "number": "23",
@@ -550,27 +555,6 @@
             "sprint_wins": 0,
             "poles": 0,
             "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
-            "driver_id": "mtsfrg",
-            "name": "Ulises",
-            "number": "85",
-            "team": "Haas",
-            "team_id": "team_haas",
-            "total_points": 25.0,
-            "rounds": {
-                "1": {
-                    "position": 1,
-                    "points": 25.0,
-                    "status": ""
-                }
-            },
-            "wins": 1,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 1,
             "fastest_laps": 0,
             "driver_of_the_day": 0
         },
@@ -830,5 +814,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-08T14:10:19"
+    "exported_at": "2026-03-10T11:29:34"
 }

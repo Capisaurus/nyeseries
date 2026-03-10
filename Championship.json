@@ -261,12 +261,12 @@
             "team": "Haas",
             "team_id": "team_haas",
             "country": "",
-            "total_races": 20,
-            "total_points": 474.5,
+            "total_races": 21,
+            "total_points": 501.5,
             "wins": 12,
             "sprint_wins": 0,
             "poles": 0,
-            "podiums": 15,
+            "podiums": 16,
             "fastest_laps": 6,
             "driver_of_the_day": 0,
             "teams_history": [
@@ -1803,28 +1803,6 @@
             ]
         },
         {
-            "driver_id": "mtsfgrg",
-            "name": "MTSFGRG",
-            "number": "",
-            "team": "",
-            "team_id": "",
-            "country": "",
-            "total_races": 1,
-            "total_points": 27.0,
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 1,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0,
-            "teams_history": [
-                {
-                    "team_id": "team_haas",
-                    "team_name": "Haas"
-                }
-            ]
-        },
-        {
             "driver_id": "docfer",
             "name": "DocFer",
             "number": "",
@@ -3183,8 +3161,8 @@
             ]
         },
         {
-            "driver_id": "memingow23",
-            "name": "Memingow23",
+            "driver_id": "mtsfgrg",
+            "name": "MTSFGRG",
             "number": "",
             "team": "",
             "team_id": "",
@@ -3388,23 +3366,6 @@
             ]
         },
         {
-            "driver_id": "steelwarrior18",
-            "name": "SteelWarrior18",
-            "number": "",
-            "team": "",
-            "team_id": "",
-            "country": "",
-            "total_races": 0,
-            "total_points": 0.0,
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0,
-            "teams_history": []
-        },
-        {
             "driver_id": "tatysflores",
             "name": "TatysFlores",
             "number": "",
@@ -3491,23 +3452,6 @@
                     "team_name": "AlphaTauri"
                 }
             ]
-        },
-        {
-            "driver_id": "wec_dragon6590z",
-            "name": "WEC dragon6590z",
-            "number": "",
-            "team": "",
-            "team_id": "",
-            "country": "",
-            "total_races": 0,
-            "total_points": 0.0,
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0,
-            "teams_history": []
         },
         {
             "driver_id": "zayitas",
@@ -3598,5 +3542,5 @@
             ]
         }
     ],
-    "exported_at": "2026-03-08T14:10:19"
+    "exported_at": "2026-03-10T11:29:34"
 }
