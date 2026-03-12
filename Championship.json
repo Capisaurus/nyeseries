@@ -7,55 +7,55 @@
         {
             "season_id": "academy_1",
             "season_name": "academy 1",
-            "status": "In Progress",
+            "status": "Finished",
             "total_races": 9
         },
         {
             "season_id": "academy_2",
             "season_name": "academy 2",
-            "status": "In Progress",
+            "status": "Finished",
             "total_races": 10
         },
         {
             "season_id": "series_1",
             "season_name": "series 1",
-            "status": "In Progress",
+            "status": "Finished",
             "total_races": 14
         },
         {
             "season_id": "series_2",
             "season_name": "series 2",
-            "status": "In Progress",
+            "status": "Finished",
             "total_races": 18
         },
         {
             "season_id": "series_2_sprint",
             "season_name": "series 2 sprint",
-            "status": "In Progress",
+            "status": "Finished",
             "total_races": 10
         },
         {
             "season_id": "series_3",
             "season_name": "series 3",
-            "status": "In Progress",
+            "status": "Finished",
             "total_races": 14
         },
         {
             "season_id": "series_4",
             "season_name": "series 4",
-            "status": "In Progress",
+            "status": "Finished",
             "total_races": 13
         },
         {
             "season_id": "series_5",
             "season_name": "series 5",
-            "status": "In Progress",
+            "status": "Finished",
             "total_races": 14
         },
         {
             "season_id": "series_6",
             "season_name": "series 6",
-            "status": "In Progress",
+            "status": "Finished",
             "total_races": 12
         },
         {
@@ -1832,8 +1832,8 @@
             "driver_id": "xamito",
             "name": "Xamito",
             "number": "",
-            "team": "Williams",
-            "team_id": "team_williams",
+            "team": "Reserva",
+            "team_id": "team_reserve_driver",
             "country": "",
             "total_races": 1,
             "total_points": 25.0,
@@ -3125,8 +3125,8 @@
             "driver_id": "lovingthezero",
             "name": "LovingTheZero",
             "number": "",
-            "team": "",
-            "team_id": "",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
             "country": "",
             "total_races": 0,
             "total_points": 0.0,
@@ -3542,5 +3542,5 @@
             ]
         }
     ],
-    "exported_at": "2026-03-10T11:30:58"
+    "exported_at": "2026-03-12T10:35:35"
 }
