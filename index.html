@@ -1451,7 +1451,7 @@
                     </div>
                 </div>
 
-                <details class="section-details" id="global-insights-section" open>
+                <details class="section-details" id="global-insights-section">
                     <summary>Resumen general</summary>
                     <div class="section-body">
                         <div class="insight-grid" id="global-insights-grid"></div>
@@ -1469,14 +1469,14 @@
                     </div>
                 </details>
 
-                <details class="section-details" id="last-race-section" open>
+                <details class="section-details" id="last-race-section">
                     <summary>Ultima carrera</summary>
                     <div class="section-body">
                         <div id="last-race-container"></div>
                     </div>
                 </details>
 
-                <details class="section-details" id="next-race-section" open>
+                <details class="section-details" id="next-race-section">
                     <summary>Próxima carrera</summary>
                     <div class="section-body">
                         <div id="next-race-container"></div>
@@ -1485,14 +1485,14 @@
 
 
 
-                <details class="section-details" id="upcoming-calendar-section" open>
+                <details class="section-details" id="upcoming-calendar-section">
                     <summary>Calendario Próxima Temporada</summary>
                     <div class="section-body">
                         <div id="upcoming-calendar-content"></div>
                     </div>
                 </details>
 
-                <details class="section-details" id="standings-section" open>
+                <details class="section-details" id="standings-section">
                     <summary id="standings-title">Clasificacion general</summary>
                     <div class="section-body">
                         <div class="table-container">
@@ -1572,6 +1572,25 @@
                                     </tr>
                                 </thead>
                                 <tbody id="superlicense-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="section-details" id="team-standings-section">
+                    <summary>Clasificación por Equipo</summary>
+                    <div class="section-body">
+                        <div class="table-container">
+                            <table>
+                                <thead id="team-standings-head">
+                                    <tr>
+                                        <th class="center">Pos</th>
+                                        <th>Equipo</th>
+                                        <th class="center">Pilotos</th>
+                                        <th class="center">Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="team-standings-body"></tbody>
                             </table>
                         </div>
                     </div>
@@ -1750,7 +1769,7 @@
             driversArray.forEach(driver => {
                 if (!driver || !driver.driver_id) return;
                 drivers[driver.driver_id] = driver;
-                if (driver.team_id) {
+                if (driver.team_id && driver.team_id !== 'team_reserve_driver') {
                     teams[driver.team_id] = { name: driver.team || driver.team_id };
                 }
             });
@@ -1969,6 +1988,7 @@
         function setViewMode(mode) {
             const historical = document.getElementById('historical-section');
             const teamSection = document.getElementById('team-stats-section');
+            const teamStandingsSection = document.getElementById('team-standings-section');
             const completedSection = document.getElementById('completed-races-section');
             const plannedSection = document.getElementById('upcoming-calendar-section');
             const driverSection = document.getElementById('driver-stats-section');
@@ -1989,6 +2009,7 @@
                 if (globalInsights) globalInsights.style.display = 'none';
                 if (historical) historical.style.display = 'none';
                 if (teamSection) teamSection.style.display = 'none';
+                if (teamStandingsSection) teamStandingsSection.style.display = 'none';
                 if (completedSection) completedSection.style.display = 'none';
                 if (plannedSection) plannedSection.style.display = 'none';
                 if (driverSection) driverSection.style.display = 'none';
@@ -2005,6 +2026,7 @@
                 if (standingsSection) standingsSection.style.display = 'block';
                 if (historical) historical.style.display = 'block';
                 if (teamSection) teamSection.style.display = 'none';
+                if (teamStandingsSection) teamStandingsSection.style.display = 'none';
                 if (completedSection) completedSection.style.display = 'none';
                 if (plannedSection) plannedSection.style.display = 'none';
                 if (driverSection) driverSection.style.display = 'block';
@@ -2026,6 +2048,7 @@
                 if (standingsSection) standingsSection.style.display = 'block';
                 if (historical) historical.style.display = 'none';
                 if (teamSection) teamSection.style.display = 'block';
+                if (teamStandingsSection) teamStandingsSection.style.display = 'block';
                 if (completedSection) completedSection.style.display = 'block';
                 if (plannedSection) plannedSection.style.display = isFinished ? 'none' : 'block';
                 if (driverSection) driverSection.style.display = 'block';
@@ -2583,7 +2606,8 @@
                         attendanceFallback
                     });
                     renderSuperlicenseTable(data.drivers, data.teams);
-                    renderTeamStats(data.drivers, data.teams, calculatedStandings);
+                    renderTeamStats(data.drivers, data.teams, calculatedStandings, data.races);
+                    renderTeamStandings(data.drivers, data.teams, calculatedStandings, data.races);
                     renderCompletedRaces(completedRaces, data.drivers, data.teams);
                 }
                 renderPlannedRaces(plannedRaces, isInProgress);
@@ -3039,7 +3063,7 @@
             });
         }
 
-        function renderTeamStats(drivers, teams, standings) {
+        function renderTeamStats(drivers, teams, standings, races) {
             const container = document.getElementById('team-stats-container');
             if (!container) return;
             container.innerHTML = '';
@@ -3049,32 +3073,56 @@
                 return;
             }
 
+            const teamNameToId = {};
             const teamStats = {};
 
             for (const [teamId, team] of Object.entries(teams)) {
+                if (teamId === 'team_reserve_driver') continue;
+                teamNameToId[team.name] = teamId;
                 teamStats[teamId] = {
                     name: team.name,
-                    drivers: 0,
+                    driverNames: new Set(),
                     totalPoints: 0,
                     bestDriver: null,
                     bestPoints: 0
                 };
             }
 
-            for (const [driverId, driver] of Object.entries(drivers)) {
-                if (driver.team_id && teamStats[driver.team_id]) {
-                    teamStats[driver.team_id].drivers++;
+            const completedRaces = (races || []).filter(r => !r.planned && r.results?.length > 0);
+            completedRaces.forEach(race => {
+                const driverPointsInRace = {};
+                (race.results || []).forEach(result => {
+                    const teamName = result.team;
+                    if (!teamName || teamName === 'Reserva') return;
+                    const teamId = teamNameToId[teamName];
+                    if (!teamId || !teamStats[teamId]) return;
+                    const points = result.points || 0;
+                    const driverName = result.driver || result.name || result.driver_id;
+                    teamStats[teamId].totalPoints += points;
+                    teamStats[teamId].driverNames.add(driverName);
+                    if (!driverPointsInRace[teamId]) driverPointsInRace[teamId] = {};
+                    driverPointsInRace[teamId][driverName] = (driverPointsInRace[teamId][driverName] || 0) + points;
+                });
+            });
 
-                    const standing = standings.find(s => s['Piloto/Ronda'] === driver.name);
-                    if (standing) {
-                        const points = standing['Total'] || 0;
-                        teamStats[driver.team_id].totalPoints += points;
-
-                        if (points > teamStats[driver.team_id].bestPoints) {
-                            teamStats[driver.team_id].bestPoints = points;
-                            teamStats[driver.team_id].bestDriver = driver.name;
-                        }
-                    }
+            // Find best driver per team across all races
+            const driverTotals = {};
+            completedRaces.forEach(race => {
+                (race.results || []).forEach(result => {
+                    const teamName = result.team;
+                    if (!teamName || teamName === 'Reserva') return;
+                    const teamId = teamNameToId[teamName];
+                    if (!teamId || !teamStats[teamId]) return;
+                    const driverName = result.driver || result.name || result.driver_id;
+                    const key = teamId + '|' + driverName;
+                    driverTotals[key] = (driverTotals[key] || 0) + (result.points || 0);
+                });
+            });
+            for (const [key, pts] of Object.entries(driverTotals)) {
+                const [teamId, driverName] = key.split('|');
+                if (teamStats[teamId] && pts > teamStats[teamId].bestPoints) {
+                    teamStats[teamId].bestPoints = pts;
+                    teamStats[teamId].bestDriver = driverName;
                 }
             }
 
@@ -3087,7 +3135,7 @@
                 card.innerHTML = `
                     <h4>${stats.name}</h4>
                     <div class="team-stats">
-                        <div class="team-stat-item">Pilotos: <strong>${stats.drivers}</strong></div>
+                        <div class="team-stat-item">Pilotos: <strong>${stats.driverNames.size}</strong></div>
                         <div class="team-stat-item">Puntos: <strong>${stats.totalPoints}</strong></div>
                         <div class="team-stat-item" style="grid-column: 1 / -1;">
                             Mejor: <strong>${stats.bestDriver || '-'} (${stats.bestPoints} pts)</strong>
@@ -3095,6 +3143,100 @@
                     </div>
                 `;
                 container.appendChild(card);
+            });
+        }
+
+        function renderTeamStandings(drivers, teams, standings, races) {
+            const tbody = document.getElementById('team-standings-body');
+            const thead = document.getElementById('team-standings-head');
+            if (!tbody) return;
+            tbody.innerHTML = '';
+
+            const teamNameToId = {};
+            const teamPoints = {};
+
+            for (const [teamId, team] of Object.entries(teams || {})) {
+                if (teamId === 'team_reserve_driver') continue;
+                teamNameToId[team.name] = teamId;
+                teamPoints[teamId] = {
+                    name: team.name,
+                    totalPoints: 0,
+                    driverNames: new Set(),
+                    rounds: {}
+                };
+            }
+
+            const completedRaces = (races || []).filter(r => !r.planned && r.results?.length > 0);
+            const roundsCount = races ? races.length : 0;
+
+            completedRaces.forEach(race => {
+                const roundKey = 'R' + race.round;
+                (race.results || []).forEach(result => {
+                    const teamName = result.team;
+                    if (!teamName || teamName === 'Reserva') return;
+
+                    let teamId = teamNameToId[teamName];
+                    if (!teamId) {
+                        teamId = 'team_' + teamName.toLowerCase().replace(/\s+/g, '_');
+                        teamNameToId[teamName] = teamId;
+                        teamPoints[teamId] = {
+                            name: teamName,
+                            totalPoints: 0,
+                            driverNames: new Set(),
+                            rounds: {}
+                        };
+                    }
+
+                    const points = result.points || 0;
+                    teamPoints[teamId].totalPoints += points;
+                    teamPoints[teamId].rounds[roundKey] = (teamPoints[teamId].rounds[roundKey] || 0) + points;
+                    teamPoints[teamId].driverNames.add(result.driver || result.name || result.driver_id);
+                });
+            });
+
+            const sortedTeams = Object.entries(teamPoints)
+                .sort(([, a], [, b]) => b.totalPoints - a.totalPoints);
+
+            if (sortedTeams.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" class="no-data">No hay datos de equipos</td></tr>';
+                return;
+            }
+
+            // Update header with round columns
+            if (thead && roundsCount > 0) {
+                let roundsHeaders = '';
+                for (let i = 1; i <= roundsCount; i++) {
+                    roundsHeaders += '<th class="center">R' + i + '</th>';
+                }
+                thead.innerHTML = '<tr>' +
+                    '<th class="center">Pos</th>' +
+                    '<th>Equipo</th>' +
+                    '<th class="center">Pilotos</th>' +
+                    roundsHeaders +
+                    '<th class="center total-points">Total</th>' +
+                    '</tr>';
+            }
+
+            sortedTeams.forEach(([teamId, stats], index) => {
+                const tr = document.createElement('tr');
+                if (index === 0) tr.classList.add('podium-1');
+                else if (index === 1) tr.classList.add('podium-2');
+                else if (index === 2) tr.classList.add('podium-3');
+
+                let roundsCells = '';
+                for (let i = 1; i <= roundsCount; i++) {
+                    const val = stats.rounds['R' + i];
+                    roundsCells += '<td class="points">' + (val !== undefined ? val : '-') + '</td>';
+                }
+
+                tr.innerHTML =
+                    '<td class="position">' + (index + 1) + '</td>' +
+                    '<td class="driver-name">' + stats.name + '</td>' +
+                    '<td class="points">' + stats.driverNames.size + '</td>' +
+                    roundsCells +
+                    '<td class="total-points">' + stats.totalPoints + '</td>';
+
+                tbody.appendChild(tr);
             });
         }
 
@@ -3848,7 +3990,7 @@
                     <div class="overview-card-header">Driver of The Day</div>
                     <div class="overview-card-body" style="padding: 0;">
                         <iframe 
-                            src="https://dotd.capiserver.xyz/" 
+                            src="https://trip-editors-concept-drawn.trycloudflare.com/" 
                             width="100%" 
                             height="600" 
                             loading="lazy"
@@ -3863,25 +4005,134 @@
             // === STANDINGS SNAPSHOT ===
             if (lastCompletedData) {
                 const standings = calculateStandingsFromRaces(lastCompletedData.races, lastCompletedData.drivers, lastCompletedData.teams);
-                const top5 = standings.slice(0, 5);
                 const isFinished = lastCompletedSeason.status?.toLowerCase() === 'finished';
                 const standingsLabel = isFinished
                     ? `Clasificacion Final - ${lastCompletedSeason.name}`
                     : `Clasificacion Actual - ${lastCompletedSeason.name}`;
 
+                const completedRacesOverview = (lastCompletedData.races || []).filter(r => !r.planned && r.results?.length > 0);
+                const overviewRoundsCount = lastCompletedData.races ? lastCompletedData.races.length : 0;
+
+                // Full driver standings table
+                let driverRows = '';
+                standings.forEach((driver, idx) => {
+                    let podiumClass = '';
+                    if (idx === 0) podiumClass = 'podium-1';
+                    else if (idx === 1) podiumClass = 'podium-2';
+                    else if (idx === 2) podiumClass = 'podium-3';
+
+                    let roundsCells = '';
+                    for (let i = 1; i <= overviewRoundsCount; i++) {
+                        const val = driver['R' + i];
+                        roundsCells += '<td class="points">' + (val !== undefined ? val : '-') + '</td>';
+                    }
+
+                    driverRows += '<tr class="' + podiumClass + '">' +
+                        '<td class="position">' + (idx + 1) + '</td>' +
+                        '<td class="driver-name">' + driver['Piloto/Ronda'] + '</td>' +
+                        '<td class="team-name">' + (driver['Equipo'] || '-') + '</td>' +
+                        '<td class="points">' + (driver.racesDisputed || 0) + '</td>' +
+                        roundsCells +
+                        '<td class="total-points">' + driver['Total'] + '</td>' +
+                        '</tr>';
+                });
+
+                let driverRoundHeaders = '';
+                for (let i = 1; i <= overviewRoundsCount; i++) {
+                    driverRoundHeaders += '<th class="center">R' + i + '</th>';
+                }
+
                 html += `
                     <div class="overview-card full-width">
-                        <div class="overview-card-header">${standingsLabel}</div>
+                        <div class="overview-card-header">${standingsLabel} - Pilotos</div>
                         <div class="overview-card-body">
-                            <div class="overview-standings">
-                                ${top5.map((driver, idx) => `
-                                    <div class="overview-standing-row ${idx < 3 ? 'podium-' + (idx + 1) : ''}">
-                                        <div class="overview-standing-pos">${idx + 1}</div>
-                                        <div class="overview-standing-driver">${driver['Piloto/Ronda']}</div>
-                                        <div class="overview-standing-team">${driver['Equipo'] || '-'}</div>
-                                        <div class="overview-standing-points">${driver['Total']} pts</div>
-                                    </div>
-                                `).join('')}
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="center">Pos</th>
+                                            <th>Piloto</th>
+                                            <th>Equipo</th>
+                                            <th class="center">Disp.</th>
+                                            ${driverRoundHeaders}
+                                            <th class="center total-points">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>${driverRows}</tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // Team standings table
+                const overviewTeamPoints = {};
+                for (const [teamId, team] of Object.entries(lastCompletedData.teams || {})) {
+                    overviewTeamPoints[teamId] = { name: team.name, totalPoints: 0, driverCount: 0, rounds: {} };
+                }
+                for (const [driverId, driver] of Object.entries(lastCompletedData.drivers || {})) {
+                    if (driver.team_id && overviewTeamPoints[driver.team_id]) {
+                        overviewTeamPoints[driver.team_id].driverCount++;
+                        const standing = standings.find(s => s.driverId === driverId);
+                        if (standing) {
+                            overviewTeamPoints[driver.team_id].totalPoints += standing['Total'] || 0;
+                            for (let i = 1; i <= overviewRoundsCount; i++) {
+                                const key = 'R' + i;
+                                if (standing[key] !== undefined) {
+                                    overviewTeamPoints[driver.team_id].rounds[key] = (overviewTeamPoints[driver.team_id].rounds[key] || 0) + standing[key];
+                                }
+                            }
+                        }
+                    }
+                }
+
+                const sortedOverviewTeams = Object.entries(overviewTeamPoints)
+                    .sort(([, a], [, b]) => b.totalPoints - a.totalPoints);
+
+                let teamRows = '';
+                sortedOverviewTeams.forEach(([teamId, stats], idx) => {
+                    let podiumClass = '';
+                    if (idx === 0) podiumClass = 'podium-1';
+                    else if (idx === 1) podiumClass = 'podium-2';
+                    else if (idx === 2) podiumClass = 'podium-3';
+
+                    let roundsCells = '';
+                    for (let i = 1; i <= overviewRoundsCount; i++) {
+                        const val = stats.rounds['R' + i];
+                        roundsCells += '<td class="points">' + (val !== undefined ? val : '-') + '</td>';
+                    }
+
+                    teamRows += '<tr class="' + podiumClass + '">' +
+                        '<td class="position">' + (idx + 1) + '</td>' +
+                        '<td class="driver-name">' + stats.name + '</td>' +
+                        '<td class="points">' + stats.driverCount + '</td>' +
+                        roundsCells +
+                        '<td class="total-points">' + stats.totalPoints + '</td>' +
+                        '</tr>';
+                });
+
+                let teamRoundHeaders = '';
+                for (let i = 1; i <= overviewRoundsCount; i++) {
+                    teamRoundHeaders += '<th class="center">R' + i + '</th>';
+                }
+
+                html += `
+                    <div class="overview-card full-width">
+                        <div class="overview-card-header">${standingsLabel} - Equipos</div>
+                        <div class="overview-card-body">
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="center">Pos</th>
+                                            <th>Equipo</th>
+                                            <th class="center">Pilotos</th>
+                                            ${teamRoundHeaders}
+                                            <th class="center total-points">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>${teamRows}</tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -3994,6 +4245,5 @@
         setInterval(loadAllData, 12000000);
     </script>
 </body>
-
 
 </html>
