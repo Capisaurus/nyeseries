@@ -1769,7 +1769,7 @@
             driversArray.forEach(driver => {
                 if (!driver || !driver.driver_id) return;
                 drivers[driver.driver_id] = driver;
-                if (driver.team_id) {
+                if (driver.team_id && driver.team_id !== 'team_reserve_driver') {
                     teams[driver.team_id] = { name: driver.team || driver.team_id };
                 }
             });
@@ -2606,7 +2606,7 @@
                         attendanceFallback
                     });
                     renderSuperlicenseTable(data.drivers, data.teams);
-                    renderTeamStats(data.drivers, data.teams, calculatedStandings);
+                    renderTeamStats(data.drivers, data.teams, calculatedStandings, data.races);
                     renderTeamStandings(data.drivers, data.teams, calculatedStandings, data.races);
                     renderCompletedRaces(completedRaces, data.drivers, data.teams);
                 }
@@ -3063,7 +3063,7 @@
             });
         }
 
-        function renderTeamStats(drivers, teams, standings) {
+        function renderTeamStats(drivers, teams, standings, races) {
             const container = document.getElementById('team-stats-container');
             if (!container) return;
             container.innerHTML = '';
@@ -3073,32 +3073,56 @@
                 return;
             }
 
+            const teamNameToId = {};
             const teamStats = {};
 
             for (const [teamId, team] of Object.entries(teams)) {
+                if (teamId === 'team_reserve_driver') continue;
+                teamNameToId[team.name] = teamId;
                 teamStats[teamId] = {
                     name: team.name,
-                    drivers: 0,
+                    driverNames: new Set(),
                     totalPoints: 0,
                     bestDriver: null,
                     bestPoints: 0
                 };
             }
 
-            for (const [driverId, driver] of Object.entries(drivers)) {
-                if (driver.team_id && teamStats[driver.team_id]) {
-                    teamStats[driver.team_id].drivers++;
+            const completedRaces = (races || []).filter(r => !r.planned && r.results?.length > 0);
+            completedRaces.forEach(race => {
+                const driverPointsInRace = {};
+                (race.results || []).forEach(result => {
+                    const teamName = result.team;
+                    if (!teamName || teamName === 'Reserva') return;
+                    const teamId = teamNameToId[teamName];
+                    if (!teamId || !teamStats[teamId]) return;
+                    const points = result.points || 0;
+                    const driverName = result.driver || result.name || result.driver_id;
+                    teamStats[teamId].totalPoints += points;
+                    teamStats[teamId].driverNames.add(driverName);
+                    if (!driverPointsInRace[teamId]) driverPointsInRace[teamId] = {};
+                    driverPointsInRace[teamId][driverName] = (driverPointsInRace[teamId][driverName] || 0) + points;
+                });
+            });
 
-                    const standing = standings.find(s => s['Piloto/Ronda'] === driver.name);
-                    if (standing) {
-                        const points = standing['Total'] || 0;
-                        teamStats[driver.team_id].totalPoints += points;
-
-                        if (points > teamStats[driver.team_id].bestPoints) {
-                            teamStats[driver.team_id].bestPoints = points;
-                            teamStats[driver.team_id].bestDriver = driver.name;
-                        }
-                    }
+            // Find best driver per team across all races
+            const driverTotals = {};
+            completedRaces.forEach(race => {
+                (race.results || []).forEach(result => {
+                    const teamName = result.team;
+                    if (!teamName || teamName === 'Reserva') return;
+                    const teamId = teamNameToId[teamName];
+                    if (!teamId || !teamStats[teamId]) return;
+                    const driverName = result.driver || result.name || result.driver_id;
+                    const key = teamId + '|' + driverName;
+                    driverTotals[key] = (driverTotals[key] || 0) + (result.points || 0);
+                });
+            });
+            for (const [key, pts] of Object.entries(driverTotals)) {
+                const [teamId, driverName] = key.split('|');
+                if (teamStats[teamId] && pts > teamStats[teamId].bestPoints) {
+                    teamStats[teamId].bestPoints = pts;
+                    teamStats[teamId].bestDriver = driverName;
                 }
             }
 
@@ -3111,7 +3135,7 @@
                 card.innerHTML = `
                     <h4>${stats.name}</h4>
                     <div class="team-stats">
-                        <div class="team-stat-item">Pilotos: <strong>${stats.drivers}</strong></div>
+                        <div class="team-stat-item">Pilotos: <strong>${stats.driverNames.size}</strong></div>
                         <div class="team-stat-item">Puntos: <strong>${stats.totalPoints}</strong></div>
                         <div class="team-stat-item" style="grid-column: 1 / -1;">
                             Mejor: <strong>${stats.bestDriver || '-'} (${stats.bestPoints} pts)</strong>
@@ -3128,14 +3152,16 @@
             if (!tbody) return;
             tbody.innerHTML = '';
 
+            const teamNameToId = {};
             const teamPoints = {};
 
             for (const [teamId, team] of Object.entries(teams || {})) {
+                if (teamId === 'team_reserve_driver') continue;
+                teamNameToId[team.name] = teamId;
                 teamPoints[teamId] = {
                     name: team.name,
                     totalPoints: 0,
-                    driverCount: 0,
-                    driverNames: [],
+                    driverNames: new Set(),
                     rounds: {}
                 };
             }
@@ -3143,23 +3169,30 @@
             const completedRaces = (races || []).filter(r => !r.planned && r.results?.length > 0);
             const roundsCount = races ? races.length : 0;
 
-            for (const [driverId, driver] of Object.entries(drivers || {})) {
-                if (driver.team_id && teamPoints[driver.team_id]) {
-                    teamPoints[driver.team_id].driverCount++;
-                    teamPoints[driver.team_id].driverNames.push(driver.name);
+            completedRaces.forEach(race => {
+                const roundKey = 'R' + race.round;
+                (race.results || []).forEach(result => {
+                    const teamName = result.team;
+                    if (!teamName || teamName === 'Reserva') return;
 
-                    const standing = standings.find(s => s.driverId === driverId);
-                    if (standing) {
-                        teamPoints[driver.team_id].totalPoints += standing['Total'] || 0;
-                        for (let i = 1; i <= roundsCount; i++) {
-                            const key = 'R' + i;
-                            if (standing[key] !== undefined) {
-                                teamPoints[driver.team_id].rounds[key] = (teamPoints[driver.team_id].rounds[key] || 0) + standing[key];
-                            }
-                        }
+                    let teamId = teamNameToId[teamName];
+                    if (!teamId) {
+                        teamId = 'team_' + teamName.toLowerCase().replace(/\s+/g, '_');
+                        teamNameToId[teamName] = teamId;
+                        teamPoints[teamId] = {
+                            name: teamName,
+                            totalPoints: 0,
+                            driverNames: new Set(),
+                            rounds: {}
+                        };
                     }
-                }
-            }
+
+                    const points = result.points || 0;
+                    teamPoints[teamId].totalPoints += points;
+                    teamPoints[teamId].rounds[roundKey] = (teamPoints[teamId].rounds[roundKey] || 0) + points;
+                    teamPoints[teamId].driverNames.add(result.driver || result.name || result.driver_id);
+                });
+            });
 
             const sortedTeams = Object.entries(teamPoints)
                 .sort(([, a], [, b]) => b.totalPoints - a.totalPoints);
@@ -3199,7 +3232,7 @@
                 tr.innerHTML =
                     '<td class="position">' + (index + 1) + '</td>' +
                     '<td class="driver-name">' + stats.name + '</td>' +
-                    '<td class="points">' + stats.driverCount + '</td>' +
+                    '<td class="points">' + stats.driverNames.size + '</td>' +
                     roundsCells +
                     '<td class="total-points">' + stats.totalPoints + '</td>';
 
