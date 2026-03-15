@@ -1991,8 +1991,8 @@
             "driver_id": "ar2d2",
             "name": "Ar2D2",
             "number": "",
-            "team": "Alfa Romeo",
-            "team_id": "team_alfa_romeo",
+            "team": "Sauber",
+            "team_id": "team_sauber",
             "total_points": 71.0,
             "rounds": {
                 "1": {
@@ -2079,8 +2079,8 @@
             "driver_id": "aaron22220909",
             "name": "Aaron22220909",
             "number": "12",
-            "team": "Sauber",
-            "team_id": "team_sauber",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
             "total_points": 50.0,
             "rounds": {
                 "1": {
@@ -2450,8 +2450,8 @@
             "driver_id": "chokogarcia",
             "name": "Chokogarcia",
             "number": "",
-            "team": "AlphaTauri",
-            "team_id": "team_alphatauri",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 11.0,
             "rounds": {
                 "1": {
@@ -2688,8 +2688,8 @@
             "driver_id": "izquierdoxdd",
             "name": "Izquierdoxdd",
             "number": "",
-            "team": "Alfa Romeo",
-            "team_id": "team_alfa_romeo",
+            "team": "Sauber",
+            "team_id": "team_sauber",
             "total_points": 0.0,
             "rounds": {
                 "2": {
@@ -2793,5 +2793,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-12T10:35:51"
+    "exported_at": "2026-03-15T15:17:49"
 }

@@ -86,7 +86,7 @@
                     "position": 9,
                     "driver": "Izquierdoxdd",
                     "driver_id": "izquierdoxdd",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 2.0,
                     "status": ""
                 },
@@ -94,7 +94,7 @@
                     "position": 10,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 1.0,
                     "status": ""
                 },
@@ -110,7 +110,7 @@
                     "position": 12,
                     "driver": "Jhonatan1826",
                     "driver_id": "jhonatan1826",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 },
@@ -118,7 +118,7 @@
                     "position": 13,
                     "driver": "JosueVilleda",
                     "driver_id": "josuevilleda",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 },
@@ -259,7 +259,7 @@
                     "position": 12,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -267,7 +267,7 @@
                     "position": 13,
                     "driver": "Izquierdoxdd",
                     "driver_id": "izquierdoxdd",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -376,7 +376,7 @@
                     "position": 7,
                     "driver": "Izquierdoxdd",
                     "driver_id": "izquierdoxdd",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 6.0,
                     "status": ""
                 },
@@ -400,7 +400,7 @@
                     "position": 10,
                     "driver": "Jhonatan1826",
                     "driver_id": "jhonatan1826",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 1.0,
                     "status": ""
                 },
@@ -416,7 +416,7 @@
                     "position": 13,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -501,7 +501,7 @@
                     "position": 5,
                     "driver": "RaPTor-B212",
                     "driver_id": "raptor-b212",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 10.0,
                     "status": ""
                 },
@@ -541,7 +541,7 @@
                     "position": 10,
                     "driver": "Izquierdoxdd",
                     "driver_id": "izquierdoxdd",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 1.0,
                     "status": ""
                 },
@@ -557,7 +557,7 @@
                     "position": 13,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -565,7 +565,7 @@
                     "position": 14,
                     "driver": "Jhonatan1826",
                     "driver_id": "jhonatan1826",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": "DNF"
                 },
@@ -642,7 +642,7 @@
                     "position": 7,
                     "driver": "RaPTor-B212",
                     "driver_id": "raptor-b212",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 6.0,
                     "status": ""
                 },
@@ -674,7 +674,7 @@
                     "position": 11,
                     "driver": "Izquierdoxdd",
                     "driver_id": "izquierdoxdd",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -682,7 +682,7 @@
                     "position": 12,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -714,7 +714,7 @@
                     "position": 16,
                     "driver": "Jhonatan1826",
                     "driver_id": "jhonatan1826",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": "DNF"
                 },
@@ -791,7 +791,7 @@
                     "position": 7,
                     "driver": "RaPTor-B212",
                     "driver_id": "raptor-b212",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 6.0,
                     "status": ""
                 },
@@ -815,7 +815,7 @@
                     "position": 10,
                     "driver": "Izquierdoxdd",
                     "driver_id": "izquierdoxdd",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 1.0,
                     "status": ""
                 },
@@ -823,7 +823,7 @@
                     "position": 11,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -892,7 +892,7 @@
                     "position": 5,
                     "driver": "RaPTor-B212",
                     "driver_id": "raptor-b212",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 10.0,
                     "status": ""
                 },
@@ -916,7 +916,7 @@
                     "position": 8,
                     "driver": "Izquierdoxdd",
                     "driver_id": "izquierdoxdd",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 4.0,
                     "status": ""
                 },
@@ -924,7 +924,7 @@
                     "position": 9,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 2.0,
                     "status": ""
                 },
@@ -1009,7 +1009,7 @@
                     "position": 3,
                     "driver": "RaPTor-B212",
                     "driver_id": "raptor-b212",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 15.0,
                     "status": ""
                 },
@@ -1049,7 +1049,7 @@
                     "position": 8,
                     "driver": "Izquierdoxdd",
                     "driver_id": "izquierdoxdd",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 4.0,
                     "status": ""
                 },
@@ -1057,7 +1057,7 @@
                     "position": 9,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 2.0,
                     "status": ""
                 },
@@ -1113,7 +1113,7 @@
                     "position": 16,
                     "driver": "Jhonatan1826",
                     "driver_id": "jhonatan1826",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": "DNF"
                 },
@@ -1182,7 +1182,7 @@
                     "position": 4,
                     "driver": "RaPTor-B212",
                     "driver_id": "raptor-b212",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 24.0,
                     "status": ""
                 },
@@ -1190,7 +1190,7 @@
                     "position": 5,
                     "driver": "Izquierdoxdd",
                     "driver_id": "izquierdoxdd",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 20.0,
                     "status": ""
                 },
@@ -1198,7 +1198,7 @@
                     "position": 6,
                     "driver": "Jhonatan1826",
                     "driver_id": "jhonatan1826",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 16.0,
                     "status": ""
                 },
@@ -1246,7 +1246,7 @@
                     "position": 12,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -1548,8 +1548,8 @@
             "driver_id": "raptor-b212",
             "name": "RaPTor-B212",
             "number": "",
-            "team": "AlphaTauri",
-            "team_id": "team_alphatauri",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 71.0,
             "rounds": {
                 "4": {
@@ -1732,8 +1732,8 @@
             "driver_id": "izquierdoxdd",
             "name": "Izquierdoxdd",
             "number": "",
-            "team": "Alfa Romeo",
-            "team_id": "team_alfa_romeo",
+            "team": "Sauber",
+            "team_id": "team_sauber",
             "total_points": 38.0,
             "rounds": {
                 "1": {
@@ -1957,8 +1957,8 @@
             "driver_id": "jhonatan1826",
             "name": "Jhonatan1826",
             "number": "",
-            "team": "AlphaTauri",
-            "team_id": "team_alphatauri",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 17.0,
             "rounds": {
                 "1": {
@@ -2416,8 +2416,8 @@
             "driver_id": "josuevilleda",
             "name": "JosueVilleda",
             "number": "",
-            "team": "AlphaTauri",
-            "team_id": "team_alphatauri",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 0.0,
             "rounds": {
                 "1": {
@@ -2584,5 +2584,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-12T10:35:49"
+    "exported_at": "2026-03-15T15:17:46"
 }

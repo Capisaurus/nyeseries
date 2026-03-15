@@ -38,7 +38,7 @@
                     "position": 3,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 16.0,
                     "status": ""
                 },
@@ -94,7 +94,7 @@
                     "position": 10,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 1.0,
                     "status": ""
                 },
@@ -110,7 +110,7 @@
                     "position": 12,
                     "driver": "Chokogarcia",
                     "driver_id": "chokogarcia",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 },
@@ -134,7 +134,7 @@
                     "position": 15,
                     "driver": "CaballeroMX841",
                     "driver_id": "caballeromx841",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -227,7 +227,7 @@
                     "position": 5,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 10.0,
                     "status": ""
                 },
@@ -235,7 +235,7 @@
                     "position": 6,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 8.0,
                     "status": ""
                 },
@@ -291,7 +291,7 @@
                     "position": 13,
                     "driver": "Chokogarcia",
                     "driver_id": "chokogarcia",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 },
@@ -323,7 +323,7 @@
                     "position": 17,
                     "driver": "CaballeroMX841",
                     "driver_id": "caballeromx841",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": "DNF"
                 },
@@ -400,7 +400,7 @@
                     "position": 6,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 8.0,
                     "status": ""
                 },
@@ -432,7 +432,7 @@
                     "position": 10,
                     "driver": "Chokogarcia",
                     "driver_id": "chokogarcia",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 1.0,
                     "status": ""
                 },
@@ -456,7 +456,7 @@
                     "position": 13,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 },
@@ -573,7 +573,7 @@
                     "position": 9,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 2.0,
                     "status": ""
                 },
@@ -605,7 +605,7 @@
                     "position": 13,
                     "driver": "CaballeroMX841",
                     "driver_id": "caballeromx841",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -621,7 +621,7 @@
                     "position": 15,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 }
@@ -698,7 +698,7 @@
                     "position": 8,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 4.0,
                     "status": ""
                 },
@@ -722,7 +722,7 @@
                     "position": 11,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 },
@@ -778,7 +778,7 @@
                     "position": 18,
                     "driver": "CaballeroMX841",
                     "driver_id": "caballeromx841",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -786,7 +786,7 @@
                     "position": 19,
                     "driver": "Chokogarcia",
                     "driver_id": "chokogarcia",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 }
@@ -823,7 +823,7 @@
                     "position": 3,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 15.0,
                     "status": ""
                 },
@@ -831,7 +831,7 @@
                     "position": 4,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 12.0,
                     "status": ""
                 },
@@ -847,7 +847,7 @@
                     "position": 6,
                     "driver": "CaballeroMX841",
                     "driver_id": "caballeromx841",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 8.0,
                     "status": ""
                 },
@@ -895,7 +895,7 @@
                     "position": 12,
                     "driver": "Chokogarcia",
                     "driver_id": "chokogarcia",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 },
@@ -980,7 +980,7 @@
                     "position": 7,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 6.0,
                     "status": ""
                 },
@@ -1004,7 +1004,7 @@
                     "position": 10,
                     "driver": "Chokogarcia",
                     "driver_id": "chokogarcia",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 1.0,
                     "status": ""
                 },
@@ -1129,7 +1129,7 @@
                     "position": 11,
                     "driver": "Chokogarcia",
                     "driver_id": "chokogarcia",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 },
@@ -1145,7 +1145,7 @@
                     "position": 13,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 },
@@ -1153,7 +1153,7 @@
                     "position": 14,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -1161,7 +1161,7 @@
                     "position": 15,
                     "driver": "CaballeroMX841",
                     "driver_id": "caballeromx841",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -1230,7 +1230,7 @@
                     "position": 6,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 8.0,
                     "status": ""
                 },
@@ -1278,7 +1278,7 @@
                     "position": 12,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 },
@@ -1347,7 +1347,7 @@
                     "position": 5,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 10.0,
                     "status": ""
                 },
@@ -1440,7 +1440,7 @@
                     "position": 1,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 25.0,
                     "status": ""
                 },
@@ -1504,7 +1504,7 @@
                     "position": 9,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 3.0,
                     "status": ""
                 },
@@ -1557,7 +1557,7 @@
                     "position": 1,
                     "driver": "CaballeroMX841",
                     "driver_id": "caballeromx841",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 37.5,
                     "status": ""
                 },
@@ -1573,7 +1573,7 @@
                     "position": 3,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 22.5,
                     "status": ""
                 },
@@ -1597,7 +1597,7 @@
                     "position": 6,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 12.0,
                     "status": ""
                 },
@@ -1690,7 +1690,7 @@
                     "position": 1,
                     "driver": "Ar2D2",
                     "driver_id": "ar2d2",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 75.0,
                     "status": ""
                 },
@@ -1746,7 +1746,7 @@
                     "position": 8,
                     "driver": "Kairi Seele",
                     "driver_id": "kairi_seele",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 12.0,
                     "status": ""
                 },
@@ -1762,7 +1762,7 @@
                     "position": 10,
                     "driver": "CaballeroMX841",
                     "driver_id": "caballeromx841",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 3.0,
                     "status": ""
                 },
@@ -1965,8 +1965,8 @@
             "driver_id": "ar2d2",
             "name": "Ar2D2",
             "number": "",
-            "team": "Alfa Romeo",
-            "team_id": "team_alfa_romeo",
+            "team": "Sauber",
+            "team_id": "team_sauber",
             "total_points": 183.0,
             "rounds": {
                 "1": {
@@ -2356,8 +2356,8 @@
             "driver_id": "kairi_seele",
             "name": "Kairi Seele",
             "number": "",
-            "team": "AlphaTauri",
-            "team_id": "team_alphatauri",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 70.5,
             "rounds": {
                 "1": {
@@ -2434,8 +2434,8 @@
             "driver_id": "caballeromx841",
             "name": "CaballeroMX841",
             "number": "",
-            "team": "Alfa Romeo",
-            "team_id": "team_alfa_romeo",
+            "team": "Sauber",
+            "team_id": "team_sauber",
             "total_points": 48.5,
             "rounds": {
                 "1": {
@@ -2579,8 +2579,8 @@
             "driver_id": "izquierdoxdd",
             "name": "Izquierdoxdd",
             "number": "",
-            "team": "Alfa Romeo",
-            "team_id": "team_alfa_romeo",
+            "team": "Sauber",
+            "team_id": "team_sauber",
             "total_points": 33.0,
             "rounds": {
                 "1": {
@@ -2778,8 +2778,8 @@
             "driver_id": "fernandoangarita",
             "name": "Fernandoangarita",
             "number": "",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 23.0,
             "rounds": {
                 "1": {
@@ -3126,8 +3126,8 @@
             "driver_id": "chokogarcia",
             "name": "Chokogarcia",
             "number": "",
-            "team": "AlphaTauri",
-            "team_id": "team_alphatauri",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 2.0,
             "rounds": {
                 "1": {
@@ -3235,8 +3235,8 @@
             "driver_id": "docfer",
             "name": "DocFer",
             "number": "",
-            "team": "AlphaTauri",
-            "team_id": "team_alphatauri",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 0.0,
             "rounds": {
                 "1": {
@@ -3372,5 +3372,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-12T10:35:50"
+    "exported_at": "2026-03-15T15:17:48"
 }

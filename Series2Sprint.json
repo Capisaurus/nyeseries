@@ -508,7 +508,7 @@
                     "position": 9,
                     "driver": "Yindaxmx",
                     "driver_id": "yindaxmx",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 2.0,
                     "status": ""
                 }
@@ -593,7 +593,7 @@
                     "position": 9,
                     "driver": "Yindaxmx",
                     "driver_id": "yindaxmx",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 2.0,
                     "status": ""
                 },
@@ -678,7 +678,7 @@
                     "position": 8,
                     "driver": "Yindaxmx",
                     "driver_id": "yindaxmx",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 4.0,
                     "status": ""
                 }
@@ -747,7 +747,7 @@
                     "position": 7,
                     "driver": "Yindaxmx",
                     "driver_id": "yindaxmx",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 6.0,
                     "status": ""
                 },
@@ -1070,8 +1070,8 @@
             "driver_id": "izquierdoxdd",
             "name": "Izquierdoxdd",
             "number": "",
-            "team": "Alfa Romeo",
-            "team_id": "team_alfa_romeo",
+            "team": "Sauber",
+            "team_id": "team_sauber",
             "total_points": 66.0,
             "rounds": {
                 "3": {
@@ -1374,8 +1374,8 @@
             "driver_id": "yindaxmx",
             "name": "Yindaxmx",
             "number": "",
-            "team": "AlphaTauri",
-            "team_id": "team_alphatauri",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 14.0,
             "rounds": {
                 "7": {
@@ -1407,5 +1407,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-12T10:35:50"
+    "exported_at": "2026-03-15T15:17:47"
 }

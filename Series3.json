@@ -70,7 +70,7 @@
                     "position": 7,
                     "driver": "Kion343",
                     "driver_id": "kion343",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 6.0,
                     "status": ""
                 },
@@ -118,7 +118,7 @@
                     "position": 13,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": "DNF"
                 },
@@ -219,7 +219,7 @@
                     "position": 6,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 8.0,
                     "status": ""
                 },
@@ -251,7 +251,7 @@
                     "position": 10,
                     "driver": "Kion343",
                     "driver_id": "kion343",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 1.0,
                     "status": ""
                 },
@@ -336,7 +336,7 @@
                     "position": 8,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 4.0,
                     "status": ""
                 },
@@ -421,7 +421,7 @@
                     "position": 5,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 10.0,
                     "status": ""
                 },
@@ -485,7 +485,7 @@
                     "position": 13,
                     "driver": "MemoXRey",
                     "driver_id": "memoxrey",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -493,7 +493,7 @@
                     "position": 14,
                     "driver": "Kion343",
                     "driver_id": "kion343",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -562,7 +562,7 @@
                     "position": 6,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 8.0,
                     "status": ""
                 },
@@ -618,7 +618,7 @@
                     "position": 13,
                     "driver": "Kion343",
                     "driver_id": "kion343",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 }
@@ -695,7 +695,7 @@
                     "position": 8,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 4.0,
                     "status": ""
                 },
@@ -804,7 +804,7 @@
                     "position": 9,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 2.0,
                     "status": ""
                 },
@@ -865,7 +865,7 @@
                     "position": 1,
                     "driver": "DocFer",
                     "driver_id": "docfer",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 26.0,
                     "status": ""
                 },
@@ -897,7 +897,7 @@
                     "position": 5,
                     "driver": "Kion343",
                     "driver_id": "kion343",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 10.0,
                     "status": ""
                 },
@@ -929,7 +929,7 @@
                     "position": 9,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 2.0,
                     "status": ""
                 },
@@ -1038,7 +1038,7 @@
                     "position": 8,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 4.0,
                     "status": ""
                 },
@@ -1062,7 +1062,7 @@
                     "position": 11,
                     "driver": "Kion343",
                     "driver_id": "kion343",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 0.0,
                     "status": ""
                 },
@@ -1070,7 +1070,7 @@
                     "position": 12,
                     "driver": "DocFer",
                     "driver_id": "docfer",
-                    "team": "AlphaTauri",
+                    "team": "Racing Bulls",
                     "points": 0.0,
                     "status": ""
                 }
@@ -1357,7 +1357,7 @@
                     "position": 9,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 2.0,
                     "status": ""
                 },
@@ -1442,7 +1442,7 @@
                     "position": 8,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 4.0,
                     "status": ""
                 },
@@ -1503,7 +1503,7 @@
                     "position": 4,
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
-                    "team": "Alfa Romeo",
+                    "team": "Sauber",
                     "points": 12.0,
                     "status": ""
                 },
@@ -1539,8 +1539,8 @@
             "driver_id": "izquierdoxdd",
             "name": "Izquierdoxdd",
             "number": "",
-            "team": "Alfa Romeo",
-            "team_id": "team_alfa_romeo",
+            "team": "Sauber",
+            "team_id": "team_sauber",
             "total_points": 204.0,
             "rounds": {
                 "1": {
@@ -1762,8 +1762,8 @@
             "driver_id": "fernandoangarita",
             "name": "Fernandoangarita",
             "number": "",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 166.0,
             "rounds": {
                 "1": {
@@ -2423,8 +2423,8 @@
             "driver_id": "docfer",
             "name": "DocFer",
             "number": "",
-            "team": "AlphaTauri",
-            "team_id": "team_alphatauri",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 26.0,
             "rounds": {
                 "8": {
@@ -2833,8 +2833,8 @@
             "driver_id": "memoxrey",
             "name": "MemoXRey",
             "number": "",
-            "team": "Alfa Romeo",
-            "team_id": "team_alfa_romeo",
+            "team": "Sauber",
+            "team_id": "team_sauber",
             "total_points": 0.0,
             "rounds": {
                 "4": {
@@ -2919,5 +2919,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-12T10:35:50"
+    "exported_at": "2026-03-15T15:17:48"
 }
