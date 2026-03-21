@@ -168,7 +168,7 @@
             "team_id": "team_mclaren",
             "country": "Netherlands",
             "total_races": 115,
-            "total_points": 631.5,
+            "total_points": 633.0,
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -262,11 +262,11 @@
             "team_id": "team_haas",
             "country": "",
             "total_races": 22,
-            "total_points": 516.5,
-            "wins": 12,
+            "total_points": 539.0,
+            "wins": 13,
             "sprint_wins": 0,
             "poles": 0,
-            "podiums": 16,
+            "podiums": 17,
             "fastest_laps": 6,
             "driver_of_the_day": 0,
             "teams_history": [
@@ -332,11 +332,11 @@
             "team_id": "team_mclaren",
             "country": "",
             "total_races": 33,
-            "total_points": 401.0,
+            "total_points": 396.5,
             "wins": 3,
             "sprint_wins": 0,
             "poles": 0,
-            "podiums": 15,
+            "podiums": 14,
             "fastest_laps": 2,
             "driver_of_the_day": 0,
             "teams_history": [
@@ -388,7 +388,7 @@
             "team_id": "team_red_bull",
             "country": "",
             "total_races": 32,
-            "total_points": 388.5,
+            "total_points": 387.0,
             "wins": 4,
             "sprint_wins": 0,
             "poles": 0,
@@ -418,7 +418,7 @@
             "team_id": "team_haas",
             "country": "",
             "total_races": 21,
-            "total_points": 362.5,
+            "total_points": 358.0,
             "wins": 3,
             "sprint_wins": 1,
             "poles": 0,
@@ -474,8 +474,8 @@
             "team_id": "team_racing_bulls",
             "country": "",
             "total_races": 30,
-            "total_points": 268.5,
-            "wins": 2,
+            "total_points": 258.0,
+            "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
             "podiums": 9,
@@ -1309,28 +1309,6 @@
             ]
         },
         {
-            "driver_id": "itssulen",
-            "name": "ItsSulen",
-            "number": "",
-            "team": "Alpine",
-            "team_id": "team_alpine",
-            "country": "",
-            "total_races": 6,
-            "total_points": 70.0,
-            "wins": 0,
-            "sprint_wins": 1,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0,
-            "teams_history": [
-                {
-                    "team_id": "team_alpine",
-                    "team_name": "Alpine"
-                }
-            ]
-        },
-        {
             "driver_id": "harryh",
             "name": "HarryH",
             "number": "",
@@ -1349,6 +1327,28 @@
                 {
                     "team_id": "team_reserve_driver",
                     "team_name": "Reserva"
+                }
+            ]
+        },
+        {
+            "driver_id": "itssulen",
+            "name": "ItsSulen",
+            "number": "",
+            "team": "Alpine",
+            "team_id": "team_alpine",
+            "country": "",
+            "total_races": 6,
+            "total_points": 67.0,
+            "wins": 0,
+            "sprint_wins": 1,
+            "poles": 0,
+            "podiums": 0,
+            "fastest_laps": 0,
+            "driver_of_the_day": 0,
+            "teams_history": [
+                {
+                    "team_id": "team_alpine",
+                    "team_name": "Alpine"
                 }
             ]
         },
@@ -3546,5 +3546,5 @@
             ]
         }
     ],
-    "exported_at": "2026-03-15T15:17:49"
+    "exported_at": "2026-03-21T12:45:49"
 }
