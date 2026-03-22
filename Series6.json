@@ -140,8 +140,8 @@
                 },
                 {
                     "position": 17,
-                    "driver": "SiegerNG",
-                    "driver_id": "siegerng",
+                    "driver": "SiegerGod",
+                    "driver_id": "siegergod",
                     "team": "Aston Martin",
                     "points": 0.0,
                     "status": "DNF"
@@ -313,8 +313,8 @@
                 },
                 {
                     "position": 18,
-                    "driver": "SiegerNG",
-                    "driver_id": "siegerng",
+                    "driver": "SiegerGod",
+                    "driver_id": "siegergod",
                     "team": "Aston Martin",
                     "points": 0.0,
                     "status": "DNF"
@@ -555,8 +555,8 @@
                 },
                 {
                     "position": 11,
-                    "driver": "SiegerNG",
-                    "driver_id": "siegerng",
+                    "driver": "SiegerGod",
+                    "driver_id": "siegergod",
                     "team": "Aston Martin",
                     "points": 0.0,
                     "status": ""
@@ -664,8 +664,8 @@
                 },
                 {
                     "position": 7,
-                    "driver": "SiegerNG",
-                    "driver_id": "siegerng",
+                    "driver": "SiegerGod",
+                    "driver_id": "siegergod",
                     "team": "Aston Martin",
                     "points": 6.0,
                     "status": ""
@@ -757,8 +757,8 @@
                 },
                 {
                     "position": 6,
-                    "driver": "SiegerNG",
-                    "driver_id": "siegerng",
+                    "driver": "SiegerGod",
+                    "driver_id": "siegergod",
                     "team": "Aston Martin",
                     "points": 8.0,
                     "status": ""
@@ -826,8 +826,8 @@
                 },
                 {
                     "position": 3,
-                    "driver": "SiegerNG",
-                    "driver_id": "siegerng",
+                    "driver": "SiegerGod",
+                    "driver_id": "siegergod",
                     "team": "Aston Martin",
                     "points": 15.0,
                     "status": ""
@@ -1004,8 +1004,8 @@
                 },
                 {
                     "position": 5,
-                    "driver": "SiegerNG",
-                    "driver_id": "siegerng",
+                    "driver": "SiegerGod",
+                    "driver_id": "siegergod",
                     "team": "Aston Martin",
                     "points": 10.0,
                     "status": ""
@@ -1169,8 +1169,8 @@
                 },
                 {
                     "position": 13,
-                    "driver": "SiegerNG",
-                    "driver_id": "siegerng",
+                    "driver": "SiegerGod",
+                    "driver_id": "siegergod",
                     "team": "Aston Martin",
                     "points": 0.0,
                     "status": ""
@@ -1234,7 +1234,7 @@
             "planned": false,
             "winner": "Sz Angel",
             "fastest_lap": "Ulises",
-            "dotd": "SiegerNG",
+            "dotd": "SiegerGod",
             "results": [
                 {
                     "position": 1,
@@ -1350,8 +1350,8 @@
                 },
                 {
                     "position": 15,
-                    "driver": "SiegerNG",
-                    "driver_id": "siegerng",
+                    "driver": "SiegerGod",
+                    "driver_id": "siegergod",
                     "team": "Aston Martin",
                     "points": 0.0,
                     "status": ""
@@ -1435,8 +1435,8 @@
                 },
                 {
                     "position": 9,
-                    "driver": "SiegerNG",
-                    "driver_id": "siegerng",
+                    "driver": "SiegerGod",
+                    "driver_id": "siegergod",
                     "team": "Aston Martin",
                     "points": 6.0,
                     "status": ""
@@ -1518,8 +1518,8 @@
             "driver_id": "sz_angel",
             "name": "Sz Angel",
             "number": "18",
-            "team": "Mercedes",
-            "team_id": "team_mercedes",
+            "team": "Williams",
+            "team_id": "team_williams",
             "total_points": 220.0,
             "rounds": {
                 "1": {
@@ -1808,8 +1808,8 @@
             "driver_id": "tgoou",
             "name": "Tgoou",
             "number": "",
-            "team": "Mercedes",
-            "team_id": "team_mercedes",
+            "team": "Williams",
+            "team_id": "team_williams",
             "total_points": 87.0,
             "rounds": {
                 "1": {
@@ -2131,8 +2131,8 @@
             "driver_of_the_day": 1
         },
         {
-            "driver_id": "siegerng",
-            "name": "SiegerNG",
+            "driver_id": "siegergod",
+            "name": "SiegerGod",
             "number": "5",
             "team": "Ferrari",
             "team_id": "team_ferrari",
@@ -2714,8 +2714,8 @@
             "driver_id": "kion343",
             "name": "Kion343",
             "number": "",
-            "team": "Williams",
-            "team_id": "team_williams",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 0.0,
             "rounds": {
                 "1": {
@@ -2793,5 +2793,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-21T12:45:49"
+    "exported_at": "2026-03-22T16:55:05"
 }

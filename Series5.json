@@ -1497,8 +1497,8 @@
             "driver_id": "sz_angel",
             "name": "Sz Angel",
             "number": "18",
-            "team": "Mercedes",
-            "team_id": "team_mercedes",
+            "team": "Williams",
+            "team_id": "team_williams",
             "total_points": 186.0,
             "rounds": {
                 "1": {
@@ -1658,8 +1658,8 @@
             "driver_id": "tgoou",
             "name": "Tgoou",
             "number": "",
-            "team": "Mercedes",
-            "team_id": "team_mercedes",
+            "team": "Williams",
+            "team_id": "team_williams",
             "total_points": 146.0,
             "rounds": {
                 "5": {
@@ -2410,5 +2410,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-21T12:45:48"
+    "exported_at": "2026-03-22T16:55:05"
 }
