@@ -2,7 +2,7 @@
     "export_type": "season",
     "championship_name": "Nye Series",
     "season_id": "academy_1",
-    "season_name": "academy 1",
+    "season_name": "Academy 1",
     "total_rounds": 9,
     "disputed_rounds": 9,
     "pending_rounds": 0,
@@ -1405,8 +1405,8 @@
             "driver_id": "steelwarrior",
             "name": "SteelWarrior",
             "number": "",
-            "team": "McLaren",
-            "team_id": "team_mclaren",
+            "team": "Aston Martin",
+            "team_id": "team_aston_martin",
             "total_points": 88.0,
             "rounds": {
                 "1": {
@@ -1522,8 +1522,8 @@
             "driver_id": "d4rk1ng",
             "name": "D4RK1NG",
             "number": "",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "Mercedes",
+            "team_id": "team_mercedes",
             "total_points": 71.0,
             "rounds": {
                 "7": {
@@ -1594,8 +1594,8 @@
             "driver_id": "t4kslinky",
             "name": "T4KSLINKY",
             "number": "",
-            "team": "Alpine",
-            "team_id": "team_alpine",
+            "team": "Haas",
+            "team_id": "team_haas",
             "total_points": 60.0,
             "rounds": {
                 "1": {
@@ -1650,8 +1650,8 @@
             "driver_id": "byjeancaa",
             "name": "ByJeanCAA",
             "number": "",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 46.0,
             "rounds": {
                 "2": {
@@ -1701,8 +1701,8 @@
             "driver_id": "rafa809rd",
             "name": "Rafa809RD",
             "number": "",
-            "team": "Williams",
-            "team_id": "team_williams",
+            "team": "Reserva",
+            "team_id": "team_reserve_driver",
             "total_points": 40.0,
             "rounds": {
                 "4": {
@@ -2194,8 +2194,8 @@
             "driver_id": "capisaurus",
             "name": "Capisaurus",
             "number": "76",
-            "team": "McLaren",
-            "team_id": "team_mclaren",
+            "team": "Sauber",
+            "team_id": "team_sauber",
             "total_points": 5.0,
             "rounds": {
                 "1": {
@@ -2437,8 +2437,8 @@
             "driver_id": "kevcazar23",
             "name": "KevCazar23",
             "number": "",
-            "team": "Mercedes",
-            "team_id": "team_mercedes",
+            "team": "Reserva",
+            "team_id": "team_reserve_driver",
             "total_points": 0.0,
             "rounds": {
                 "1": {
@@ -2463,8 +2463,8 @@
             "driver_id": "kion343",
             "name": "Kion343",
             "number": "",
-            "team": "Racing Bulls",
-            "team_id": "team_racing_bulls",
+            "team": "Williams",
+            "team_id": "team_williams",
             "total_points": 0.0,
             "rounds": {
                 "1": {
@@ -2584,5 +2584,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-03-22T16:55:03"
+    "exported_at": "2026-04-12T15:27:20"
 }
