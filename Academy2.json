@@ -1279,8 +1279,8 @@
             "driver_id": "izquierdoxdd",
             "name": "Izquierdoxdd",
             "number": "",
-            "team": "Sauber",
-            "team_id": "team_sauber",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
             "total_points": 146.0,
             "rounds": {
                 "1": {
@@ -1401,8 +1401,8 @@
             "driver_id": "mrpresident2004",
             "name": "MrPresident2004",
             "number": "",
-            "team": "Ferrari",
-            "team_id": "team_ferrari",
+            "team": "Mercedes",
+            "team_id": "team_mercedes",
             "total_points": 97.0,
             "rounds": {
                 "1": {
@@ -1488,8 +1488,8 @@
             "driver_id": "cienfuegosj23",
             "name": "Cienfuegosj23",
             "number": "",
-            "team": "Ferrari",
-            "team_id": "team_ferrari",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 54.0,
             "rounds": {
                 "1": {
@@ -1554,8 +1554,8 @@
             "driver_id": "antonio_gc",
             "name": "Antonio GC",
             "number": "",
-            "team": "Alpine",
-            "team_id": "team_alpine",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 53.0,
             "rounds": {
                 "1": {
@@ -1605,8 +1605,8 @@
             "driver_id": "capisaurus",
             "name": "Capisaurus",
             "number": "76",
-            "team": "Sauber",
-            "team_id": "team_sauber",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 49.0,
             "rounds": {
                 "1": {
@@ -1671,8 +1671,8 @@
             "driver_id": "hyuga",
             "name": "Hyuga",
             "number": "",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "Williams",
+            "team_id": "team_williams",
             "total_points": 48.0,
             "rounds": {
                 "10": {
@@ -1913,8 +1913,8 @@
             "driver_id": "steelwarrior",
             "name": "SteelWarrior",
             "number": "",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 27.0,
             "rounds": {
                 "1": {
@@ -1985,8 +1985,8 @@
             "driver_id": "nosoyyo98",
             "name": "NoSoyYo98",
             "number": "",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "Alpine",
+            "team_id": "team_alpine",
             "total_points": 20.0,
             "rounds": {
                 "2": {
@@ -2037,8 +2037,8 @@
             "driver_id": "victor_xd",
             "name": "Victor xd",
             "number": "",
-            "team": "Williams",
-            "team_id": "team_williams",
+            "team": "Alpine",
+            "team_id": "team_alpine",
             "total_points": 18.0,
             "rounds": {
                 "1": {
@@ -2114,8 +2114,8 @@
             "driver_id": "alexmatrix266",
             "name": "AlexMatrix266",
             "number": "",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "Mercedes",
+            "team_id": "team_mercedes",
             "total_points": 14.0,
             "rounds": {
                 "7": {
@@ -2150,8 +2150,8 @@
             "driver_id": "hector_zambrano",
             "name": "Hector Zambrano",
             "number": "",
-            "team": "Alpine",
-            "team_id": "team_alpine",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 13.0,
             "rounds": {
                 "3": {
@@ -2349,21 +2349,6 @@
             "driver_of_the_day": 0
         },
         {
-            "driver_id": "davis",
-            "name": "Davis",
-            "number": "",
-            "team": "Williams",
-            "team_id": "team_williams",
-            "total_points": 0.0,
-            "rounds": {},
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
             "driver_id": "drasticalrose",
             "name": "Drasticalrose",
             "number": "",
@@ -2377,21 +2362,6 @@
                     "status": "DNF"
                 }
             },
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
-        },
-        {
-            "driver_id": "juanjet",
-            "name": "JUANJET",
-            "number": "",
-            "team": "Racing Bulls",
-            "team_id": "team_racing_bulls",
-            "total_points": 0.0,
-            "rounds": {},
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2419,22 +2389,7 @@
             "podiums": 0,
             "fastest_laps": 0,
             "driver_of_the_day": 0
-        },
-        {
-            "driver_id": "lobo",
-            "name": "Lobo",
-            "number": "",
-            "team": "Haas",
-            "team_id": "team_haas",
-            "total_points": 0.0,
-            "rounds": {},
-            "wins": 0,
-            "sprint_wins": 0,
-            "poles": 0,
-            "podiums": 0,
-            "fastest_laps": 0,
-            "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-04-19T17:55:01"
+    "exported_at": "2026-04-25T22:04:11"
 }

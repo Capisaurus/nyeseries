@@ -1518,8 +1518,8 @@
             "driver_id": "sz_angel",
             "name": "Sz Angel",
             "number": "18",
-            "team": "Mercedes",
-            "team_id": "team_mercedes",
+            "team": "Williams",
+            "team_id": "team_williams",
             "total_points": 205.0,
             "rounds": {
                 "1": {
@@ -1584,8 +1584,8 @@
             "driver_id": "leozever",
             "name": "Leozever",
             "number": "",
-            "team": "Williams",
-            "team_id": "team_williams",
+            "team": "Aston Martin",
+            "team_id": "team_aston_martin",
             "total_points": 129.0,
             "rounds": {
                 "1": {
@@ -1655,8 +1655,8 @@
             "driver_id": "puffy",
             "name": "Puffy",
             "number": "44",
-            "team": "Haas",
-            "team_id": "team_haas",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 121.0,
             "rounds": {
                 "1": {
@@ -1792,8 +1792,8 @@
             "driver_id": "tgoou",
             "name": "Tgoou",
             "number": "",
-            "team": "Mercedes",
-            "team_id": "team_mercedes",
+            "team": "Williams",
+            "team_id": "team_williams",
             "total_points": 87.0,
             "rounds": {
                 "1": {
@@ -1853,8 +1853,8 @@
             "driver_id": "dragon6590z",
             "name": "Dragon6590z",
             "number": "",
-            "team": "Alpine",
-            "team_id": "team_alpine",
+            "team": "Haas",
+            "team_id": "team_haas",
             "total_points": 73.0,
             "rounds": {
                 "1": {
@@ -1925,8 +1925,8 @@
             "driver_id": "memingow",
             "name": "Memingow",
             "number": "23",
-            "team": "Red Bull",
-            "team_id": "team_red_bull",
+            "team": "Aston Martin",
+            "team_id": "team_aston_martin",
             "total_points": 71.0,
             "rounds": {
                 "1": {
@@ -2001,8 +2001,8 @@
             "driver_id": "gabriel.b01",
             "name": "Gabriel.b01",
             "number": "",
-            "team": "Sauber",
-            "team_id": "team_sauber",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 48.0,
             "rounds": {
                 "1": {
@@ -2047,8 +2047,8 @@
             "driver_id": "siegergod",
             "name": "SiegerGod",
             "number": "5",
-            "team": "Aston Martin",
-            "team_id": "team_aston_martin",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
             "total_points": 45.0,
             "rounds": {
                 "1": {
@@ -2113,8 +2113,8 @@
             "driver_id": "capisaurus",
             "name": "Capisaurus",
             "number": "76",
-            "team": "Ferrari",
-            "team_id": "team_ferrari",
+            "team": "McLaren",
+            "team_id": "team_mclaren",
             "total_points": 44.0,
             "rounds": {
                 "1": {
@@ -2189,8 +2189,8 @@
             "driver_id": "aaron22220909",
             "name": "Aaron22220909",
             "number": "12",
-            "team": "McLaren",
-            "team_id": "team_mclaren",
+            "team": "Ferrari",
+            "team_id": "team_ferrari",
             "total_points": 41.0,
             "rounds": {
                 "1": {
@@ -2302,8 +2302,8 @@
             "driver_id": "connor",
             "name": "Connor",
             "number": "",
-            "team": "Sauber",
-            "team_id": "team_sauber",
+            "team": "Red Bull",
+            "team_id": "team_red_bull",
             "total_points": 18.0,
             "rounds": {
                 "1": {
@@ -2648,8 +2648,8 @@
             "driver_id": "kion343",
             "name": "Kion343",
             "number": "",
-            "team": "Reserva",
-            "team_id": "team_reserve_driver",
+            "team": "Racing Bulls",
+            "team_id": "team_racing_bulls",
             "total_points": 0.0,
             "rounds": {
                 "1": {
@@ -2723,5 +2723,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-04-19T17:55:03"
+    "exported_at": "2026-04-25T22:04:13"
 }
