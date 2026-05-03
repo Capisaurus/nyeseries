@@ -2,7 +2,7 @@
     "export_type": "season",
     "championship_name": "Nye Series",
     "season_id": "series_7",
-    "season_name": "Series 7",
+    "season_name": "series 7",
     "total_rounds": 15,
     "disputed_rounds": 9,
     "pending_rounds": 6,
@@ -1905,5 +1905,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-05-02T21:24:10"
+    "exported_at": "2026-05-02T21:34:19"
 }

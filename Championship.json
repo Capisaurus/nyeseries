@@ -1,66 +1,72 @@
 {
     "export_type": "championship",
     "championship_name": "Nye Series",
-    "total_seasons": 10,
+    "total_seasons": 11,
     "total_races": 123,
     "seasons": [
         {
             "season_id": "academy_1",
-            "season_name": "Academy 1",
+            "season_name": "academy 1",
             "status": "In Progress",
             "total_races": 9
         },
         {
+            "season_id": "academy_1_1",
+            "season_name": "academy 1 1",
+            "status": "In Progress",
+            "total_races": 0
+        },
+        {
             "season_id": "academy_2",
-            "season_name": "Academy 2",
+            "season_name": "academy 2",
             "status": "In Progress",
             "total_races": 10
         },
         {
             "season_id": "series_1",
-            "season_name": "Series 1",
+            "season_name": "series 1",
             "status": "In Progress",
             "total_races": 14
         },
         {
             "season_id": "series_2",
-            "season_name": "Series 2",
+            "season_name": "series 2",
             "status": "In Progress",
             "total_races": 18
         },
         {
             "season_id": "series_2_sprint",
-            "season_name": "Series 2 Sprint",
+            "season_name": "series 2 sprint",
             "status": "In Progress",
             "total_races": 10
         },
         {
             "season_id": "series_3",
-            "season_name": "Series 3",
+            "season_name": "series 3",
             "status": "In Progress",
             "total_races": 14
         },
         {
             "season_id": "series_4",
-            "season_name": "Series 4",
+            "season_name": "series 4",
             "status": "In Progress",
             "total_races": 13
         },
         {
             "season_id": "series_5",
-            "season_name": "Series 5",
+            "season_name": "series 5",
             "status": "In Progress",
             "total_races": 14
         },
         {
             "season_id": "series_6",
-            "season_name": "Series 6",
+            "season_name": "series 6",
             "status": "In Progress",
             "total_races": 12
         },
         {
             "season_id": "series_7",
-            "season_name": "Series 7",
+            "season_name": "series 7",
             "status": "In Progress",
             "total_races": 9
         }
@@ -3623,5 +3629,5 @@
             ]
         }
     ],
-    "exported_at": "2026-05-02T21:24:10"
+    "exported_at": "2026-05-02T21:34:19"
 }
