@@ -1,72 +1,66 @@
 {
     "export_type": "championship",
     "championship_name": "Nye Series",
-    "total_seasons": 11,
+    "total_seasons": 10,
     "total_races": 123,
     "seasons": [
         {
             "season_id": "academy_1",
-            "season_name": "academy 1",
+            "season_name": "Academy 1",
             "status": "In Progress",
             "total_races": 9
         },
         {
-            "season_id": "academy_1_1",
-            "season_name": "academy 1 1",
-            "status": "In Progress",
-            "total_races": 0
-        },
-        {
             "season_id": "academy_2",
-            "season_name": "academy 2",
+            "season_name": "Academy 2",
             "status": "In Progress",
             "total_races": 10
         },
         {
             "season_id": "series_1",
-            "season_name": "series 1",
+            "season_name": "Series 1",
             "status": "In Progress",
             "total_races": 14
         },
         {
             "season_id": "series_2",
-            "season_name": "series 2",
+            "season_name": "Series 2",
             "status": "In Progress",
             "total_races": 18
         },
         {
             "season_id": "series_2_sprint",
-            "season_name": "series 2 sprint",
+            "season_name": "Series 2 Sprint",
             "status": "In Progress",
             "total_races": 10
         },
         {
             "season_id": "series_3",
-            "season_name": "series 3",
+            "season_name": "Series 3",
             "status": "In Progress",
             "total_races": 14
         },
         {
             "season_id": "series_4",
-            "season_name": "series 4",
+            "season_name": "Series 4",
             "status": "In Progress",
             "total_races": 13
         },
         {
             "season_id": "series_5",
-            "season_name": "series 5",
+            "season_name": "Series 5",
             "status": "In Progress",
             "total_races": 14
         },
         {
             "season_id": "series_6",
-            "season_name": "series 6",
+            "season_name": "Series 6",
             "status": "In Progress",
             "total_races": 12
         },
         {
             "season_id": "series_7",
-            "season_name": "series 7",
+            "season_name": "Series 7",
             "status": "In Progress",
             "total_races": 9
         }
@@ -81,6 +75,98 @@
             "country": "",
             "total_races": 95,
             "total_points": 1008.5,
+            "rounds": {
+                "1": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 5,
+                    "points": 20.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 1,
+                    "points": 39.0,
+                    "status": ""
+                }
+            },
             "wins": 6,
             "sprint_wins": 0,
             "poles": 0,
@@ -111,6 +197,98 @@
             "country": "",
             "total_races": 69,
             "total_points": 855.5,
+            "rounds": {
+                "1": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 9,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 4,
+                    "points": 13.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 4,
+                    "points": 18.0,
+                    "status": ""
+                }
+            },
             "wins": 9,
             "sprint_wins": 0,
             "poles": 0,
@@ -141,6 +319,80 @@
             "country": "",
             "total_races": 51,
             "total_points": 792.0,
+            "rounds": {
+                "3": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 8,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": "",
+                    "sprint_points": 4.0,
+                    "sprint_position": 5
+                },
+                "6": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 6,
+                    "points": 24.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 6,
+                    "points": 24.0,
+                    "status": "NC"
+                }
+            },
             "wins": 7,
             "sprint_wins": 0,
             "poles": 0,
@@ -175,6 +427,102 @@
             "country": "Netherlands",
             "total_races": 120,
             "total_points": 692.5,
+            "rounds": {
+                "1": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": "NC"
+                },
+                "3": {
+                    "position": 7,
+                    "points": 9.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 10,
+                    "points": 1.5,
+                    "status": "NC"
+                },
+                "5": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": "",
+                    "sprint_points": 0.0,
+                    "sprint_position": 15
+                },
+                "6": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 10,
+                    "points": 1.5,
+                    "status": "NC",
+                    "qualifying_points": 0.0,
+                    "qualifying_position": 6
+                },
+                "8": {
+                    "position": 4,
+                    "points": 36.0,
+                    "status": "NC"
+                },
+                "9": {
+                    "position": 5,
+                    "points": 22.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 10,
+                    "points": 3.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 3,
+                    "points": 22.5,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -209,6 +557,102 @@
             "country": "",
             "total_races": 96,
             "total_points": 661.0,
+            "rounds": {
+                "1": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 5,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 9,
+                    "points": 3.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": "",
+                    "sprint_points": 0.0,
+                    "sprint_position": 13
+                },
+                "6": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 6,
+                    "points": 12.0,
+                    "status": "",
+                    "qualifying_points": 0.0,
+                    "qualifying_position": 7
+                },
+                "8": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 6,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 4,
+                    "points": 36.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 9,
+                    "points": 3.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -239,6 +683,72 @@
             "country": "",
             "total_races": 25,
             "total_points": 621.5,
+            "rounds": {
+                "2": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 2,
+                    "points": 27.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 1,
+                    "points": 37.5,
+                    "status": ""
+                },
+                "5": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": "",
+                    "sprint_points": 0.0,
+                    "sprint_position": 10
+                },
+                "6": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 1,
+                    "points": 37.5,
+                    "status": "",
+                    "qualifying_points": 0.0,
+                    "qualifying_position": 1
+                },
+                "8": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 1,
+                    "points": 78.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 4,
+                    "points": 36.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                }
+            },
             "wins": 16,
             "sprint_wins": 0,
             "poles": 1,
@@ -265,6 +775,88 @@
             "country": "",
             "total_races": 39,
             "total_points": 548.0,
+            "rounds": {
+                "2": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 8,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 7,
+                    "points": 18.0,
+                    "status": ""
+                }
+            },
             "wins": 8,
             "sprint_wins": 0,
             "poles": 0,
@@ -295,6 +887,80 @@
             "country": "",
             "total_races": 43,
             "total_points": 439.0,
+            "rounds": {
+                "1": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 18,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "4": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 3,
+                    "points": 16.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": "",
+                    "sprint_points": 6.0,
+                    "sprint_position": 3
+                },
+                "6": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                }
+            },
             "wins": 2,
             "sprint_wins": 0,
             "poles": 0,
@@ -321,6 +987,82 @@
             "country": "",
             "total_races": 37,
             "total_points": 422.0,
+            "rounds": {
+                "5": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": "NC",
+                    "sprint_points": 0.0,
+                    "sprint_position": 16
+                },
+                "6": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": "NC"
+                },
+                "7": {
+                    "position": 9,
+                    "points": 3.0,
+                    "status": "NC",
+                    "qualifying_points": 0.0,
+                    "qualifying_position": 8
+                },
+                "9": {
+                    "position": 4,
+                    "points": 27.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 4,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": "NC"
+                },
+                "12": {
+                    "position": 7,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 7,
+                    "points": 18.0,
+                    "status": "NC"
+                }
+            },
             "wins": 4,
             "sprint_wins": 0,
             "poles": 0,
@@ -351,6 +1093,70 @@
             "country": "",
             "total_races": 35,
             "total_points": 418.5,
+            "rounds": {
+                "1": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 3,
+                    "points": 22.5,
+                    "status": ""
+                },
+                "4": {
+                    "position": 4,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": "",
+                    "sprint_points": 2.0,
+                    "sprint_position": 7
+                },
+                "6": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 7,
+                    "points": 7.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                }
+            },
             "wins": 3,
             "sprint_wins": 0,
             "poles": 0,
@@ -385,6 +1191,75 @@
             "country": "",
             "total_races": 22,
             "total_points": 411.0,
+            "rounds": {
+                "1": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": "",
+                    "sprint_points": 5.0,
+                    "sprint_position": 4
+                },
+                "6": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 2,
+                    "points": 54.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                }
+            },
             "wins": 6,
             "sprint_wins": 0,
             "poles": 0,
@@ -411,6 +1286,58 @@
             "country": "",
             "total_races": 20,
             "total_points": 380.0,
+            "rounds": {
+                "1": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 4,
+                    "points": 36.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                }
+            },
             "wins": 8,
             "sprint_wins": 0,
             "poles": 0,
@@ -433,6 +1360,77 @@
             "country": "",
             "total_races": 23,
             "total_points": 355.0,
+            "rounds": {
+                "1": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 1,
+                    "points": 37.5,
+                    "status": ""
+                },
+                "4": {
+                    "position": 3,
+                    "points": 22.5,
+                    "status": ""
+                },
+                "5": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": "",
+                    "sprint_points": 0.0,
+                    "sprint_position": 12
+                },
+                "6": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 8,
+                    "points": 6.0,
+                    "status": "NC",
+                    "qualifying_points": 0.0,
+                    "qualifying_position": 2
+                },
+                "8": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 7,
+                    "points": 9.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 6,
+                    "points": 24.0,
+                    "status": ""
+                }
+            },
             "wins": 3,
             "sprint_wins": 0,
             "poles": 0,
@@ -463,6 +1461,73 @@
             "country": "",
             "total_races": 24,
             "total_points": 337.0,
+            "rounds": {
+                "2": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 7,
+                    "points": 7.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 5,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 9,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                }
+            },
             "wins": 5,
             "sprint_wins": 0,
             "poles": 0,
@@ -489,6 +1554,75 @@
             "country": "",
             "total_races": 32,
             "total_points": 269.0,
+            "rounds": {
+                "1": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 2,
+                    "points": 27.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": "NC",
+                    "sprint_points": 3.0,
+                    "sprint_position": 6
+                },
+                "7": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 3,
+                    "points": 16.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -523,6 +1657,68 @@
             "country": "",
             "total_races": 16,
             "total_points": 250.0,
+            "rounds": {
+                "1": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 6,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 1,
+                    "points": 75.0,
+                    "status": ""
+                }
+            },
             "wins": 4,
             "sprint_wins": 0,
             "poles": 0,
@@ -549,6 +1745,67 @@
             "country": "",
             "total_races": 17,
             "total_points": 247.5,
+            "rounds": {
+                "1": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": "",
+                    "sprint_points": 8.0,
+                    "sprint_position": 1
+                },
+                "6": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 3,
+                    "points": 22.5,
+                    "status": "",
+                    "qualifying_points": 0.0,
+                    "qualifying_position": 10
+                },
+                "9": {
+                    "position": 1,
+                    "points": 50.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 9,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 1,
+                    "points": 75.0,
+                    "status": ""
+                }
+            },
             "wins": 2,
             "sprint_wins": 1,
             "poles": 0,
@@ -575,6 +1832,63 @@
             "country": "",
             "total_races": 22,
             "total_points": 238.0,
+            "rounds": {
+                "5": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "2": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                }
+            },
             "wins": 2,
             "sprint_wins": 0,
             "poles": 0,
@@ -597,6 +1911,72 @@
             "country": "",
             "total_races": 19,
             "total_points": 238.0,
+            "rounds": {
+                "1": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 6,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 7,
+                    "points": 9.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": "",
+                    "sprint_points": 0.0,
+                    "sprint_position": 11
+                },
+                "6": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 2,
+                    "points": 54.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 3,
+                    "points": 45.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 4,
+                    "points": 18.0,
+                    "status": "",
+                    "qualifying_points": 0.0,
+                    "qualifying_position": 9
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -623,6 +2003,58 @@
             "country": "",
             "total_races": 15,
             "total_points": 213.0,
+            "rounds": {
+                "1": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "4": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 4,
+                    "points": 24.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 5,
+                    "points": 30.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                }
+            },
             "wins": 2,
             "sprint_wins": 0,
             "poles": 0,
@@ -649,6 +2081,78 @@
             "country": "",
             "total_races": 28,
             "total_points": 202.0,
+            "rounds": {
+                "7": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": "DNF"
+                },
+                "5": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                }
+            },
             "wins": 2,
             "sprint_wins": 0,
             "poles": 0,
@@ -683,6 +2187,93 @@
             "country": "",
             "total_races": 38,
             "total_points": 191.0,
+            "rounds": {
+                "3": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": "DNF"
+                },
+                "1": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 4,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 7,
+                    "points": 9.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -713,6 +2304,48 @@
             "country": "",
             "total_races": 9,
             "total_points": 182.0,
+            "rounds": {
+                "7": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 5,
             "sprint_wins": 0,
             "poles": 0,
@@ -739,6 +2372,78 @@
             "country": "",
             "total_races": 14,
             "total_points": 165.0,
+            "rounds": {
+                "1": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 8,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 2,
+                    "points": 27.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -761,6 +2466,38 @@
             "country": "",
             "total_races": 6,
             "total_points": 157.0,
+            "rounds": {
+                "4": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 2,
+                    "points": 36.0,
+                    "status": ""
+                }
+            },
             "wins": 4,
             "sprint_wins": 0,
             "poles": 0,
@@ -783,6 +2520,77 @@
             "country": "",
             "total_races": 17,
             "total_points": 141.0,
+            "rounds": {
+                "11": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 6,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 5,
+                    "points": 15.0,
+                    "status": "",
+                    "qualifying_points": 0.0,
+                    "qualifying_position": 4
+                },
+                "9": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": "NC"
+                },
+                "5": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": "NC",
+                    "sprint_points": 0.0,
+                    "sprint_position": 9
+                },
+                "6": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 3,
+                    "points": 45.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -813,6 +2621,53 @@
             "country": "",
             "total_races": 17,
             "total_points": 137.0,
+            "rounds": {
+                "1": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 17,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "4": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -843,6 +2698,38 @@
             "country": "",
             "total_races": 6,
             "total_points": 133.5,
+            "rounds": {
+                "5": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 2,
+                    "points": 28.5,
+                    "status": ""
+                },
+                "13": {
+                    "position": 2,
+                    "points": 54.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -865,6 +2752,53 @@
             "country": "",
             "total_races": 9,
             "total_points": 126.0,
+            "rounds": {
+                "3": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 4,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 3,
+                    "points": 45.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -887,6 +2821,38 @@
             "country": "",
             "total_races": 6,
             "total_points": 124.0,
+            "rounds": {
+                "10": {
+                    "position": 3,
+                    "points": 48.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -913,6 +2879,55 @@
             "country": "",
             "total_races": 9,
             "total_points": 123.0,
+            "rounds": {
+                "11": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 5,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": "",
+                    "sprint_points": 1.0,
+                    "sprint_position": 8
+                },
+                "6": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 2,
+                    "points": 36.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -935,6 +2950,48 @@
             "country": "",
             "total_races": 8,
             "total_points": 102.0,
+            "rounds": {
+                "1": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -957,6 +3014,43 @@
             "country": "",
             "total_races": 7,
             "total_points": 99.0,
+            "rounds": {
+                "3": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 7,
+                    "points": 7.0,
+                    "status": ""
+                }
+            },
             "wins": 3,
             "sprint_wins": 0,
             "poles": 0,
@@ -979,6 +3073,78 @@
             "country": "",
             "total_races": 26,
             "total_points": 97.0,
+            "rounds": {
+                "1": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1005,6 +3171,58 @@
             "country": "",
             "total_races": 20,
             "total_points": 93.0,
+            "rounds": {
+                "1": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 19,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "9": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1035,6 +3253,50 @@
             "country": "",
             "total_races": 11,
             "total_points": 92.0,
+            "rounds": {
+                "1": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 7,
+                    "points": 9.0,
+                    "status": "",
+                    "qualifying_points": 0.0,
+                    "qualifying_position": 3
+                },
+                "8": {
+                    "position": 5,
+                    "points": 30.0,
+                    "status": "NC"
+                },
+                "10": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 5,
+                    "points": 30.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1061,6 +3323,63 @@
             "country": "",
             "total_races": 14,
             "total_points": 91.0,
+            "rounds": {
+                "6": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 5,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "15": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "16": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "17": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1083,6 +3402,43 @@
             "country": "",
             "total_races": 13,
             "total_points": 89.0,
+            "rounds": {
+                "2": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "7": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 8,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1109,6 +3465,38 @@
             "country": "",
             "total_races": 7,
             "total_points": 88.0,
+            "rounds": {
+                "10": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 20,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 2,
             "sprint_wins": 0,
             "poles": 0,
@@ -1135,6 +3523,53 @@
             "country": "",
             "total_races": 11,
             "total_points": 88.0,
+            "rounds": {
+                "1": {
+                    "position": 18,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "2": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "8": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "9": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1161,6 +3596,53 @@
             "country": "",
             "total_races": 9,
             "total_points": 85.0,
+            "rounds": {
+                "1": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1183,6 +3665,38 @@
             "country": "",
             "total_races": 7,
             "total_points": 84.0,
+            "rounds": {
+                "1": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1209,6 +3723,28 @@
             "country": "",
             "total_races": 4,
             "total_points": 81.0,
+            "rounds": {
+                "1": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                }
+            },
             "wins": 3,
             "sprint_wins": 0,
             "poles": 0,
@@ -1231,6 +3767,53 @@
             "country": "",
             "total_races": 21,
             "total_points": 80.0,
+            "rounds": {
+                "1": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 17,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "9": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "2": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1265,6 +3848,28 @@
             "country": "",
             "total_races": 5,
             "total_points": 77.0,
+            "rounds": {
+                "1": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                }
+            },
             "wins": 2,
             "sprint_wins": 0,
             "poles": 0,
@@ -1291,6 +3896,43 @@
             "country": "",
             "total_races": 7,
             "total_points": 72.0,
+            "rounds": {
+                "1": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1313,6 +3955,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 71.0,
+            "rounds": {
+                "7": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 1,
+                    "points": 52.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -1335,6 +3989,68 @@
             "country": "",
             "total_races": 12,
             "total_points": 70.5,
+            "rounds": {
+                "1": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 9,
+                    "points": 3.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 3,
+                    "points": 22.5,
+                    "status": ""
+                },
+                "13": {
+                    "position": 8,
+                    "points": 12.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1357,6 +4073,28 @@
             "country": "",
             "total_races": 4,
             "total_points": 70.0,
+            "rounds": {
+                "7": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -1379,6 +4117,28 @@
             "country": "",
             "total_races": 4,
             "total_points": 67.0,
+            "rounds": {
+                "11": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "18": {
+                    "position": 5,
+                    "points": 15.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -1401,6 +4161,43 @@
             "country": "",
             "total_races": 11,
             "total_points": 66.0,
+            "rounds": {
+                "2": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "6": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1427,6 +4224,53 @@
             "country": "",
             "total_races": 9,
             "total_points": 60.0,
+            "rounds": {
+                "4": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1453,6 +4297,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 54.0,
+            "rounds": {
+                "10": {
+                    "position": 2,
+                    "points": 54.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1475,6 +4326,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 52.0,
+            "rounds": {
+                "3": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                }
+            },
             "wins": 2,
             "sprint_wins": 0,
             "poles": 0,
@@ -1497,6 +4360,22 @@
             "country": "",
             "total_races": 2,
             "total_points": 52.0,
+            "rounds": {
+                "5": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": "",
+                    "sprint_points": 7.0,
+                    "sprint_position": 2
+                },
+                "7": {
+                    "position": 2,
+                    "points": 27.0,
+                    "status": "",
+                    "qualifying_points": 0.0,
+                    "qualifying_position": 5
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1523,6 +4402,70 @@
             "country": "",
             "total_races": 20,
             "total_points": 52.0,
+            "rounds": {
+                "12": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 20,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "2": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "4": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "5": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": "NC",
+                    "sprint_points": 0.0,
+                    "sprint_position": 14
+                },
+                "3": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "6": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": "NC"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1561,6 +4504,48 @@
             "country": "",
             "total_races": 8,
             "total_points": 48.5,
+            "rounds": {
+                "1": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 17,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "4": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 18,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 1,
+                    "points": 37.5,
+                    "status": ""
+                },
+                "13": {
+                    "position": 10,
+                    "points": 3.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -1583,6 +4568,28 @@
             "country": "",
             "total_races": 4,
             "total_points": 48.0,
+            "rounds": {
+                "7": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1609,6 +4616,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 41.0,
+            "rounds": {
+                "5": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -1631,6 +4650,28 @@
             "country": "",
             "total_races": 4,
             "total_points": 36.0,
+            "rounds": {
+                "1": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 8,
+                    "points": 5.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -1653,6 +4694,33 @@
             "country": "",
             "total_races": 5,
             "total_points": 36.0,
+            "rounds": {
+                "2": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "3": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1675,6 +4743,28 @@
             "country": "",
             "total_races": 4,
             "total_points": 36.0,
+            "rounds": {
+                "1": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 3,
+                    "points": 16.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1697,6 +4787,38 @@
             "country": "",
             "total_races": 6,
             "total_points": 35.0,
+            "rounds": {
+                "1": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "10": {
+                    "position": 19,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1723,6 +4845,68 @@
             "country": "",
             "total_races": 17,
             "total_points": 33.0,
+            "rounds": {
+                "1": {
+                    "position": 18,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "2": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "11": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1749,6 +4933,33 @@
             "country": "",
             "total_races": 6,
             "total_points": 33.0,
+            "rounds": {
+                "1": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 17,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": "NC"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1779,6 +4990,23 @@
             "country": "",
             "total_races": 3,
             "total_points": 32.0,
+            "rounds": {
+                "1": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -1801,6 +5029,43 @@
             "country": "",
             "total_races": 7,
             "total_points": 32.0,
+            "rounds": {
+                "1": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1823,6 +5088,23 @@
             "country": "",
             "total_races": 3,
             "total_points": 31.0,
+            "rounds": {
+                "4": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1845,6 +5127,38 @@
             "country": "",
             "total_races": 6,
             "total_points": 26.0,
+            "rounds": {
+                "8": {
+                    "position": 1,
+                    "points": 26.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 18,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "2": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -1871,6 +5185,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 25.0,
+            "rounds": {
+                "2": {
+                    "position": 1,
+                    "points": 25.0,
+                    "status": ""
+                }
+            },
             "wins": 1,
             "sprint_wins": 0,
             "poles": 0,
@@ -1893,6 +5214,33 @@
             "country": "",
             "total_races": 6,
             "total_points": 25.0,
+            "rounds": {
+                "1": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "2": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 17,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "7": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1919,6 +5267,23 @@
             "country": "",
             "total_races": 3,
             "total_points": 24.0,
+            "rounds": {
+                "11": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1941,6 +5306,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 23.0,
+            "rounds": {
+                "5": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": "DNF"
+                },
+                "6": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1963,6 +5340,13 @@
             "country": "",
             "total_races": 2,
             "total_points": 22.0,
+            "rounds": {
+                "10": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -1985,6 +5369,58 @@
             "country": "",
             "total_races": 10,
             "total_points": 22.0,
+            "rounds": {
+                "1": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": "DNF"
+                },
+                "5": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "11": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "13": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "14": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2007,6 +5443,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 19.0,
+            "rounds": {
+                "5": {
+                    "position": 2,
+                    "points": 19.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2029,6 +5472,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 18.0,
+            "rounds": {
+                "1": {
+                    "position": 2,
+                    "points": 18.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2051,6 +5501,23 @@
             "country": "",
             "total_races": 3,
             "total_points": 18.0,
+            "rounds": {
+                "3": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": "DNF"
+                },
+                "5": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": "DNF"
+                },
+                "6": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2073,6 +5540,23 @@
             "country": "",
             "total_races": 3,
             "total_points": 18.0,
+            "rounds": {
+                "9": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2099,6 +5583,38 @@
             "country": "",
             "total_races": 7,
             "total_points": 17.0,
+            "rounds": {
+                "1": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "5": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "8": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "9": {
+                    "position": 6,
+                    "points": 16.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2121,6 +5637,38 @@
             "country": "",
             "total_races": 6,
             "total_points": 16.0,
+            "rounds": {
+                "1": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": "DNF"
+                },
+                "4": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2143,6 +5691,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 15.0,
+            "rounds": {
+                "1": {
+                    "position": 3,
+                    "points": 15.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2165,6 +5720,33 @@
             "country": "",
             "total_races": 6,
             "total_points": 14.0,
+            "rounds": {
+                "1": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": "NC"
+                },
+                "6": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": "NC"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2191,6 +5773,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 14.0,
+            "rounds": {
+                "11": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 8,
+                    "points": 12.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2213,6 +5807,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 13.0,
+            "rounds": {
+                "8": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 7,
+                    "points": 12.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2235,6 +5841,38 @@
             "country": "",
             "total_races": 6,
             "total_points": 12.0,
+            "rounds": {
+                "10": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "9": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2261,6 +5899,28 @@
             "country": "",
             "total_races": 4,
             "total_points": 12.0,
+            "rounds": {
+                "2": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2283,6 +5943,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 12.0,
+            "rounds": {
+                "8": {
+                    "position": 4,
+                    "points": 12.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2305,6 +5972,23 @@
             "country": "",
             "total_races": 3,
             "total_points": 10.0,
+            "rounds": {
+                "6": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                },
+                "1": {
+                    "position": 17,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 18,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2331,6 +6015,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 10.0,
+            "rounds": {
+                "8": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "12": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2353,6 +6049,23 @@
             "country": "",
             "total_races": 3,
             "total_points": 10.0,
+            "rounds": {
+                "5": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 9,
+                    "points": 6.0,
+                    "status": "DNF"
+                },
+                "11": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2375,6 +6088,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 10.0,
+            "rounds": {
+                "1": {
+                    "position": 19,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "2": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2397,6 +6122,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 10.0,
+            "rounds": {
+                "3": {
+                    "position": 5,
+                    "points": 10.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2419,6 +6151,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 10.0,
+            "rounds": {
+                "3": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2441,6 +6185,23 @@
             "country": "",
             "total_races": 3,
             "total_points": 9.0,
+            "rounds": {
+                "7": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2463,6 +6224,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 8.0,
+            "rounds": {
+                "11": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2485,6 +6253,23 @@
             "country": "",
             "total_races": 3,
             "total_points": 8.0,
+            "rounds": {
+                "1": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                },
+                "2": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "5": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2507,6 +6292,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 8.0,
+            "rounds": {
+                "1": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2529,6 +6321,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 8.0,
+            "rounds": {
+                "1": {
+                    "position": 6,
+                    "points": 8.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2551,6 +6350,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 6.0,
+            "rounds": {
+                "7": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 7,
+                    "points": 6.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2573,6 +6384,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 5.0,
+            "rounds": {
+                "1": {
+                    "position": 8,
+                    "points": 5.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2595,6 +6413,23 @@
             "country": "",
             "total_races": 3,
             "total_points": 5.0,
+            "rounds": {
+                "2": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                },
+                "4": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "10": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2617,6 +6452,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 4.0,
+            "rounds": {
+                "4": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2639,6 +6481,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 4.0,
+            "rounds": {
+                "9": {
+                    "position": 8,
+                    "points": 4.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2661,6 +6510,33 @@
             "country": "",
             "total_races": 5,
             "total_points": 3.0,
+            "rounds": {
+                "1": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 10,
+                    "points": 2.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2687,6 +6563,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 3.0,
+            "rounds": {
+                "6": {
+                    "position": 9,
+                    "points": 3.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2709,6 +6592,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 2.0,
+            "rounds": {
+                "1": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2731,6 +6626,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 2.0,
+            "rounds": {
+                "4": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2753,6 +6655,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 2.0,
+            "rounds": {
+                "10": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2775,6 +6684,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 2.0,
+            "rounds": {
+                "2": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "3": {
+                    "position": 9,
+                    "points": 2.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2797,6 +6718,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 1.0,
+            "rounds": {
+                "2": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2819,6 +6747,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 1.0,
+            "rounds": {
+                "7": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 18,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2841,6 +6781,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 1.0,
+            "rounds": {
+                "6": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2863,6 +6810,33 @@
             "country": "",
             "total_races": 5,
             "total_points": 1.0,
+            "rounds": {
+                "1": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "3": {
+                    "position": 17,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "4": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "5": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2885,6 +6859,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 1.0,
+            "rounds": {
+                "10": {
+                    "position": 10,
+                    "points": 1.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2907,6 +6888,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 0.0,
+            "rounds": {
+                "1": {
+                    "position": 19,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "4": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2929,6 +6922,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 0.0,
+            "rounds": {
+                "8": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 17,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2951,6 +6956,7 @@
             "country": "",
             "total_races": 0,
             "total_points": 0.0,
+            "rounds": {},
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2968,6 +6974,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "3": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -2990,6 +7003,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "13": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3012,6 +7032,23 @@
             "country": "",
             "total_races": 3,
             "total_points": 0.0,
+            "rounds": {
+                "7": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "9": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3034,6 +7071,7 @@
             "country": "",
             "total_races": 0,
             "total_points": 0.0,
+            "rounds": {},
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3051,6 +7089,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "10": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3073,6 +7118,7 @@
             "country": "",
             "total_races": 0,
             "total_points": 0.0,
+            "rounds": {},
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3090,6 +7136,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "1": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3112,6 +7165,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 0.0,
+            "rounds": {
+                "1": {
+                    "position": 17,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "8": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3134,6 +7199,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "1": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3156,6 +7228,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "8": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3178,6 +7257,7 @@
             "country": "",
             "total_races": 0,
             "total_points": 0.0,
+            "rounds": {},
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3195,6 +7275,7 @@
             "country": "",
             "total_races": 0,
             "total_points": 0.0,
+            "rounds": {},
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3212,6 +7293,7 @@
             "country": "",
             "total_races": 0,
             "total_points": 0.0,
+            "rounds": {},
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3229,6 +7311,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "1": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3251,6 +7340,7 @@
             "country": "",
             "total_races": 0,
             "total_points": 0.0,
+            "rounds": {},
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3268,6 +7358,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "4": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3290,6 +7387,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 0.0,
+            "rounds": {
+                "1": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "8": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3312,6 +7421,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "10": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3334,6 +7450,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "13": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3356,6 +7479,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "2": {
+                    "position": 17,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3378,6 +7508,7 @@
             "country": "",
             "total_races": 0,
             "total_points": 0.0,
+            "rounds": {},
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3395,6 +7526,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "6": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": "NC"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3417,6 +7555,28 @@
             "country": "",
             "total_races": 4,
             "total_points": 0.0,
+            "rounds": {
+                "3": {
+                    "position": 16,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "5": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "6": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "7": {
+                    "position": 11,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3439,6 +7599,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "4": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3461,6 +7628,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "10": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3483,6 +7657,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "8": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3505,6 +7686,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 0.0,
+            "rounds": {
+                "7": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                },
+                "8": {
+                    "position": 13,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3527,6 +7720,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "13": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3549,6 +7749,18 @@
             "country": "",
             "total_races": 2,
             "total_points": 0.0,
+            "rounds": {
+                "2": {
+                    "position": 19,
+                    "points": 0.0,
+                    "status": "DNF"
+                },
+                "3": {
+                    "position": 15,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3571,6 +7783,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "2": {
+                    "position": 12,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3593,6 +7812,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "1": {
+                    "position": 18,
+                    "points": 0.0,
+                    "status": "DNF"
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3615,6 +7841,13 @@
             "country": "",
             "total_races": 1,
             "total_points": 0.0,
+            "rounds": {
+                "7": {
+                    "position": 14,
+                    "points": 0.0,
+                    "status": ""
+                }
+            },
             "wins": 0,
             "sprint_wins": 0,
             "poles": 0,
@@ -3629,5 +7862,5 @@
             ]
         }
     ],
-    "exported_at": "2026-05-04T12:04:22"
+    "exported_at": "2026-05-04T13:46:12"
 }

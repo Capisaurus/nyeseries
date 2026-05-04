@@ -2,7 +2,7 @@
     "export_type": "season",
     "championship_name": "Nye Series",
     "season_id": "series_2_sprint",
-    "season_name": "series 2 sprint",
+    "season_name": "Series 2 Sprint",
     "total_rounds": 10,
     "disputed_rounds": 10,
     "pending_rounds": 0,
@@ -1407,5 +1407,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-05-04T12:04:21"
+    "exported_at": "2026-05-04T13:46:11"
 }

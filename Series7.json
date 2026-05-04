@@ -2,7 +2,7 @@
     "export_type": "season",
     "championship_name": "Nye Series",
     "season_id": "series_7",
-    "season_name": "series 7",
+    "season_name": "Series 7",
     "total_rounds": 15,
     "disputed_rounds": 9,
     "pending_rounds": 6,
@@ -879,7 +879,7 @@
                     "driver": "SiegerGod",
                     "driver_id": "siegergod",
                     "team": "Ferrari",
-                    "points": 25.0,
+                    "points": 50.0,
                     "status": ""
                 },
                 {
@@ -887,7 +887,7 @@
                     "driver": "ItsSulen",
                     "driver_id": "itssulen",
                     "team": "Alpine",
-                    "points": 18.0,
+                    "points": 36.0,
                     "status": ""
                 },
                 {
@@ -903,7 +903,7 @@
                     "driver": "Termopolio",
                     "driver_id": "termopolio",
                     "team": "Red Bull",
-                    "points": 12.0,
+                    "points": 27.0,
                     "status": ""
                 },
                 {
@@ -911,7 +911,7 @@
                     "driver": "Capisaurus",
                     "driver_id": "capisaurus",
                     "team": "McLaren",
-                    "points": 10.0,
+                    "points": 22.0,
                     "status": ""
                 },
                 {
@@ -919,7 +919,7 @@
                     "driver": "Memingow",
                     "driver_id": "memingow",
                     "team": "Aston Martin",
-                    "points": 8.0,
+                    "points": 18.0,
                     "status": ""
                 }
             ]
@@ -1018,10 +1018,8 @@
                 },
                 "9": {
                     "position": 1,
-                    "points": 25.0,
-                    "status": "",
-                    "extra_points": 25.0,
-                    "extra_position": 1
+                    "points": 50.0,
+                    "status": ""
                 }
             },
             "wins": 2,
@@ -1178,10 +1176,8 @@
                 },
                 "9": {
                     "position": 2,
-                    "points": 18.0,
-                    "status": "",
-                    "extra_points": 18.0,
-                    "extra_position": 2
+                    "points": 36.0,
+                    "status": ""
                 }
             },
             "wins": 0,
@@ -1398,10 +1394,8 @@
                 },
                 "9": {
                     "position": 5,
-                    "points": 10.0,
-                    "status": "",
-                    "extra_points": 12.0,
-                    "extra_position": 4
+                    "points": 22.0,
+                    "status": ""
                 }
             },
             "wins": 0,
@@ -1465,10 +1459,8 @@
                 },
                 "9": {
                     "position": 4,
-                    "points": 12.0,
-                    "status": "",
-                    "extra_points": 15.0,
-                    "extra_position": 3
+                    "points": 27.0,
+                    "status": ""
                 }
             },
             "wins": 0,
@@ -1527,10 +1519,8 @@
                 },
                 "9": {
                     "position": 6,
-                    "points": 8.0,
-                    "status": "",
-                    "extra_points": 10.0,
-                    "extra_position": 5
+                    "points": 18.0,
+                    "status": ""
                 }
             },
             "wins": 0,
@@ -1905,5 +1895,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-05-04T12:04:22"
+    "exported_at": "2026-05-04T13:46:12"
 }

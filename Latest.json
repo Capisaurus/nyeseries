@@ -19,7 +19,7 @@
             "number": "5",
             "team": "Ferrari",
             "position": 1,
-            "points": 25.0,
+            "points": 50.0,
             "status": "",
             "best_lap": "",
             "best_lap_sec": "",
@@ -37,7 +37,7 @@
             "number": "",
             "team": "Alpine",
             "position": 2,
-            "points": 18.0,
+            "points": 36.0,
             "status": "",
             "best_lap": "",
             "best_lap_sec": "",
@@ -73,7 +73,7 @@
             "number": "",
             "team": "Red Bull",
             "position": 4,
-            "points": 12.0,
+            "points": 27.0,
             "status": "",
             "best_lap": "",
             "best_lap_sec": "",
@@ -91,7 +91,7 @@
             "number": "76",
             "team": "McLaren",
             "position": 5,
-            "points": 10.0,
+            "points": 22.0,
             "status": "",
             "best_lap": "",
             "best_lap_sec": "",
@@ -109,7 +109,7 @@
             "number": "23",
             "team": "Aston Martin",
             "position": 6,
-            "points": 8.0,
+            "points": 18.0,
             "status": "",
             "best_lap": "",
             "best_lap_sec": "",
@@ -123,5 +123,5 @@
         }
     ],
     "sprint_results": [],
-    "exported_at": "2026-05-04T12:04:22"
+    "exported_at": "2026-05-04T13:46:13"
 }
