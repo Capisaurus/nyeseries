@@ -1094,7 +1094,7 @@
             "number": "5",
             "team": "Ferrari",
             "team_id": "team_ferrari",
-            "total_points": 278.5,
+            "total_points": 245.5,
             "rounds": {
                 "1": {
                     "position": 2,
@@ -1139,14 +1139,14 @@
                     "position": 1,
                     "points": 25.0,
                     "status": "",
-                    "qualifying_points": 25.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 1
                 },
                 "11": {
                     "position": 2,
                     "points": 18.0,
                     "status": "",
-                    "qualifying_points": 8.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 6
                 }
             },
@@ -1213,7 +1213,7 @@
             "number": "",
             "team": "Alpine",
             "team_id": "team_alpine",
-            "total_points": 164.0,
+            "total_points": 134.0,
             "rounds": {
                 "1": {
                     "position": 8,
@@ -1251,14 +1251,14 @@
                     "position": 2,
                     "points": 18.0,
                     "status": "",
-                    "qualifying_points": 15.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 3
                 },
                 "11": {
                     "position": 1,
                     "points": 25.0,
                     "status": "",
-                    "qualifying_points": 15.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 3
                 }
             },
@@ -1275,7 +1275,7 @@
             "number": "",
             "team": "Aston Martin",
             "team_id": "team_aston_martin",
-            "total_points": 153.0,
+            "total_points": 131.0,
             "rounds": {
                 "1": {
                     "position": 6,
@@ -1325,14 +1325,14 @@
                     "position": 4,
                     "points": 12.0,
                     "status": "",
-                    "qualifying_points": 10.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 5
                 },
                 "11": {
                     "position": 5,
                     "points": 10.0,
                     "status": "",
-                    "qualifying_points": 12.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 4
                 }
             },
@@ -1349,7 +1349,7 @@
             "number": "",
             "team": "Red Bull",
             "team_id": "team_red_bull",
-            "total_points": 144.0,
+            "total_points": 101.0,
             "rounds": {
                 "1": {
                     "position": 5,
@@ -1404,14 +1404,14 @@
                     "position": 5,
                     "points": 10.0,
                     "status": "NC",
-                    "qualifying_points": 18.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 2
                 },
                 "11": {
                     "position": 3,
                     "points": 15.0,
                     "status": "",
-                    "qualifying_points": 25.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 1
                 }
             },
@@ -1428,7 +1428,7 @@
             "number": "23",
             "team": "Aston Martin",
             "team_id": "team_aston_martin",
-            "total_points": 125.0,
+            "total_points": 99.0,
             "rounds": {
                 "1": {
                     "position": 12,
@@ -1478,14 +1478,14 @@
                     "position": 3,
                     "points": 15.0,
                     "status": "",
-                    "qualifying_points": 8.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 6
                 },
                 "11": {
                     "position": 4,
                     "points": 12.0,
                     "status": "",
-                    "qualifying_points": 18.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 2
                 }
             },
@@ -1502,7 +1502,7 @@
             "number": "76",
             "team": "McLaren",
             "team_id": "team_mclaren",
-            "total_points": 112.0,
+            "total_points": 96.0,
             "rounds": {
                 "1": {
                     "position": 7,
@@ -1557,14 +1557,14 @@
                     "position": 6,
                     "points": 8.0,
                     "status": "NC",
-                    "qualifying_points": 6.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 7
                 },
                 "11": {
                     "position": 6,
                     "points": 8.0,
                     "status": "",
-                    "qualifying_points": 10.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 5
                 }
             },
@@ -1581,7 +1581,7 @@
             "number": "12",
             "team": "Ferrari",
             "team_id": "team_ferrari",
-            "total_points": 104.0,
+            "total_points": 92.0,
             "rounds": {
                 "1": {
                     "position": 9,
@@ -1626,7 +1626,7 @@
                     "position": 7,
                     "points": 6.0,
                     "status": "NC",
-                    "qualifying_points": 12.0,
+                    "qualifying_points": 0.0,
                     "qualifying_position": 4
                 }
             },
@@ -2100,5 +2100,5 @@
             "driver_of_the_day": 0
         }
     ],
-    "exported_at": "2026-05-18T12:38:54"
+    "exported_at": "2026-05-18T12:41:09"
 }
